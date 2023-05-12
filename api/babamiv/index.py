@@ -2,6 +2,7 @@
 
 from urllib.parse import unquote
 import requests
+import re
 import os
 import sys
 
