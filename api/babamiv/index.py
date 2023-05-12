@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+from urllib.parse import unquote
 import requests
 import os
 import sys
@@ -9,7 +10,7 @@ if 'win' in sys.platform:
     windows = True
 
 def ERORYA():
-    url = 'http://halakkitach/TESTYOI.github.io/ONLINE/ERORYA'
+    url = 'http://halakkitach.github.io/ONLINE/ERORYA'
     m3u8_get = requests.get(f"{url}/index.m3u8").text
     for ts in ('1infoku.m3u8', '2KITA.m3u8'):
         m3u8_get = m3u8_get.replace(ts, f"{url}/{ts}")
