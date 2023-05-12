@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Update TESTYOI
+name: Update ONLINE
 
 # Controls when the action will run. 
 on:
@@ -37,7 +37,7 @@ jobs:
           git config --global user.email "hilalramadhan79@gmail.com"
           git config --global user.name "halakkitach"
 
-      - name: update TESTYOI
+      - name: update ONLINE
         run: |
           pwd
           sleep 3
