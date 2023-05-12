@@ -10,8 +10,8 @@ windows = False
 if 'win' in sys.platform:
     windows = True
 
-def ERORYA():
-    url = 'http://halakkitach.github.io/ONLINE/ERORYA'
+def erorya():
+    url = 'http://halakkitach.github.io/ONLINE/erorya'
     m3u8_get = requests.get(f"{url}/index.m3u8").text
     for ts in ['1infoku.m3u8', '2KITA.m3u8']:
         m3u8_get = m3u8_get.replace(ts, f"{url}/{ts}")
@@ -24,7 +24,7 @@ def grab(url):
     else:
         for code in ['403 ', '404 ', '500 ']:
             if code in response:
-                return ERORYA()
+                return erorya()
             else:
                 break
         return response
