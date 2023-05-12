@@ -22,7 +22,7 @@ def grab(url):
     if '.m3u8' not in response:
         return ERORYA()
     else:
-        for code in '403', '404', '500':
+        for code in ['403 ', '404 ', '500 ']:
             if code in response:
                 return ERORYA()
             else:
