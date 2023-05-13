@@ -30,5 +30,5 @@ def grab(url):
         return response
 
 s = requests.Session()
-result = grab('https://apirplus21.thescript2.workers.dev' + str(sys.argv[1]))
+result = grab(str(sys.argv[1]))
 print(result)
