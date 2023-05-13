@@ -12,7 +12,7 @@ if 'win' in sys.platform:
 
 def erorya():
     url = 'http://halakkitach.github.io/ONLINE/erorya'
-    m3u8_get = requests.get(f"{url}/sdi.m3u8").text
+    m3u8_get = requests.get(f"{url}/index.m3u8").text
     for ts in ['1infoku.m3u8', '2KITA.m3u8']:
         m3u8_get = m3u8_get.replace(ts, f"{url}/{ts}")
     return m3u8_get
@@ -30,5 +30,5 @@ def grab(url):
         return response
 
 s = requests.Session()
-result = grab(str(sys.argv[1]))
+result = grab('https://rctiplusworkers2x1.thescript2.workers.dev/index.m3u8?id=' + str(sys.argv[1]))
 print(result)
