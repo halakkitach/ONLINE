@@ -20,7 +20,7 @@ def erorya():
 def grab(url):
     response = s.get(url, timeout=15).text
     if '.m3u8' not in response:
-        return ERORYA()
+        return erorya()
     else:
         for code in ['403 ', '404 ', '500 ']:
             if code in response:
