@@ -12,10 +12,10 @@ on:
       - master
 
   # Allows you to run this workflow manually from the Actions tab
-on:
-  workflow_dispatch: # Putting here is also fine!!
-  release:
-    types: [created]
+  on:
+    workflow_dispatch: # Putting here is also fine!!
+      release:
+      types: [created]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
