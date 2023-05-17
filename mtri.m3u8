@@ -1,3 +1,11 @@
 #EXTM3U
-#EXTINF:8.333333,
-https://dl.dropboxusercontent.com/s/2e85fh4c34jxksu/kitabisanew_1080p.ts
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://live-production.secureswiftcontent.com/exp=1684312369~acl=/hls-p/ingest_8237_*/*~hmac=09045a1b5d2a2bf5543062da155b259ee46cc9fe364418128c4e6ac32ffb6164/hls-p/ingest_8237_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://live-production.secureswiftcontent.com/exp=1684312369~acl=/hls-p/ingest_8237_*/*~hmac=09045a1b5d2a2bf5543062da155b259ee46cc9fe364418128c4e6ac32ffb6164/hls-p/ingest_8237_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://live-production.secureswiftcontent.com/exp=1684312369~acl=/hls-p/ingest_8237_*/*~hmac=09045a1b5d2a2bf5543062da155b259ee46cc9fe364418128c4e6ac32ffb6164/hls-p/ingest_8237_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://live-production.secureswiftcontent.com/exp=1684312369~acl=/hls-p/ingest_8237_*/*~hmac=09045a1b5d2a2bf5543062da155b259ee46cc9fe364418128c4e6ac32ffb6164/hls-p/ingest_8237_240p/index.m3u8
+
