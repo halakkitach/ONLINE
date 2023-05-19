@@ -30,5 +30,5 @@ def grab(url):
         return response
 
 s = requests.Session()
-result = grab('https://cdn.thomasandi.my.id/chpriv/vid.m3u8?id=' + str(sys.argv[1]))
+result = grab('https://vidiohls.thescript2.workers.dev/apiv2.php?id=' + str(sys.argv[1]))
 print(result)
