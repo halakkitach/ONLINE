@@ -30,5 +30,5 @@ def grab(url):
         return response
 
 s = requests.Session()
-result = grab('https://vidiohls.thescript2.workers.dev/apiv2.php?id=' + str(sys.argv[1]))
+result = grab('https://m.vidio.com/live/' + str(sys.argv[1]))
 print(result)
