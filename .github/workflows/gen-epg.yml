@@ -1,0 +1,38 @@
+name: Generate EPG
+on:
+  schedule:
+    - cron: '00 13 * * *'
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: config
+        run: |
+          git pull
+          git config --global user.email "<>"
+          git config --global user.name "halakkitach"
+      - name: Update ONLINE
+        run: |
+          cd epg
+          pwd
+          pip install lxml
+          echo "Generating EPG for main playlist..."
+          python3 scripts/index.py guide.xml scripts/general.txt "halakkitach.github.io/ONLINE" 
+          tar -czvf guide.xml.gz guide.xml
+          rm guide.xml
+          echo "Generating EPG for local playlist..."
+          python3 scripts/index.py guide.xml scripts/local.txt "halakkitach.github.io/ONLINE" 
+          cd ..
+      - name: commit
+        run: |
+          git add -A
+          ls -la
+          git commit -m "Generate EPG every 1.00pm"
+          git push
