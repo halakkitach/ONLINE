@@ -12,7 +12,7 @@ if 'win' in sys.platform:
 
 def erorya():
     url = 'http://halakkitach.github.io/ONLINE/erorya'
-    m3u8_get = requests.get(f"{url}/index.m3u8").text
+    m3u8_get = requests.get(f"{url}/stream.mpd").text
     for ts in ['1infoku.m3u8', '2KITA.m3u8']:
         m3u8_get = m3u8_get.replace(ts, f"{url}/{ts}")
     return m3u8_get
