@@ -40,17 +40,17 @@ jobs:
       - name: update ONLINE
         run: |
           pwd
-          python3 api/babamiv/index.py 7464 > ajewa.m3u8
+          python3 api/babamiv/index.py 7464 > BABAMI1.m3u8
           sleep 3
-          python3 api/babamiv/index.py 7946 > tempo.m3u8
+          python3 api/babamiv/index.py 7946 > UTTUT.m3u8
           sleep 3
-          python3 api/babamiv/index.py 206 > omji.m3u8
+          python3 api/babamiv/index.py 206 > EMOSIAU.m3u8
           sleep 3
-          python3 api/babamiv/index.py 8237 > mtri.m3u8
+          python3 api/babamiv/index.py 8237 > MATEMAHO.m3u8
           sleep 3
-          python3 api/babamiv/index.py 8241 > raans.m3u8
+          python3 api/babamiv/index.py 8241 > komanadani.m3u8
           sleep 3
-          python3 api/babamiv/index.py 6482 > daaaii.m3u8
+          python3 api/babamiv/index.py 6482 > adongma.m3u8
           sleep 3
           python3 api/babamiv/index.py 205 > cupangterbang.m3u8
           sleep 3
