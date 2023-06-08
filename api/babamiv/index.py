@@ -30,5 +30,5 @@ def grab(url):
         return response
 
 s = requests.Session()
-result = grab('https://vidiohls.combipart1.workers.dev/index.m3u8?id=' + str(sys.argv[1]))
+result = grab('https://deptokv1.herokuapp.com/index.m3u8?id=' + str(sys.argv[1]))
 print(result)
