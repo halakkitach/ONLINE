@@ -1,19 +1,19 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://etslive-2-vidio-com.akamaized.net/exp=1687606542~acl=/hls-p/ingest_6686_*/*~hmac=75ead5b753cae209e6243544e1d2bdb2b27198d4ebd3660cf4822406cbc1a6c8/hls-p/ingest_6686_720p/index.m3u8
+https://etslive-2-vidio-com.akamaized.net/exp=1687610273~acl=/hls-p/ingest_6686_*/*~hmac=4a508fbe0196147f17af7130d458c3a2f01631b0bb2ccf15e0cdc26e50a538d2/hls-p/ingest_6686_720p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://etslive-2-vidio-com.akamaized.net/exp=1687606542~acl=/hls-p/ingest_6686_*/*~hmac=75ead5b753cae209e6243544e1d2bdb2b27198d4ebd3660cf4822406cbc1a6c8/hls-p/ingest_6686_480p/index.m3u8
+https://etslive-2-vidio-com.akamaized.net/exp=1687610273~acl=/hls-p/ingest_6686_*/*~hmac=4a508fbe0196147f17af7130d458c3a2f01631b0bb2ccf15e0cdc26e50a538d2/hls-p/ingest_6686_480p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://etslive-2-vidio-com.akamaized.net/exp=1687606542~acl=/hls-p/ingest_6686_*/*~hmac=75ead5b753cae209e6243544e1d2bdb2b27198d4ebd3660cf4822406cbc1a6c8/hls-p/ingest_6686_360p/index.m3u8
+https://etslive-2-vidio-com.akamaized.net/exp=1687610273~acl=/hls-p/ingest_6686_*/*~hmac=4a508fbe0196147f17af7130d458c3a2f01631b0bb2ccf15e0cdc26e50a538d2/hls-p/ingest_6686_360p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://etslive-2-vidio-com.akamaized.net/exp=1687606542~acl=/hls-p/ingest_6686_*/*~hmac=75ead5b753cae209e6243544e1d2bdb2b27198d4ebd3660cf4822406cbc1a6c8/hls-p/ingest_6686_240p/index.m3u8
+https://etslive-2-vidio-com.akamaized.net/exp=1687610273~acl=/hls-p/ingest_6686_*/*~hmac=4a508fbe0196147f17af7130d458c3a2f01631b0bb2ccf15e0cdc26e50a538d2/hls-p/ingest_6686_240p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://etslive-2-vidio-com.akamaized.net/exp=1687606542~acl=/hls-b/ingest_6686_*/*~hmac=f4f0ede9e318e94276f491074130dcb4bcd238c70711e265305797ea2131474a/hls-b/ingest_6686_720p/index.m3u8
+https://etslive-2-vidio-com.akamaized.net/exp=1687610273~acl=/hls-b/ingest_6686_*/*~hmac=b39ea9daf113e059f06c38dea50f05ef9e641c38fb3e2fc45cbab8f117112f26/hls-b/ingest_6686_720p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://etslive-2-vidio-com.akamaized.net/exp=1687606542~acl=/hls-b/ingest_6686_*/*~hmac=f4f0ede9e318e94276f491074130dcb4bcd238c70711e265305797ea2131474a/hls-b/ingest_6686_480p/index.m3u8
+https://etslive-2-vidio-com.akamaized.net/exp=1687610273~acl=/hls-b/ingest_6686_*/*~hmac=b39ea9daf113e059f06c38dea50f05ef9e641c38fb3e2fc45cbab8f117112f26/hls-b/ingest_6686_480p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://etslive-2-vidio-com.akamaized.net/exp=1687606542~acl=/hls-b/ingest_6686_*/*~hmac=f4f0ede9e318e94276f491074130dcb4bcd238c70711e265305797ea2131474a/hls-b/ingest_6686_360p/index.m3u8
+https://etslive-2-vidio-com.akamaized.net/exp=1687610273~acl=/hls-b/ingest_6686_*/*~hmac=b39ea9daf113e059f06c38dea50f05ef9e641c38fb3e2fc45cbab8f117112f26/hls-b/ingest_6686_360p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://etslive-2-vidio-com.akamaized.net/exp=1687606542~acl=/hls-b/ingest_6686_*/*~hmac=f4f0ede9e318e94276f491074130dcb4bcd238c70711e265305797ea2131474a/hls-b/ingest_6686_240p/index.m3u8
+https://etslive-2-vidio-com.akamaized.net/exp=1687610273~acl=/hls-b/ingest_6686_*/*~hmac=b39ea9daf113e059f06c38dea50f05ef9e641c38fb3e2fc45cbab8f117112f26/hls-b/ingest_6686_240p/index.m3u8
 
