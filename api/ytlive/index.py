@@ -19,8 +19,8 @@ windows = False
 if 'win' in sys.platform:
     windows = True
 
-def nosignal():
-    url = 'https://halakkitafree.online/RCTIPLUS/info.m3u8'
+def erorya():
+    url = 'http://halakkitach.github.io/ONLINE/erorya'
     m3u8_get = requests.get(f"{url}/index.m3u8").text
     for ts in ['01.m3u8', '02.m3u8']:
         m3u8_get = m3u8_get.replace(ts, f"{url}/{ts}")
