@@ -81,7 +81,7 @@ jobs:
           
           pwd
           python3 api/ytlive/index.py --url "https://www.youtube.com/@SMToonAsia/live" 7larvayt.m3u8
-          sleep 3
+          pwd
           python3 api/ytlive/index.py --url "https://www.youtube.com/@pubgmobileid/live" 7pubgidyt.m3u8
           
       - name: git add
