@@ -37,7 +37,7 @@ jobs:
           git config --global user.email "<>"
           git config --global user.name "halakkitach"
 
-      - name: update ONLINE
+      - name: Update Youtube ONLINE
         run: |
           pwd
           python3 api/ytlive/index.py --url "https://www.youtube.com/@SMToonAsia/live" 7larvayt.m3u8
