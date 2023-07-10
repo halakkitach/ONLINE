@@ -1,11 +1,13 @@
 #EXTM3U
 #EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=2500000,NAME=1080p,RESOLUTION=1920x1080
+https://live-production.secureswiftcontent.com/exp=1688973176~acl=/hls-p/ingest_12607_*/*~hmac=c239bdbb5990d2223172ca091a3f34e2c9341b3b9038ccc5fa22ce1aec8b3715/hls-p/ingest_12607_1080p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://live-production.secureswiftcontent.com/exp=1688969787~acl=/hls-p/ingest_12607_*/*~hmac=440294ae67c93b8185367baa1deab94147e353fb0fa7584eab9d910ce0e9b9d7/hls-p/ingest_12607_720p/index.m3u8
+https://live-production.secureswiftcontent.com/exp=1688973176~acl=/hls-p/ingest_12607_*/*~hmac=c239bdbb5990d2223172ca091a3f34e2c9341b3b9038ccc5fa22ce1aec8b3715/hls-p/ingest_12607_720p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://live-production.secureswiftcontent.com/exp=1688969787~acl=/hls-p/ingest_12607_*/*~hmac=440294ae67c93b8185367baa1deab94147e353fb0fa7584eab9d910ce0e9b9d7/hls-p/ingest_12607_480p/index.m3u8
+https://live-production.secureswiftcontent.com/exp=1688973176~acl=/hls-p/ingest_12607_*/*~hmac=c239bdbb5990d2223172ca091a3f34e2c9341b3b9038ccc5fa22ce1aec8b3715/hls-p/ingest_12607_480p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://live-production.secureswiftcontent.com/exp=1688969787~acl=/hls-p/ingest_12607_*/*~hmac=440294ae67c93b8185367baa1deab94147e353fb0fa7584eab9d910ce0e9b9d7/hls-p/ingest_12607_360p/index.m3u8
+https://live-production.secureswiftcontent.com/exp=1688973176~acl=/hls-p/ingest_12607_*/*~hmac=c239bdbb5990d2223172ca091a3f34e2c9341b3b9038ccc5fa22ce1aec8b3715/hls-p/ingest_12607_360p/index.m3u8
 #EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://live-production.secureswiftcontent.com/exp=1688969787~acl=/hls-p/ingest_12607_*/*~hmac=440294ae67c93b8185367baa1deab94147e353fb0fa7584eab9d910ce0e9b9d7/hls-p/ingest_12607_240p/index.m3u8
+https://live-production.secureswiftcontent.com/exp=1688973176~acl=/hls-p/ingest_12607_*/*~hmac=c239bdbb5990d2223172ca091a3f34e2c9341b3b9038ccc5fa22ce1aec8b3715/hls-p/ingest_12607_240p/index.m3u8
 
