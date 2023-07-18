@@ -48,17 +48,17 @@ jobs:
           sleep 3
           python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=Gb5oFXZeG48" 7zikirpagiiii.m3u8
           sleep 3
-          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=MljvwvjbK6I" 7zarjitenndee.m3u8
+          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=edVHcv4oBac" 7zarjitenndee.m3u8
           sleep 3
           python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=yNKvkPJl-tg" 7onee1tv.m3u8
           sleep 3
-          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=56JXTy3GfFc" 7rremiixxxbarat.m3u8
+          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=-82taRBK0-g" 7rremiixxxbarat.m3u8
           sleep 3
           python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=D8idXdTYG4w" 7popido2000.m3u8
           sleep 3
           python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=AwHPTgAbb3Y" 7djjido2000.m3u8
           sleep 3
-          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=gO2l6Mymj98" 7esportmlbbb.m3u8
+          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=5rfGbAkZ3xc" 7esportmlbbb.m3u8
   
       - name: git add
         run: |
