@@ -1,4 +1,4 @@
-name: Update Other ONLINE
+name: Update ONLINE
 on:
   schedule:
     - cron: '00 00/2 * * *'
