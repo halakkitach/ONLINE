@@ -23,14 +23,14 @@ jobs:
           pwd
           mkdir tmp
           wget -U 'okhttp/1.2' -qP tmp http://halakkitafree.online/api/pidio/index.py
-          python3 tmp/index.py --channel-code 7464 --channel-name "ajwa-tv" 7BABAMI1.m3u8
-          python3 tmp/index.py --channel-code 7946 --channel-name "tv-tempo" 7UTTUT.m3u8
-          python3 tmp/index.py --channel-code 8237 --channel-name "mentari-tv" 7MATEMAHO.m3u8
-          python3 tmp/index.py --channel-code 205 --channel-name "indosiar" 7cupangterbang.m3u8
-          python3 tmp/index.py --channel-code 204 --channel-name "sctv" 7sitivi.m3u8
-          python3 tmp/index.py --channel-code 206 --channel-name "moji" 7EMOSIAU.m3u8
-          python3 tmp/index.py --channel-code 782 --channel-name "antv" 7enteve.m3u8
-          python3 tmp/index.py --channel-code 12607 --channel-name "tawaf-tv" 7TAAAWWWAAAAF.m3u8
+          python3 api/babamiv/index.py --channel-code 7464 --channel-name "ajwa-tv" 7BABAMI1.m3u8
+          python3 api/babamiv/index.py --channel-code 7946 --channel-name "tv-tempo" 7UTTUT.m3u8
+          python3 api/babamiv/index.py --channel-code 8237 --channel-name "mentari-tv" 7MATEMAHO.m3u8
+          python3 api/babamiv/index.py --channel-code 205 --channel-name "indosiar" 7cupangterbang.m3u8
+          python3 api/babamiv/index.py --channel-code 204 --channel-name "sctv" 7sitivi.m3u8
+          python3 api/babamiv/index.py --channel-code 206 --channel-name "moji" 7EMOSIAU.m3u8
+          python3 api/babamiv/index.py --channel-code 782 --channel-name "antv" 7enteve.m3u8
+          python3 api/babamiv/index.py --channel-code 12607 --channel-name "tawaf-tv" 7TAAAWWWAAAAF.m3u8
           rm -rf tmp
           
       - name: commit
