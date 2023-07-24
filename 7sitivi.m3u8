@@ -1,19 +1,45 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://etslive-2-vidio-com.akamaized.net/exp=1690187808~acl=/hls-p/ingest_204_*/*~hmac=dfc032936d340a09c3487caba0e4bb7b13a4790311a86c8336f8bef2e7017bb1/hls-p/ingest_204_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://etslive-2-vidio-com.akamaized.net/exp=1690187808~acl=/hls-p/ingest_204_*/*~hmac=dfc032936d340a09c3487caba0e4bb7b13a4790311a86c8336f8bef2e7017bb1/hls-p/ingest_204_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://etslive-2-vidio-com.akamaized.net/exp=1690187808~acl=/hls-p/ingest_204_*/*~hmac=dfc032936d340a09c3487caba0e4bb7b13a4790311a86c8336f8bef2e7017bb1/hls-p/ingest_204_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://etslive-2-vidio-com.akamaized.net/exp=1690187808~acl=/hls-p/ingest_204_*/*~hmac=dfc032936d340a09c3487caba0e4bb7b13a4790311a86c8336f8bef2e7017bb1/hls-p/ingest_204_240p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://etslive-2-vidio-com.akamaized.net/exp=1690187808~acl=/hls-b/ingest_204_*/*~hmac=81f8c76c5dc296bd2de2f8915c4bfafcb7e51887d651c1b8be4e942a190b7587/hls-b/ingest_204_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://etslive-2-vidio-com.akamaized.net/exp=1690187808~acl=/hls-b/ingest_204_*/*~hmac=81f8c76c5dc296bd2de2f8915c4bfafcb7e51887d651c1b8be4e942a190b7587/hls-b/ingest_204_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://etslive-2-vidio-com.akamaized.net/exp=1690187808~acl=/hls-b/ingest_204_*/*~hmac=81f8c76c5dc296bd2de2f8915c4bfafcb7e51887d651c1b8be4e942a190b7587/hls-b/ingest_204_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://etslive-2-vidio-com.akamaized.net/exp=1690187808~acl=/hls-b/ingest_204_*/*~hmac=81f8c76c5dc296bd2de2f8915c4bfafcb7e51887d651c1b8be4e942a190b7587/hls-b/ingest_204_240p/index.m3u8
+<pre>Array
+(
+    [data] => Array
+        (
+            [id] => 204
+            [type] => livestreaming
+            [attributes] => Array
+                (
+                    [hls] => https://etslive-app.vidio.com/live/204/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdkpxbHVJOW5XaTlPR2w2Q2lzM3R6ekh6OFY5a2VjQXJJV1d4bGc5OVNoZ0dlc0UyR3Z2OTVyaHRXR1gwbnRzK1dQL3NIOU1QL1kxN0FjUmsxdzIzNnphMGEvTHZ1OWt3cFlZNnNBeTkrQVEzckxlRU50Nm9GNmtJMityOUJQQmZCUUFNZzRrT0xKNHlTS0l4VXhaaUYyK1RaLzljQnlRd1pOSHZ2WHdJMzNYc2g0Tm4zR0JmcHN4UnFIZ2VxNW5oQ2RHdWdtS08zWEFBK3hFcUhXMzdaUmlGR3J4L3ZKN1dMdmV0dDMxZlVYMHphazZNTlZpV05TaHdUYmpEb05iMUNmYkV6UnQwM3pPREROMkpNc0Fac2xIYk9Dd0R0eHg3b3dTOTEwNVhVdU9Gb201NjRMV1RPdHlTTnZSc0NWaVlaWHFWMldtVEY2czUrMHA2c09ZaGJpNGxFR0NvUDZSSDlsVDF3SFoxME1xWHV0Qjd6eFJPaGdrY0ZBQTl0MlgwNUxYMkZrbGFaalhmZS9lSThMaGFGcXBlaGdXVlhxd3d3RThJZURzaG5XaUNNdXc2N2M5RGtVTVIwV2s1aDVxK3V5TGw2NFQ5QThRRjFJTWRUekplWXQzOXVWb3RKTlNRSXhsZzNRNTNkclJ0UGU1bmh3NERwQ21TMVFoRWNZa2ptQXJuWHY3Vy95NndvVm8zUHlJS2Q1WXNtMlI1VGdIWE9YeVpZK3NWZkkrZnVoeTMzK0dGODBVOHdVQ0drZ0p1OUdYTWVhdmFMMjZDVnh0eWtRdXJLWUFJekxvd1pEMytIbTJkKzF3RHdkZHI0VDZaZnRUakpUb0Y4cERUYVRtTEU4MWFhTjJHYWhJVGZwWGZNZ05WVHZ5Y0daVGM1QlJvak5IbE4xM0dLSXltWUU2ZE55VFRISGYyV2VPTllYV1Jm&trace_id=d4c43cb8ffc3b8ec7d8377b2061d0996/2553247696905382321
+                    [dash] => https://etslive-2-vidio-com.akamaized.net/exp=1690191363~acl=/vp9/204_stream.mpd!/vp9/204/*!/vp9/*/204_stream.mpd!/vp9/*/204/*~hmac=4b30837996ca5f1d4d57da7c34fb0e3471ef8b237560ecd3ba1df57ac9d87655/vp9/204_stream.mpd
+                    [cdn] => akamai
+                    [geoblock_url] => 
+                    [expires_in] => 14400
+                    [is_preview] => 
+                    [is_drm] => 
+                    [custom_data] => 
+                    [required_hdcp] => 
+                    [background_playback] => pip
+                    [dvr_enabled] => 
+                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=false&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F204-sctv&cid=204&cuu=sctv&cuid=4&fld=false&cmg&ce=&cg=&cgp&cro=13%20or%20more&cur=internal_partner&cct&lst=entertainment%2Cindonesia-entertainmen-produksi
+                    [jailbreak_check] => 
+                    [resolution_mapping] => Array
+                        (
+                        )
 
+                )
+
+            [relationships] => Array
+                (
+                )
+
+            [links] => Array
+                (
+                    [watchpage] => https://www.vidio.com/live/204-sctv
+                )
+
+            [meta] => Array
+                (
+                    [mux_reporting] => 
+                )
+
+        )
+
+)
+</pre>https://etslive-app.vidio.com/live/204/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdkpxbHVJOW5XaTlPR2w2Q2lzM3R6ekh6OFY5a2VjQXJJV1d4bGc5OVNoZ0dlc0UyR3Z2OTVyaHRXR1gwbnRzK1dQL3NIOU1QL1kxN0FjUmsxdzIzNnphMGEvTHZ1OWt3cFlZNnNBeTkrQVEzckxlRU50Nm9GNmtJMityOUJQQmZCUUFNZzRrT0xKNHlTS0l4VXhaaUYyK1RaLzljQnlRd1pOSHZ2WHdJMzNYc2g0Tm4zR0JmcHN4UnFIZ2VxNW5oQ2RHdWdtS08zWEFBK3hFcUhXMzdaUmlGR3J4L3ZKN1dMdmV0dDMxZlVYMHphazZNTlZpV05TaHdUYmpEb05iMUNmYkV6UnQwM3pPREROMkpNc0Fac2xIYk9Dd0R0eHg3b3dTOTEwNVhVdU9Gb201NjRMV1RPdHlTTnZSc0NWaVlaWHFWMldtVEY2czUrMHA2c09ZaGJpNGxFR0NvUDZSSDlsVDF3SFoxME1xWHV0Qjd6eFJPaGdrY0ZBQTl0MlgwNUxYMkZrbGFaalhmZS9lSThMaGFGcXBlaGdXVlhxd3d3RThJZURzaG5XaUNNdXc2N2M5RGtVTVIwV2s1aDVxK3V5TGw2NFQ5QThRRjFJTWRUekplWXQzOXVWb3RKTlNRSXhsZzNRNTNkclJ0UGU1bmh3NERwQ21TMVFoRWNZa2ptQXJuWHY3Vy95NndvVm8zUHlJS2Q1WXNtMlI1VGdIWE9YeVpZK3NWZkkrZnVoeTMzK0dGODBVOHdVQ0drZ0p1OUdYTWVhdmFMMjZDVnh0eWtRdXJLWUFJekxvd1pEMytIbTJkKzF3RHdkZHI0VDZaZnRUakpUb0Y4cERUYVRtTEU4MWFhTjJHYWhJVGZwWGZNZ05WVHZ5Y0daVGM1QlJvak5IbE4xM0dLSXltWUU2ZE55VFRISGYyV2VPTllYV1Jm&trace_id=d4c43cb8ffc3b8ec7d8377b2061d0996/2553247696905382321

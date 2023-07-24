@@ -1,13 +1,45 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=2500000,NAME=1080p,RESOLUTION=1920x1080
-https://live-production.secureswiftcontent.com/exp=1690187849~acl=/hls-p/ingest_12607_*/*~hmac=1267efe253e8c458e6083bf4735d01472e0aedbf9277a057d83641e612da306e/hls-p/ingest_12607_1080p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://live-production.secureswiftcontent.com/exp=1690187849~acl=/hls-p/ingest_12607_*/*~hmac=1267efe253e8c458e6083bf4735d01472e0aedbf9277a057d83641e612da306e/hls-p/ingest_12607_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://live-production.secureswiftcontent.com/exp=1690187849~acl=/hls-p/ingest_12607_*/*~hmac=1267efe253e8c458e6083bf4735d01472e0aedbf9277a057d83641e612da306e/hls-p/ingest_12607_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://live-production.secureswiftcontent.com/exp=1690187849~acl=/hls-p/ingest_12607_*/*~hmac=1267efe253e8c458e6083bf4735d01472e0aedbf9277a057d83641e612da306e/hls-p/ingest_12607_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://live-production.secureswiftcontent.com/exp=1690187849~acl=/hls-p/ingest_12607_*/*~hmac=1267efe253e8c458e6083bf4735d01472e0aedbf9277a057d83641e612da306e/hls-p/ingest_12607_240p/index.m3u8
+<pre>Array
+(
+    [data] => Array
+        (
+            [id] => 12607
+            [type] => livestreaming
+            [attributes] => Array
+                (
+                    [hls] => https://etslive-app.vidio.com/live/12607/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmNFeUoybmh6SnpzRTR3WkJkVU54SnNYQzhBODR6SllOVnNxZEQvZ1dkeGN3Rnppam5qenIraENIV1VEenE4cERxOE03RzI5bmhKblJqUVB6N2kxM2RxNnFNV3AvSXFob2taRTVWREtVTzBxM0tCV0pZV3lKM0dXYWdyTTUraXdCTis0Sy96NzVwSWlLQ2lCUHZ6RWZYN3Y5L0FIQWtPRldjUW00Rjk1VTRBeHZLU25UZ0ZEWHBpL0lGQUZHTS9rZHBUUFRZUjNqL0w2aGtTL2dNUkhCa29WOS9qUmRlZHdhcG1JOEMzT1dSdlc5UXp6eGpxMVJhR3RZc3lCUWZmM0d3Rk41UXFNVDFOTEkxUDBkQ0tvNllyQ3FPWVpuamVyWmkwUFBkdlRXZkNTbE94MjRUaDVuQmJIZTBUdjBDMml6M2d5a1EwQzJuUm1vdkc1YVlZTjA3RTFuTHdjVVRlaXV2UUZBT3Y0eUZMOXZrTkVtOTZmTDU2eEQxZlllMHh3SkFrblllczBYQUlvWENERkRRY3ZYeGdpTGVOL2RTZWJSdnhUdlZMdVRWVnlEVWdqLy9saE5Tc0g2bC9wWXc1MlVHMEtJVTN3RVpFWWdGMjMzalVJRWNKWVBNbldxREoyUk1YdWkzNklONFAvV010clMvSkltVWRTbXJHRlowcEU4WTBqNUVEN0pTVGRlcWoxQVkvNjZXdHA1aUdQQmhRN3QwVmorUWMxaTNGOVUva09jaVZtb09aTzhKeTNGKysyMGo0K2pPL0dUVmZYaGc1MGFJUGNXTkZTT3hOYVZmYnhDdm5LeUlUMU84UkhpclF4anZjemNuYU94cE9IMm9sZVowN3l6R2x4dnhTOHFqTkkrOFRlaXhrWW1mRWdMYkRKemd5eThpZVdjbWpNTS8wWEJ5elNRVE0yRWs5QnhZU0Yxa2Urc0w1V09idW11dnViajFKZ1l5UFh3MFhEMWFiM3FyVitrbGFoYjljWEIxQytHWllIaXNjMzNIanlFeWJ6blBwOFZoa2swMVpPUEkwczVaNVRza2JjSndmc2Q5c1RxQzJ4Z1hqY3dpTjg9&trace_id=a0befb5381e06a3a1560f6e299510cfa/14599328980852773416
+                    [dash] => 
+                    [cdn] => swiftserve
+                    [geoblock_url] => 
+                    [expires_in] => 14400
+                    [is_preview] => 
+                    [is_drm] => 
+                    [custom_data] => 
+                    [required_hdcp] => 
+                    [background_playback] => pip
+                    [dvr_enabled] => 
+                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=false&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F12607-tawaf-tv&cid=12607&cuu=tawaftv&cuid=31334652&fld=false&cmg&ce=&cg=&cgp&cro=&cur=external_partner&cct&lst=religi
+                    [jailbreak_check] => 
+                    [resolution_mapping] => Array
+                        (
+                        )
 
+                )
+
+            [relationships] => Array
+                (
+                )
+
+            [links] => Array
+                (
+                    [watchpage] => https://www.vidio.com/live/12607-tawaf-tv
+                )
+
+            [meta] => Array
+                (
+                    [mux_reporting] => 
+                )
+
+        )
+
+)
+</pre>https://etslive-app.vidio.com/live/12607/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmNFeUoybmh6SnpzRTR3WkJkVU54SnNYQzhBODR6SllOVnNxZEQvZ1dkeGN3Rnppam5qenIraENIV1VEenE4cERxOE03RzI5bmhKblJqUVB6N2kxM2RxNnFNV3AvSXFob2taRTVWREtVTzBxM0tCV0pZV3lKM0dXYWdyTTUraXdCTis0Sy96NzVwSWlLQ2lCUHZ6RWZYN3Y5L0FIQWtPRldjUW00Rjk1VTRBeHZLU25UZ0ZEWHBpL0lGQUZHTS9rZHBUUFRZUjNqL0w2aGtTL2dNUkhCa29WOS9qUmRlZHdhcG1JOEMzT1dSdlc5UXp6eGpxMVJhR3RZc3lCUWZmM0d3Rk41UXFNVDFOTEkxUDBkQ0tvNllyQ3FPWVpuamVyWmkwUFBkdlRXZkNTbE94MjRUaDVuQmJIZTBUdjBDMml6M2d5a1EwQzJuUm1vdkc1YVlZTjA3RTFuTHdjVVRlaXV2UUZBT3Y0eUZMOXZrTkVtOTZmTDU2eEQxZlllMHh3SkFrblllczBYQUlvWENERkRRY3ZYeGdpTGVOL2RTZWJSdnhUdlZMdVRWVnlEVWdqLy9saE5Tc0g2bC9wWXc1MlVHMEtJVTN3RVpFWWdGMjMzalVJRWNKWVBNbldxREoyUk1YdWkzNklONFAvV010clMvSkltVWRTbXJHRlowcEU4WTBqNUVEN0pTVGRlcWoxQVkvNjZXdHA1aUdQQmhRN3QwVmorUWMxaTNGOVUva09jaVZtb09aTzhKeTNGKysyMGo0K2pPL0dUVmZYaGc1MGFJUGNXTkZTT3hOYVZmYnhDdm5LeUlUMU84UkhpclF4anZjemNuYU94cE9IMm9sZVowN3l6R2x4dnhTOHFqTkkrOFRlaXhrWW1mRWdMYkRKemd5eThpZVdjbWpNTS8wWEJ5elNRVE0yRWs5QnhZU0Yxa2Urc0w1V09idW11dnViajFKZ1l5UFh3MFhEMWFiM3FyVitrbGFoYjljWEIxQytHWllIaXNjMzNIanlFeWJ6blBwOFZoa2swMVpPUEkwczVaNVRza2JjSndmc2Q5c1RxQzJ4Z1hqY3dpTjg9&trace_id=a0befb5381e06a3a1560f6e299510cfa/14599328980852773416

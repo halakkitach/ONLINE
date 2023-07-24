@@ -1,13 +1,45 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=2500000,NAME=1080p,RESOLUTION=1920x1080
-https://etslive-2-vidio-com.akamaized.net/exp=1690187789~acl=/hls-p/ingest_206_*/*~hmac=c37eda853568aab3294e82dd8c4a9c191626418cb18e795c8e0aed104b243af2/hls-p/ingest_206_1080p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://etslive-2-vidio-com.akamaized.net/exp=1690187789~acl=/hls-p/ingest_206_*/*~hmac=c37eda853568aab3294e82dd8c4a9c191626418cb18e795c8e0aed104b243af2/hls-p/ingest_206_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://etslive-2-vidio-com.akamaized.net/exp=1690187789~acl=/hls-p/ingest_206_*/*~hmac=c37eda853568aab3294e82dd8c4a9c191626418cb18e795c8e0aed104b243af2/hls-p/ingest_206_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://etslive-2-vidio-com.akamaized.net/exp=1690187789~acl=/hls-p/ingest_206_*/*~hmac=c37eda853568aab3294e82dd8c4a9c191626418cb18e795c8e0aed104b243af2/hls-p/ingest_206_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://etslive-2-vidio-com.akamaized.net/exp=1690187789~acl=/hls-p/ingest_206_*/*~hmac=c37eda853568aab3294e82dd8c4a9c191626418cb18e795c8e0aed104b243af2/hls-p/ingest_206_240p/index.m3u8
+<pre>Array
+(
+    [data] => Array
+        (
+            [id] => 206
+            [type] => livestreaming
+            [attributes] => Array
+                (
+                    [hls] => https://etslive-app.vidio.com/live/206/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdnpMVG5lSWJOR0NxTUlmbi9EZFVCQWlueWJIVTFMYWhnek4rUFNvRnZRVHpEYlFqQ1VSY2F3Rm41SVZ3eWxzVlNBcVI0V1Y2Z1VNa3dBVHlUalBpZkZ2aWVsNzlBQW13dkdlOUNGbmtRdG81bzF5VGdwVXVpMDlUaklRYmlYV0N6MGpGZk9EaDArNmNtczRkN0w4azJ5RHhhQkhZTkJqYmpmZ01JR1Z3VWc2eUU5cUR6RHMveGlBYUlVKzczVko2akpkNENDVk5ERHlseGxRVldHQmlHVGRhSGdZemg2bG13b2FWN0FaaEZneFRpd3ZmN1RFbzJ6SkxXUE9WMStwUnNHZWwvQ04yWlg1SXp5NzJPUXhTRGF5a2g5ZmtZN0pmTHF0L0lhVDI2ZVlTVTBHdnIzcWRUL01FdVFvd3djT1pSL1pjanJnWmtNVGt6aktGalE1NHAxMFYyQTAyZXBkMmI1WmMvMGtlSzRudDlLa2U0clcxdFJGOElZbHh4WWpBYitSR0ZnL3lxWHFmMzMyeW5iQllpOGY3ekU0S1BWQXoyRCsvZ1h0Yy9RTnB2cmc3Y3EvdGR1L0tBcHBDa0tWQlQyaTVONlh2RHZwc1JNZmJNRGFUb0ZaZFRRQThrN2RhVDAzV21jRytueTFuVWY3a1dva3ZSV1dabk4rWVVOc0ZWKzIyMWdtMXZQdElxUkdROGJqUjdicVZUUmtjL3Nwa0EwM1NCQjVlZlhzazRCQ0t2ajBPWnNKU09STFYxaytMdCtnZzVGUnBQQ2FQNkpXWllIemhabVFKelA5bG5takt4TFljQ29FSzBMcFcrdzlmMTZBakV2WDdUZ0oxMmJRWk82WWhGK3lXeFdUZXc2V0JDOHVkSm1zQUNJVHBNS2drSERIRzBxNmFmZy9FZ25ReUhlVUxEK0hsUHN5aHJ4bVhv&trace_id=5b27ac759b760b92f0f598b81ae02c2e/11451271131831371899
+                    [dash] => 
+                    [cdn] => akamai
+                    [geoblock_url] => 
+                    [expires_in] => 14400
+                    [is_preview] => 
+                    [is_drm] => 
+                    [custom_data] => 
+                    [required_hdcp] => 
+                    [background_playback] => pip
+                    [dvr_enabled] => 
+                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=false&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F206-moji&cid=206&cuu=moji&cuid=187464&fld=false&cmg&ce=&cg=&cgp&cro=13%20or%20more&cur=internal_partner&cct&lst=entertainment%2Cindonesia-entertainmen-produksi%2Cochannel%2Co-channel
+                    [jailbreak_check] => 
+                    [resolution_mapping] => Array
+                        (
+                        )
 
+                )
+
+            [relationships] => Array
+                (
+                )
+
+            [links] => Array
+                (
+                    [watchpage] => https://www.vidio.com/live/206-moji
+                )
+
+            [meta] => Array
+                (
+                    [mux_reporting] => 
+                )
+
+        )
+
+)
+</pre>https://etslive-app.vidio.com/live/206/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdnpMVG5lSWJOR0NxTUlmbi9EZFVCQWlueWJIVTFMYWhnek4rUFNvRnZRVHpEYlFqQ1VSY2F3Rm41SVZ3eWxzVlNBcVI0V1Y2Z1VNa3dBVHlUalBpZkZ2aWVsNzlBQW13dkdlOUNGbmtRdG81bzF5VGdwVXVpMDlUaklRYmlYV0N6MGpGZk9EaDArNmNtczRkN0w4azJ5RHhhQkhZTkJqYmpmZ01JR1Z3VWc2eUU5cUR6RHMveGlBYUlVKzczVko2akpkNENDVk5ERHlseGxRVldHQmlHVGRhSGdZemg2bG13b2FWN0FaaEZneFRpd3ZmN1RFbzJ6SkxXUE9WMStwUnNHZWwvQ04yWlg1SXp5NzJPUXhTRGF5a2g5ZmtZN0pmTHF0L0lhVDI2ZVlTVTBHdnIzcWRUL01FdVFvd3djT1pSL1pjanJnWmtNVGt6aktGalE1NHAxMFYyQTAyZXBkMmI1WmMvMGtlSzRudDlLa2U0clcxdFJGOElZbHh4WWpBYitSR0ZnL3lxWHFmMzMyeW5iQllpOGY3ekU0S1BWQXoyRCsvZ1h0Yy9RTnB2cmc3Y3EvdGR1L0tBcHBDa0tWQlQyaTVONlh2RHZwc1JNZmJNRGFUb0ZaZFRRQThrN2RhVDAzV21jRytueTFuVWY3a1dva3ZSV1dabk4rWVVOc0ZWKzIyMWdtMXZQdElxUkdROGJqUjdicVZUUmtjL3Nwa0EwM1NCQjVlZlhzazRCQ0t2ajBPWnNKU09STFYxaytMdCtnZzVGUnBQQ2FQNkpXWllIemhabVFKelA5bG5takt4TFljQ29FSzBMcFcrdzlmMTZBakV2WDdUZ0oxMmJRWk82WWhGK3lXeFdUZXc2V0JDOHVkSm1zQUNJVHBNS2drSERIRzBxNmFmZy9FZ25ReUhlVUxEK0hsUHN5aHJ4bVhv&trace_id=5b27ac759b760b92f0f598b81ae02c2e/11451271131831371899

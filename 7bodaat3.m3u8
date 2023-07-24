@@ -1,19 +1,45 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://live-production.secureswiftcontent.com/exp=1690187845~acl=/hls-p/ingest_6533_*/*~hmac=715e8c82eb4fb092752861f92be618bae8dd838069377b8e20e7733a2e6186c6/hls-p/ingest_6533_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://live-production.secureswiftcontent.com/exp=1690187845~acl=/hls-p/ingest_6533_*/*~hmac=715e8c82eb4fb092752861f92be618bae8dd838069377b8e20e7733a2e6186c6/hls-p/ingest_6533_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://live-production.secureswiftcontent.com/exp=1690187845~acl=/hls-p/ingest_6533_*/*~hmac=715e8c82eb4fb092752861f92be618bae8dd838069377b8e20e7733a2e6186c6/hls-p/ingest_6533_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://live-production.secureswiftcontent.com/exp=1690187845~acl=/hls-p/ingest_6533_*/*~hmac=715e8c82eb4fb092752861f92be618bae8dd838069377b8e20e7733a2e6186c6/hls-p/ingest_6533_240p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://live-production.secureswiftcontent.com/exp=1690187845~acl=/hls-b/ingest_6533_*/*~hmac=e05ea93e06a41dfd8ed89fd5309b1147aac494bc27c5ac923e60d3679c3f9cbb/hls-b/ingest_6533_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://live-production.secureswiftcontent.com/exp=1690187845~acl=/hls-b/ingest_6533_*/*~hmac=e05ea93e06a41dfd8ed89fd5309b1147aac494bc27c5ac923e60d3679c3f9cbb/hls-b/ingest_6533_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://live-production.secureswiftcontent.com/exp=1690187845~acl=/hls-b/ingest_6533_*/*~hmac=e05ea93e06a41dfd8ed89fd5309b1147aac494bc27c5ac923e60d3679c3f9cbb/hls-b/ingest_6533_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://live-production.secureswiftcontent.com/exp=1690187845~acl=/hls-b/ingest_6533_*/*~hmac=e05ea93e06a41dfd8ed89fd5309b1147aac494bc27c5ac923e60d3679c3f9cbb/hls-b/ingest_6533_240p/index.m3u8
+<pre>Array
+(
+    [data] => Array
+        (
+            [id] => 6533
+            [type] => livestreaming
+            [attributes] => Array
+                (
+                    [hls] => https://etslive-app.vidio.com/live/6533/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmhiMVJXWHk3TDRBV1RFalFOSG4rajgyc0xvNWRUQjVkQWE1UmZvWjZ1Z3FqU2IzT25IZysvSXBQUnVMRVoyMXNaM1UxREtid1VHWWQrYitFa1JaQm9nTWNhUFFWV0ppeEZWMkphUVZCT1M2UW1hYnIyaDBwclVUMEZOdjVQQ2Y0UXBQcitRUlcwY0ppVnNWRFFYc2p5Y2NydzlRQ1kyM2lIRm8vazdyWUlkWmErTVJadHFTRUhLZ21ETEdzMWVZdFN2MWtxTkRVellsdjJLay9jSVJBSzg1VkhZU29Fd1ZNZmlJcFgwRWk1RzJ1ckl1b1ZDR1JNSEs0TWRJOFBIVHRQeTY5VW9IdCsrNERkN0podENseDRUWDFmMlU1bngwL3Z4aHpaaE9tanJBSCtuekNrUkgwN2lTVVhBVWJkS0J6SjFmSUVYS2VZdG0wSmlVeDNpYUpNd3RUUzJPQXlLdEEyRE9NQm4za0FJZno2aXRvZDhxSmljcnVXU2d4ZW8xaEpuRVh4T0tWTUUzemp4MEVuNlEvdjk2SjBiSHBHUVNZamdRaUs5ejkvV1owNXU5VzA0dFV0YzkrcXQ3U0hTMzh0ZXhWNitNTUo4di9JcnFJRE1ZcjVGdDQ4ZDdGUUM0bmRDUWRrQ3ZlRFN2UjBESlRRdWdwYytDcGUyZVlXeERreWttU29lR2RHUWtGZUxtaEJhbnBrbGNlczllaHpZQjFNK2JPYjU2eGgwNWdMYTdwZkc4T2NHMlVpNHZoeEd5dXdYWWFxTGxrZjdMM0NWQ21lT2JHcWd0TWtVTmM0WEI2dXpyTkFTcVJIWUI0YXk2MzZ2M1B2L3piTUVIbm5kbE1YdlhIemZRcjVLODFVUFUxYUpaSHpXYndHSHRqak0veStOMEtVTjFuZEMreWZDQTNROUpsWDFWQ2ZSR2h4cUVNVHlIbzVqOXlwWTJCK1JEWEdzT3RRTWVuK1B1SGh5dUFEdXUzY2pCNTdTTHJRL3pJdSs3WWdPT0NMMi91cnlIbW9xaUNQa3I3WFdtL0c1SnRjMDVsL2o3WmloR0p5VUhXdk9qMElBR2N4WEk9&trace_id=899ff5e38e54021800ed581c333249f0/18196000980421627093
+                    [dash] => 
+                    [cdn] => swiftserve
+                    [geoblock_url] => https://geo-id-media-vidio-com.akamaized.net/2x2.png
+                    [expires_in] => 14400
+                    [is_preview] => 
+                    [is_drm] => 
+                    [custom_data] => 
+                    [required_hdcp] => 
+                    [background_playback] => pip
+                    [dvr_enabled] => 
+                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=true&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F6533-zoomoo&cid=6533&cuu=vidiopremier&cuid=26094842&fld=false&cmg&ce=&cg=&cgp&cro=less%20than%207&cur=internal_partner&cct&lst=kids
+                    [jailbreak_check] => 
+                    [resolution_mapping] => Array
+                        (
+                        )
 
+                )
+
+            [relationships] => Array
+                (
+                )
+
+            [links] => Array
+                (
+                    [watchpage] => https://www.vidio.com/live/6533-zoomoo
+                )
+
+            [meta] => Array
+                (
+                    [mux_reporting] => 
+                )
+
+        )
+
+)
+</pre>https://etslive-app.vidio.com/live/6533/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmhiMVJXWHk3TDRBV1RFalFOSG4rajgyc0xvNWRUQjVkQWE1UmZvWjZ1Z3FqU2IzT25IZysvSXBQUnVMRVoyMXNaM1UxREtid1VHWWQrYitFa1JaQm9nTWNhUFFWV0ppeEZWMkphUVZCT1M2UW1hYnIyaDBwclVUMEZOdjVQQ2Y0UXBQcitRUlcwY0ppVnNWRFFYc2p5Y2NydzlRQ1kyM2lIRm8vazdyWUlkWmErTVJadHFTRUhLZ21ETEdzMWVZdFN2MWtxTkRVellsdjJLay9jSVJBSzg1VkhZU29Fd1ZNZmlJcFgwRWk1RzJ1ckl1b1ZDR1JNSEs0TWRJOFBIVHRQeTY5VW9IdCsrNERkN0podENseDRUWDFmMlU1bngwL3Z4aHpaaE9tanJBSCtuekNrUkgwN2lTVVhBVWJkS0J6SjFmSUVYS2VZdG0wSmlVeDNpYUpNd3RUUzJPQXlLdEEyRE9NQm4za0FJZno2aXRvZDhxSmljcnVXU2d4ZW8xaEpuRVh4T0tWTUUzemp4MEVuNlEvdjk2SjBiSHBHUVNZamdRaUs5ejkvV1owNXU5VzA0dFV0YzkrcXQ3U0hTMzh0ZXhWNitNTUo4di9JcnFJRE1ZcjVGdDQ4ZDdGUUM0bmRDUWRrQ3ZlRFN2UjBESlRRdWdwYytDcGUyZVlXeERreWttU29lR2RHUWtGZUxtaEJhbnBrbGNlczllaHpZQjFNK2JPYjU2eGgwNWdMYTdwZkc4T2NHMlVpNHZoeEd5dXdYWWFxTGxrZjdMM0NWQ21lT2JHcWd0TWtVTmM0WEI2dXpyTkFTcVJIWUI0YXk2MzZ2M1B2L3piTUVIbm5kbE1YdlhIemZRcjVLODFVUFUxYUpaSHpXYndHSHRqak0veStOMEtVTjFuZEMreWZDQTNROUpsWDFWQ2ZSR2h4cUVNVHlIbzVqOXlwWTJCK1JEWEdzT3RRTWVuK1B1SGh5dUFEdXUzY2pCNTdTTHJRL3pJdSs3WWdPT0NMMi91cnlIbW9xaUNQa3I3WFdtL0c1SnRjMDVsL2o3WmloR0p5VUhXdk9qMElBR2N4WEk9&trace_id=899ff5e38e54021800ed581c333249f0/18196000980421627093

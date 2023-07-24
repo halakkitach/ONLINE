@@ -1,19 +1,45 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://live-production.secureswiftcontent.com/exp=1690187836~acl=/hls-p/ingest_6397_*/*~hmac=0003b7521f4fe5e37e73e48388a780f7a9ef68edc1f3fb6411394423cb0501b1/hls-p/ingest_6397_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://live-production.secureswiftcontent.com/exp=1690187836~acl=/hls-p/ingest_6397_*/*~hmac=0003b7521f4fe5e37e73e48388a780f7a9ef68edc1f3fb6411394423cb0501b1/hls-p/ingest_6397_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://live-production.secureswiftcontent.com/exp=1690187836~acl=/hls-p/ingest_6397_*/*~hmac=0003b7521f4fe5e37e73e48388a780f7a9ef68edc1f3fb6411394423cb0501b1/hls-p/ingest_6397_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://live-production.secureswiftcontent.com/exp=1690187836~acl=/hls-p/ingest_6397_*/*~hmac=0003b7521f4fe5e37e73e48388a780f7a9ef68edc1f3fb6411394423cb0501b1/hls-p/ingest_6397_240p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://live-production.secureswiftcontent.com/exp=1690187836~acl=/hls-b/ingest_6397_*/*~hmac=0e3835d83ea3f87e4e7ba36a40fd493ddada825781172b5350f50c65d2783626/hls-b/ingest_6397_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://live-production.secureswiftcontent.com/exp=1690187836~acl=/hls-b/ingest_6397_*/*~hmac=0e3835d83ea3f87e4e7ba36a40fd493ddada825781172b5350f50c65d2783626/hls-b/ingest_6397_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://live-production.secureswiftcontent.com/exp=1690187836~acl=/hls-b/ingest_6397_*/*~hmac=0e3835d83ea3f87e4e7ba36a40fd493ddada825781172b5350f50c65d2783626/hls-b/ingest_6397_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://live-production.secureswiftcontent.com/exp=1690187836~acl=/hls-b/ingest_6397_*/*~hmac=0e3835d83ea3f87e4e7ba36a40fd493ddada825781172b5350f50c65d2783626/hls-b/ingest_6397_240p/index.m3u8
+<pre>Array
+(
+    [data] => Array
+        (
+            [id] => 6397
+            [type] => livestreaming
+            [attributes] => Array
+                (
+                    [hls] => https://etslive-app.vidio.com/live/6397/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdkM3SXNVNWUxSVJRZDlzTmpyd3cyNnNTa1RaSWZUUWR2QnFmTmwvd2tvczlLVVJnZEZBa211WkNzWVhGamlBbHZwa0hCYVdFZEFxenJkdnJyZ21GQWdxYkR4czJVTG1vVkxsTVBxcVpSY3JvYkowcEdYNUxjODM3Wi9DbFk0REQxOWxIQVBLOS9oN0tiVUhxZitaL0tuekc2WE8xQTRyN1U4b0Q3MU16NlZOQnBVZjhqdG5qbzg5ZDIvZW01SzA0cVJsTHIzazZDTmxIQVlNOEZuL2dvQWg2S1FnTHlDYUJPazZmbG4zTDNQeGJwM05aejNkdjl2OVFCVkx6dTE1SUYrWEJ2SjBRdjlCKzJqdk01RzJDSWUrdEg0dXNaeDhaMXQ3bjdMWUgzRWozaXFvOVp5eWNveUhNTXYreW5WZDdvQmN4WHVyNTREK2syNGZlZ2p1c2cyTVdEMkVNUnhQekxUbFFYSXdMZlViZDFTMmRHdnhWWTdUL2wyUnNuaGRrUzFFaE1HcGZDVkhCb2t5TFFvM1JnR1lFLzFva2lCcmkzclJPRklRemI1WGhOZXVFdEp3SE5XS2dmcm9EajhNYTcrNWFyd3M3cSt2ZHR6SDBaK3ZPclRGZ3Nyb1YvVFA4T2UyOWZla2ZHaEMzem1DWlJweU40dnhPS0F6QXl5SzNUZWl3b1NUeVRqK25BQTZZV0t2Q2V5b244bmFzMzdvZHlUMHlaNXVPb2lKUDljQ2x3SkxpN1Q0dG12UE5ncEJMMnUwbDBIQ2JURFJCbHJjMElkdWgvWm9oL3FmMVJnaTZZcldZRkZuVGFNT1FRZ1hjWnBXOHRQVmd0aklPNzdMZzF3NG5NQXcwQkg5RVBsbFh6Sy9sODlUQ2d5ZnlKMlhnVlViRkowYXI4UG5GOVhOaFY4QzBDVkg3VnE4ODN1QzZucFpkakU5dVc4Qnc2SElyOXNISWVzYVE2VFlaeUlOeWxHR2ZRNUJ0T1FDeWRNMEVuc09YMVlIZjFxV3NsVXgwaWduRk95ZWNUYWF5TnZZV3Z2cVM2Rnp1N2hQaytLUlozbTIwOTNlVUFiV3M9&trace_id=11979834f6bc5b8cdade31d22353ce67/11276245603218375105
+                    [dash] => 
+                    [cdn] => swiftserve
+                    [geoblock_url] => 
+                    [expires_in] => 14400
+                    [is_preview] => 
+                    [is_drm] => 
+                    [custom_data] => 
+                    [required_hdcp] => 
+                    [background_playback] => pip
+                    [dvr_enabled] => 
+                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=true&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F6397-horee&cid=6397&cuu=vidiopremier&cuid=26094842&fld=false&cmg&ce=&cg=&cgp&cro=7%20or%20more&cur=internal_partner&cct&lst=kids
+                    [jailbreak_check] => 
+                    [resolution_mapping] => Array
+                        (
+                        )
 
+                )
+
+            [relationships] => Array
+                (
+                )
+
+            [links] => Array
+                (
+                    [watchpage] => https://www.vidio.com/live/6397-horee
+                )
+
+            [meta] => Array
+                (
+                    [mux_reporting] => 
+                )
+
+        )
+
+)
+</pre>https://etslive-app.vidio.com/live/6397/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdkM3SXNVNWUxSVJRZDlzTmpyd3cyNnNTa1RaSWZUUWR2QnFmTmwvd2tvczlLVVJnZEZBa211WkNzWVhGamlBbHZwa0hCYVdFZEFxenJkdnJyZ21GQWdxYkR4czJVTG1vVkxsTVBxcVpSY3JvYkowcEdYNUxjODM3Wi9DbFk0REQxOWxIQVBLOS9oN0tiVUhxZitaL0tuekc2WE8xQTRyN1U4b0Q3MU16NlZOQnBVZjhqdG5qbzg5ZDIvZW01SzA0cVJsTHIzazZDTmxIQVlNOEZuL2dvQWg2S1FnTHlDYUJPazZmbG4zTDNQeGJwM05aejNkdjl2OVFCVkx6dTE1SUYrWEJ2SjBRdjlCKzJqdk01RzJDSWUrdEg0dXNaeDhaMXQ3bjdMWUgzRWozaXFvOVp5eWNveUhNTXYreW5WZDdvQmN4WHVyNTREK2syNGZlZ2p1c2cyTVdEMkVNUnhQekxUbFFYSXdMZlViZDFTMmRHdnhWWTdUL2wyUnNuaGRrUzFFaE1HcGZDVkhCb2t5TFFvM1JnR1lFLzFva2lCcmkzclJPRklRemI1WGhOZXVFdEp3SE5XS2dmcm9EajhNYTcrNWFyd3M3cSt2ZHR6SDBaK3ZPclRGZ3Nyb1YvVFA4T2UyOWZla2ZHaEMzem1DWlJweU40dnhPS0F6QXl5SzNUZWl3b1NUeVRqK25BQTZZV0t2Q2V5b244bmFzMzdvZHlUMHlaNXVPb2lKUDljQ2x3SkxpN1Q0dG12UE5ncEJMMnUwbDBIQ2JURFJCbHJjMElkdWgvWm9oL3FmMVJnaTZZcldZRkZuVGFNT1FRZ1hjWnBXOHRQVmd0aklPNzdMZzF3NG5NQXcwQkg5RVBsbFh6Sy9sODlUQ2d5ZnlKMlhnVlViRkowYXI4UG5GOVhOaFY4QzBDVkg3VnE4ODN1QzZucFpkakU5dVc4Qnc2SElyOXNISWVzYVE2VFlaeUlOeWxHR2ZRNUJ0T1FDeWRNMEVuc09YMVlIZjFxV3NsVXgwaWduRk95ZWNUYWF5TnZZV3Z2cVM2Rnp1N2hQaytLUlozbTIwOTNlVUFiV3M9&trace_id=11979834f6bc5b8cdade31d22353ce67/11276245603218375105

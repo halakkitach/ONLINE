@@ -1,19 +1,45 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://etslive-2-vidio-com.akamaized.net/exp=1690187824~acl=/hls-p/ingest_6686_*/*~hmac=4be355200a7938f8ff9f444feadd707b155fd7bf32eb052d16b5d507a82317ef/hls-p/ingest_6686_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://etslive-2-vidio-com.akamaized.net/exp=1690187824~acl=/hls-p/ingest_6686_*/*~hmac=4be355200a7938f8ff9f444feadd707b155fd7bf32eb052d16b5d507a82317ef/hls-p/ingest_6686_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://etslive-2-vidio-com.akamaized.net/exp=1690187824~acl=/hls-p/ingest_6686_*/*~hmac=4be355200a7938f8ff9f444feadd707b155fd7bf32eb052d16b5d507a82317ef/hls-p/ingest_6686_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://etslive-2-vidio-com.akamaized.net/exp=1690187824~acl=/hls-p/ingest_6686_*/*~hmac=4be355200a7938f8ff9f444feadd707b155fd7bf32eb052d16b5d507a82317ef/hls-p/ingest_6686_240p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://etslive-2-vidio-com.akamaized.net/exp=1690187824~acl=/hls-b/ingest_6686_*/*~hmac=da8e9d68aec8e27f6d32c105b24454ec1601667840152afcfe7416ed494143de/hls-b/ingest_6686_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://etslive-2-vidio-com.akamaized.net/exp=1690187824~acl=/hls-b/ingest_6686_*/*~hmac=da8e9d68aec8e27f6d32c105b24454ec1601667840152afcfe7416ed494143de/hls-b/ingest_6686_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://etslive-2-vidio-com.akamaized.net/exp=1690187824~acl=/hls-b/ingest_6686_*/*~hmac=da8e9d68aec8e27f6d32c105b24454ec1601667840152afcfe7416ed494143de/hls-b/ingest_6686_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://etslive-2-vidio-com.akamaized.net/exp=1690187824~acl=/hls-b/ingest_6686_*/*~hmac=da8e9d68aec8e27f6d32c105b24454ec1601667840152afcfe7416ed494143de/hls-b/ingest_6686_240p/index.m3u8
+<pre>Array
+(
+    [data] => Array
+        (
+            [id] => 6686
+            [type] => livestreaming
+            [attributes] => Array
+                (
+                    [hls] => https://etslive-app.vidio.com/live/6686/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdlhXUGVJNkxvUTVlblR1NVRrNnlXamxwUzhvT2N4UDMxRVRIYnpaMXRlYTVEaEp4NllDcXM5ZkNHZjVCWlVzak1DZVNyNENsR1BjeXNXMWlJeHFlSlpNSlBkUlhXeW52ZERGZnhieWFuUUtuMklIRUZ5ZkRKZ2N4Rmpzc0JSZjJLbE5qMHpGSmt2QWcyZEJ6NUp3dDhQQ2ZaaEhOK09WQ1pJYkd4OURPRTlFYzV6bXA2K1BiNElyd3VqSkp0aDFGc044ZUZtR2ZpbDdGVTEzZ0xuRkc0ZXhES29DUlkrbHdsSHk4cEJpbTdkZFZJVC9LQ1M5aFQ1RjNsV1NCVjI2OE41bG9GaE5UcWV1QmVnb0dKSXc1QkdEV1pSRVVGSks2VjZpTkFCQ2M4Wk9KNThzQXFRTE5MUWgrTUNOU3ZLdTNaNm5yQmhtMjJvTWxvaDF5djVUY1V6MERTeTBEdlZCRHI2SnhrZ3pqRThROUNob3hqMmk3ZVNvZVNLZzFodkFKd0EySHNDQUFJUzE4S3hRMndGaGg3WTZJZXVhQ2ZrcWYwTzZqV1VTSzR4SFIxd2xQalZkenY1cUd4VndORXYrY01vSnBTb2E3QnczZitoZmJXSmlmampCcTFLZkcrR0dFQVN2WEhub2U0TzNQMzB3VVcvNUkrMzN1TDJSYTgvNVNsOWxaVlY0K0dkUFpDbWsyRzBvL0xWMVJxYkRlTWszeit6RzdVZlQ2c05Zd1Zzb0Nma2RwSVNzQnE4V0xLZitFY1pyQVptMnNiU202RE5IdG9rSnp0c2JNdlI2MlRMWllyNFVIMm5uRzNUNER2UFBtMTB0b1UraTJqMWJsRnFaVE5XTWQ0UHM1ZTJtM2dpNFJzaHFlbHpHQk5jYk5hRmhDZnNBVXhKc1BkYWQ1UWJsOTVDV1ZHeURkNEEyRlQ2TDRWMUF6S1NEREVGTGpoUUdrS0ZEMkRzdz09&trace_id=b25f862a58c2b710094a07bffa1cb7bc/5405711433883544382
+                    [dash] => 
+                    [cdn] => akamai
+                    [geoblock_url] => https://geo-id-tl-media-vidio-com.akamaized.net/2x2.png
+                    [expires_in] => 14400
+                    [is_preview] => 
+                    [is_drm] => 
+                    [custom_data] => 
+                    [required_hdcp] => 
+                    [background_playback] => pip
+                    [dvr_enabled] => 
+                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=true&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F6686-champions-tv-2&cid=6686&cuu=vidiopremier&cuid=26094842&fld=false&cmg&ce=&cg=&cgp=Sports&cro=13%20or%20more&cur=internal_partner&cct&lst=sports
+                    [jailbreak_check] => 
+                    [resolution_mapping] => Array
+                        (
+                        )
 
+                )
+
+            [relationships] => Array
+                (
+                )
+
+            [links] => Array
+                (
+                    [watchpage] => https://www.vidio.com/live/6686-champions-tv-2
+                )
+
+            [meta] => Array
+                (
+                    [mux_reporting] => 
+                )
+
+        )
+
+)
+</pre>https://etslive-app.vidio.com/live/6686/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdlhXUGVJNkxvUTVlblR1NVRrNnlXamxwUzhvT2N4UDMxRVRIYnpaMXRlYTVEaEp4NllDcXM5ZkNHZjVCWlVzak1DZVNyNENsR1BjeXNXMWlJeHFlSlpNSlBkUlhXeW52ZERGZnhieWFuUUtuMklIRUZ5ZkRKZ2N4Rmpzc0JSZjJLbE5qMHpGSmt2QWcyZEJ6NUp3dDhQQ2ZaaEhOK09WQ1pJYkd4OURPRTlFYzV6bXA2K1BiNElyd3VqSkp0aDFGc044ZUZtR2ZpbDdGVTEzZ0xuRkc0ZXhES29DUlkrbHdsSHk4cEJpbTdkZFZJVC9LQ1M5aFQ1RjNsV1NCVjI2OE41bG9GaE5UcWV1QmVnb0dKSXc1QkdEV1pSRVVGSks2VjZpTkFCQ2M4Wk9KNThzQXFRTE5MUWgrTUNOU3ZLdTNaNm5yQmhtMjJvTWxvaDF5djVUY1V6MERTeTBEdlZCRHI2SnhrZ3pqRThROUNob3hqMmk3ZVNvZVNLZzFodkFKd0EySHNDQUFJUzE4S3hRMndGaGg3WTZJZXVhQ2ZrcWYwTzZqV1VTSzR4SFIxd2xQalZkenY1cUd4VndORXYrY01vSnBTb2E3QnczZitoZmJXSmlmampCcTFLZkcrR0dFQVN2WEhub2U0TzNQMzB3VVcvNUkrMzN1TDJSYTgvNVNsOWxaVlY0K0dkUFpDbWsyRzBvL0xWMVJxYkRlTWszeit6RzdVZlQ2c05Zd1Zzb0Nma2RwSVNzQnE4V0xLZitFY1pyQVptMnNiU202RE5IdG9rSnp0c2JNdlI2MlRMWllyNFVIMm5uRzNUNER2UFBtMTB0b1UraTJqMWJsRnFaVE5XTWQ0UHM1ZTJtM2dpNFJzaHFlbHpHQk5jYk5hRmhDZnNBVXhKc1BkYWQ1UWJsOTVDV1ZHeURkNEEyRlQ2TDRWMUF6S1NEREVGTGpoUUdrS0ZEMkRzdz09&trace_id=b25f862a58c2b710094a07bffa1cb7bc/5405711433883544382

@@ -1,11 +1,45 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://live-production.secureswiftcontent.com/exp=1690187781~acl=/hls-p/ingest_7464_*/*~hmac=2cd65961340c74a02ab3b456775b63afe4f8ab095b45cad797e1243b4311d5b9/hls-p/ingest_7464_720p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
-https://live-production.secureswiftcontent.com/exp=1690187781~acl=/hls-p/ingest_7464_*/*~hmac=2cd65961340c74a02ab3b456775b63afe4f8ab095b45cad797e1243b4311d5b9/hls-p/ingest_7464_480p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
-https://live-production.secureswiftcontent.com/exp=1690187781~acl=/hls-p/ingest_7464_*/*~hmac=2cd65961340c74a02ab3b456775b63afe4f8ab095b45cad797e1243b4311d5b9/hls-p/ingest_7464_360p/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
-https://live-production.secureswiftcontent.com/exp=1690187781~acl=/hls-p/ingest_7464_*/*~hmac=2cd65961340c74a02ab3b456775b63afe4f8ab095b45cad797e1243b4311d5b9/hls-p/ingest_7464_240p/index.m3u8
+<pre>Array
+(
+    [data] => Array
+        (
+            [id] => 7464
+            [type] => livestreaming
+            [attributes] => Array
+                (
+                    [hls] => https://etslive-app.vidio.com/live/7464/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdm5reWRRbFdUc1Q0cHpWang2UUhRTlI1U21yMFRKNnZ3MUZZb1BBcG1wYVFxWHdZWFFJZk9YbkNVeVJreHplYkR1WW9aejRqcFIvTlF1azFpRWZmOVE1Qy9iWE9xOHh1eVRRbWUrQzZ5TTZ3MVZzTWg1OVFUMXNaWFF3SW4rY3ROQ004c2hFazZ3S1Y3RmwxUFhHbk50L0dJQTdPVVljSFVLdnloV3EvZmdobnB1eGZlRDU5WDZyVGtDT2l5cGdadVFqQXliTTBrNEtuWUhBZFlTOFEyRmtDVTUremhNeVd3NGJDdWp0QVlvaytaL0p2NEhjdUgzZUVsOFFyUlNjWktJdlFtWHVoUEZ2YWxONVY5eE9TWGtqd1B4V3VrdTE2MUJpVlBkbjhtVTRzZkN3a1NUYzhmWjl3KysvL25Pc0Nmd0I4NElRa2c3ZTF4VkNkcWRiejNwL1I4OEYvL29JMm5pMmdVaFdZaEtQdG9RQk9Vdm4rZnYwckpibGcrbVFQNVJHejAyK1d3SldqWDVlWCt5YW5GUXJMQzJzSW44RkFqKzNjSHN6SWFSbTRtOEIwMnVVZ1lvd2Z1ODJIdVhVZ0dmRGJzZk9XODlNRVlZU092SmhvUW8vVTBGQ2dxb0NhSXVCM1RYNjdQYUE3ZFE3NnhTblp3dkF3WjNWUzYrNlpyNzY2R1FiTktwaWlQWkpKSWl1d3dOTWtIK0NUMklRR3A1MEJPMi9Dc2lFWFV1aWlua3RMMVVodW5vN3JYdHIvRURWbTVEM2cyYVVreTNZS0NJaDVycEZZVHVkcXVlZ2tVeUdjR2dmWGJ2dlBwaHcrY0owWE01dXVjVW5vbnFzbjRLa3NVeXN2YVNnWCt0MUtkcnFwNmRZUytCeEJKTmp6Sm1xUGdpRmhtZ2JjOEtQSFdCRGRwd3UxQWlWL0V2TmJUSFg5YnE3TGFZd294eE5WcUZET1NtWjZwUitLYWhQR0NXLy90d004aUZ3OGhZV0dkOFhtZ282N241VG56Z2t4cTFOTnVCY2ZFd0tLdld2NVVHTDBLQ3crd2V5N01zdEUxWjhKeFZOeTcxTVk9&trace_id=b8dc22d3b88bd321c14f931adeaea38f/9284846028276119903
+                    [dash] => 
+                    [cdn] => swiftserve
+                    [geoblock_url] => 
+                    [expires_in] => 14400
+                    [is_preview] => 
+                    [is_drm] => 
+                    [custom_data] => 
+                    [required_hdcp] => 
+                    [background_playback] => pip
+                    [dvr_enabled] => 
+                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=false&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F7464-ajwa-tv&cid=7464&cuu=ajwatv&cuid=52728829&fld=false&cmg&ce=&cg=&cgp&cro=&cur=internal_partner&cct&lst=religi%2Cindonesia-entertainmen-produksi
+                    [jailbreak_check] => 
+                    [resolution_mapping] => Array
+                        (
+                        )
 
+                )
+
+            [relationships] => Array
+                (
+                )
+
+            [links] => Array
+                (
+                    [watchpage] => https://www.vidio.com/live/7464-ajwa-tv
+                )
+
+            [meta] => Array
+                (
+                    [mux_reporting] => 
+                )
+
+        )
+
+)
+</pre>https://etslive-app.vidio.com/live/7464/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdm5reWRRbFdUc1Q0cHpWang2UUhRTlI1U21yMFRKNnZ3MUZZb1BBcG1wYVFxWHdZWFFJZk9YbkNVeVJreHplYkR1WW9aejRqcFIvTlF1azFpRWZmOVE1Qy9iWE9xOHh1eVRRbWUrQzZ5TTZ3MVZzTWg1OVFUMXNaWFF3SW4rY3ROQ004c2hFazZ3S1Y3RmwxUFhHbk50L0dJQTdPVVljSFVLdnloV3EvZmdobnB1eGZlRDU5WDZyVGtDT2l5cGdadVFqQXliTTBrNEtuWUhBZFlTOFEyRmtDVTUremhNeVd3NGJDdWp0QVlvaytaL0p2NEhjdUgzZUVsOFFyUlNjWktJdlFtWHVoUEZ2YWxONVY5eE9TWGtqd1B4V3VrdTE2MUJpVlBkbjhtVTRzZkN3a1NUYzhmWjl3KysvL25Pc0Nmd0I4NElRa2c3ZTF4VkNkcWRiejNwL1I4OEYvL29JMm5pMmdVaFdZaEtQdG9RQk9Vdm4rZnYwckpibGcrbVFQNVJHejAyK1d3SldqWDVlWCt5YW5GUXJMQzJzSW44RkFqKzNjSHN6SWFSbTRtOEIwMnVVZ1lvd2Z1ODJIdVhVZ0dmRGJzZk9XODlNRVlZU092SmhvUW8vVTBGQ2dxb0NhSXVCM1RYNjdQYUE3ZFE3NnhTblp3dkF3WjNWUzYrNlpyNzY2R1FiTktwaWlQWkpKSWl1d3dOTWtIK0NUMklRR3A1MEJPMi9Dc2lFWFV1aWlua3RMMVVodW5vN3JYdHIvRURWbTVEM2cyYVVreTNZS0NJaDVycEZZVHVkcXVlZ2tVeUdjR2dmWGJ2dlBwaHcrY0owWE01dXVjVW5vbnFzbjRLa3NVeXN2YVNnWCt0MUtkcnFwNmRZUytCeEJKTmp6Sm1xUGdpRmhtZ2JjOEtQSFdCRGRwd3UxQWlWL0V2TmJUSFg5YnE3TGFZd294eE5WcUZET1NtWjZwUitLYWhQR0NXLy90d004aUZ3OGhZV0dkOFhtZ282N241VG56Z2t4cTFOTnVCY2ZFd0tLdld2NVVHTDBLQ3crd2V5N01zdEUxWjhKeFZOeTcxTVk9&trace_id=b8dc22d3b88bd321c14f931adeaea38f/9284846028276119903
