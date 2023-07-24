@@ -40,7 +40,7 @@ jobs:
       - name: Update ONLINE
         run: |
           pwd
-          python3 api/ytlive/index.py --url "https://www.youtube.com/@enjocartoonvietnam12/live" 7larva.m3u8
+          python3 api/ytlive/index.py --url "https://www.youtube.com/@larvacartoonvietnam6214/live" 7larva.m3u8
           sleep 3
           python3 api/ytlive/index.py --url "https://www.youtube.com/pubgmobileid/live" 7pubgid.m3u8
           sleep 3
