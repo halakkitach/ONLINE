@@ -1,45 +1,11 @@
-<pre>Array
-(
-    [data] => Array
-        (
-            [id] => 782
-            [type] => livestreaming
-            [attributes] => Array
-                (
-                    [hls] => https://app-etslive-2.vidio.com/live/782/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdlRONEVCeGVUZnEvR0F0T203RkNINzJWcGxheUVFOHNLaWNtYkRFUi9uV1VBL09xVTFlaTNFanlDUDh5VFgxSmQ2STh1SEJNdlg4YWpJS1RSc0gyOTFyU0VJL1V2c1hQNy9iOTErdTlTSWtlNUlneTVwdWl2bDE2QitZT3RZTklHaHM1WkJudkRDSHBIN1NwSjlWUmEvdDBYb3I2WU9BSVFuK0dUODJXY29RcjMxNTQyQVhwOGxZTGF6N0JlV0dqbTIyTjh6OUdrTlp5YXMrVGI0NXBvbWhPSHlHU0FKekZTQk51cDNBYWU4RmdTeFNUNGNQbTI4eHJvNWQrbk5WMFdhQ3NJQmdDNzkrN0VyYWdxaTlvODdUQXZtaXFxemZlUENqMXZxaTUwZnhHYlBOQjZEV0VaR3VENXBMaE15aUJ3UUN0Nk5jdVRvS3Q1cXZBVGw2d2RpaUEwS1VsSVpEa0xDYlRJNlBCcXpSNTBpeDBoK3draVZNWmhzaHE3VWRHa1FrTTRYYzVoZy8xOFl1cDUzc2RjdVV6VHRBUklmTUpLMHFKQTRuMzYrR3RVa1pGTS9lUnpjNzIzSndsZy9TL2Q4WDdMb0JYanhQRGVWbHhiNHBCR01tQUJhb1lPVnVXcmhRa1E4RS9YWXg4bWRNS1ZIYmx5MUl6K3p4bTEwTENKd2tRejMzNitob1RuN2tWT0ZkdHRBV25aWUlHbUZMNFl5Q1d0WmNXUFdqSjE2QU00WENnWk9RM3FlajJtdjZHNyt0eVF3OWdNVjY0aHlENm1lSktiVGY4aE8vYURHS1RFRE9uRFB1L0hERnFONlU0Y1l1WFRoT214VWJ3VXVnNFFLWUtxSUNJWnhGYlhVZEhHZHBmWC9MY05TYU13ZWVYM0pKV3ByN3UyUDEzUDJJV25ueGxxM2lqbm9hWUErdjl4SXNFWnVBOWRpY0N6OHJiclZ4RzBuZz09&trace_id=1ba096ca514efd6d7749b344b9f78e69/11314221516439296431
-                    [dash] => 
-                    [cdn] => akamai
-                    [geoblock_url] => https://geo-id-media-vidio-com.akamaized.net/2x2.png
-                    [expires_in] => 14400
-                    [is_preview] => 
-                    [is_drm] => 
-                    [custom_data] => 
-                    [required_hdcp] => 
-                    [background_playback] => pip
-                    [dvr_enabled] => 
-                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=false&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F782-antv&cid=782&cuu=antv&cuid=88855596&fld=false&cmg&ce=&cg=&cgp&cro=13%20or%20more&cur=external_partner&cct&lst=
-                    [jailbreak_check] => 
-                    [resolution_mapping] => Array
-                        (
-                        )
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://etslive-2-vidio-com.akamaized.net/exp=1690270334~acl=/hls-p/ingest_782_*/*~hmac=0a90dd4d9755582847f756098424aacf6ac75a0458f57b0f1b954f55ec92768b/hls-p/ingest_782_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://etslive-2-vidio-com.akamaized.net/exp=1690270334~acl=/hls-p/ingest_782_*/*~hmac=0a90dd4d9755582847f756098424aacf6ac75a0458f57b0f1b954f55ec92768b/hls-p/ingest_782_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://etslive-2-vidio-com.akamaized.net/exp=1690270334~acl=/hls-p/ingest_782_*/*~hmac=0a90dd4d9755582847f756098424aacf6ac75a0458f57b0f1b954f55ec92768b/hls-p/ingest_782_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://etslive-2-vidio-com.akamaized.net/exp=1690270334~acl=/hls-p/ingest_782_*/*~hmac=0a90dd4d9755582847f756098424aacf6ac75a0458f57b0f1b954f55ec92768b/hls-p/ingest_782_240p/index.m3u8
 
-                )
-
-            [relationships] => Array
-                (
-                )
-
-            [links] => Array
-                (
-                    [watchpage] => https://www.vidio.com/live/782-antv
-                )
-
-            [meta] => Array
-                (
-                    [mux_reporting] => 
-                )
-
-        )
-
-)
-</pre>https://app-etslive-2.vidio.com/live/782/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdlRONEVCeGVUZnEvR0F0T203RkNINzJWcGxheUVFOHNLaWNtYkRFUi9uV1VBL09xVTFlaTNFanlDUDh5VFgxSmQ2STh1SEJNdlg4YWpJS1RSc0gyOTFyU0VJL1V2c1hQNy9iOTErdTlTSWtlNUlneTVwdWl2bDE2QitZT3RZTklHaHM1WkJudkRDSHBIN1NwSjlWUmEvdDBYb3I2WU9BSVFuK0dUODJXY29RcjMxNTQyQVhwOGxZTGF6N0JlV0dqbTIyTjh6OUdrTlp5YXMrVGI0NXBvbWhPSHlHU0FKekZTQk51cDNBYWU4RmdTeFNUNGNQbTI4eHJvNWQrbk5WMFdhQ3NJQmdDNzkrN0VyYWdxaTlvODdUQXZtaXFxemZlUENqMXZxaTUwZnhHYlBOQjZEV0VaR3VENXBMaE15aUJ3UUN0Nk5jdVRvS3Q1cXZBVGw2d2RpaUEwS1VsSVpEa0xDYlRJNlBCcXpSNTBpeDBoK3draVZNWmhzaHE3VWRHa1FrTTRYYzVoZy8xOFl1cDUzc2RjdVV6VHRBUklmTUpLMHFKQTRuMzYrR3RVa1pGTS9lUnpjNzIzSndsZy9TL2Q4WDdMb0JYanhQRGVWbHhiNHBCR01tQUJhb1lPVnVXcmhRa1E4RS9YWXg4bWRNS1ZIYmx5MUl6K3p4bTEwTENKd2tRejMzNitob1RuN2tWT0ZkdHRBV25aWUlHbUZMNFl5Q1d0WmNXUFdqSjE2QU00WENnWk9RM3FlajJtdjZHNyt0eVF3OWdNVjY0aHlENm1lSktiVGY4aE8vYURHS1RFRE9uRFB1L0hERnFONlU0Y1l1WFRoT214VWJ3VXVnNFFLWUtxSUNJWnhGYlhVZEhHZHBmWC9MY05TYU13ZWVYM0pKV3ByN3UyUDEzUDJJV25ueGxxM2lqbm9hWUErdjl4SXNFWnVBOWRpY0N6OHJiclZ4RzBuZz09&trace_id=1ba096ca514efd6d7749b344b9f78e69/11314221516439296431

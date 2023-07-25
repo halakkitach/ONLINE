@@ -1,45 +1,11 @@
-<pre>Array
-(
-    [data] => Array
-        (
-            [id] => 7052
-            [type] => livestreaming
-            [attributes] => Array
-                (
-                    [hls] => https://etslive-app.vidio.com/live/7052/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdllOb2MxRG5MYnNuTGszTHZQZnorcXFndUxid2dTSW5JYUt0alF0bUtJaW5iSUk4cVhtUGhlTXAzZi8zNHY0aDVUQU9VRUZRMXVxRDBqRU9wOHR1aVZFYTBtMVBqQzFPU2xBVXhiRitkZ04zRGFBVS81L3BWNU0zdm1rTGxHSWNsU3NhbENoNFMrWnU4Z3RKMVlBeFFrTWhKQWhlN1RQY2g5ME1lWmZzaDJLMS80azRsdXFoM3UxZGRBNEpqeVJIdkdVWCsvc1NRcXpaNE9BZGxCKzg2djEwcGFOeFZSK0d5bWw2dFgvUnlCWEdMU09WR2dad1M2dWQybzhiYlI2Q2huMDNJdFZReTdvdmZ5ZlZRcVozZm5nd0RQaWZqK1EyK1k1R0NyTkZjYzFoY3pxT29pUG5td0NmZ0ZzR3ZLRTgxSHhpNXdlV3grNEpmdVJKUnZwOWtnbmZ6dCtTWFo5L2dKVWpIeE9ybnphMDFONjNHeStmWDZibVdJQ0FORWpLa2VLNTVXcFFUYnlUV3lRU0Y5WndRQmc5WEdIWmpZaFhFc3JLMXpJc2t2YklXNTJ4YWo0ZFdXTmJMMEdveG05a1c5NnVEUWJtMFV5eVkwUDVMRkFEdXV6ejhmZmM2eUdtNE9ZYnA1bkx3UnhOcWZMdHhDNUh4a05IaktQNHNZY3I0dXlnZEtyeCtRVCs0R2kvWjU0VzF5ZXhFRWdmaVVlL0RjSkhIeDllOU9wOHl2SmFhK3N6Q2EwQmp5L1hwaWMyZUEraGI3b0sydi9ndzlzNmpyeUhhYVp4UnJNd21qcDZES3R0WmNGWEc4ZFNWTHJaT3NUb3VGTUg3VjdGdEZod3FtMlU2eEdqb3lCS3ZCWGhmZHRMUVV2TjdBSDU0RHZkRDRxQlJySFlGY2t4dUhWTUg5bTVjVE4xQTZ1T2MxU0Vma25aa1hLNlNwSkxRQldlYUVTdWRBSDNsd3dSQlMxMjAxRVZEVlI1d2JXZG8zWnl3Y2pxQ1ZvUmNxaHE4djNYNHlQL25DazgrQTFyYlVueXhXcTZseE1QYy9hWnJqVXByMldtVVQ0S0dmSFE9&trace_id=de5abb72f72a39bcfc19a818d402a8cf/16719276437055373411
-                    [dash] => 
-                    [cdn] => swiftserve
-                    [geoblock_url] => 
-                    [expires_in] => 14400
-                    [is_preview] => 
-                    [is_drm] => 
-                    [custom_data] => 
-                    [required_hdcp] => 
-                    [background_playback] => pip
-                    [dvr_enabled] => 
-                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=true&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F7052-hip-hip-horee&cid=7052&cuu=hiphiphoree&cuid=45651656&fld=false&cmg&ce=&cg=&cgp&cro=less%20than%207&cur=external_partner&cct&lst=kids
-                    [jailbreak_check] => 
-                    [resolution_mapping] => Array
-                        (
-                        )
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://live-production.secureswiftcontent.com/exp=1690270351~acl=/hls-p/ingest_7052_*/*~hmac=bd3847fc68f1d77114d06372af36599a4317010bf57198d8002f52ccc3574922/hls-p/ingest_7052_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://live-production.secureswiftcontent.com/exp=1690270351~acl=/hls-p/ingest_7052_*/*~hmac=bd3847fc68f1d77114d06372af36599a4317010bf57198d8002f52ccc3574922/hls-p/ingest_7052_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://live-production.secureswiftcontent.com/exp=1690270351~acl=/hls-p/ingest_7052_*/*~hmac=bd3847fc68f1d77114d06372af36599a4317010bf57198d8002f52ccc3574922/hls-p/ingest_7052_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://live-production.secureswiftcontent.com/exp=1690270351~acl=/hls-p/ingest_7052_*/*~hmac=bd3847fc68f1d77114d06372af36599a4317010bf57198d8002f52ccc3574922/hls-p/ingest_7052_240p/index.m3u8
 
-                )
-
-            [relationships] => Array
-                (
-                )
-
-            [links] => Array
-                (
-                    [watchpage] => https://www.vidio.com/live/7052-hip-hip-horee
-                )
-
-            [meta] => Array
-                (
-                    [mux_reporting] => 
-                )
-
-        )
-
-)
-</pre>https://etslive-app.vidio.com/live/7052/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdllOb2MxRG5MYnNuTGszTHZQZnorcXFndUxid2dTSW5JYUt0alF0bUtJaW5iSUk4cVhtUGhlTXAzZi8zNHY0aDVUQU9VRUZRMXVxRDBqRU9wOHR1aVZFYTBtMVBqQzFPU2xBVXhiRitkZ04zRGFBVS81L3BWNU0zdm1rTGxHSWNsU3NhbENoNFMrWnU4Z3RKMVlBeFFrTWhKQWhlN1RQY2g5ME1lWmZzaDJLMS80azRsdXFoM3UxZGRBNEpqeVJIdkdVWCsvc1NRcXpaNE9BZGxCKzg2djEwcGFOeFZSK0d5bWw2dFgvUnlCWEdMU09WR2dad1M2dWQybzhiYlI2Q2huMDNJdFZReTdvdmZ5ZlZRcVozZm5nd0RQaWZqK1EyK1k1R0NyTkZjYzFoY3pxT29pUG5td0NmZ0ZzR3ZLRTgxSHhpNXdlV3grNEpmdVJKUnZwOWtnbmZ6dCtTWFo5L2dKVWpIeE9ybnphMDFONjNHeStmWDZibVdJQ0FORWpLa2VLNTVXcFFUYnlUV3lRU0Y5WndRQmc5WEdIWmpZaFhFc3JLMXpJc2t2YklXNTJ4YWo0ZFdXTmJMMEdveG05a1c5NnVEUWJtMFV5eVkwUDVMRkFEdXV6ejhmZmM2eUdtNE9ZYnA1bkx3UnhOcWZMdHhDNUh4a05IaktQNHNZY3I0dXlnZEtyeCtRVCs0R2kvWjU0VzF5ZXhFRWdmaVVlL0RjSkhIeDllOU9wOHl2SmFhK3N6Q2EwQmp5L1hwaWMyZUEraGI3b0sydi9ndzlzNmpyeUhhYVp4UnJNd21qcDZES3R0WmNGWEc4ZFNWTHJaT3NUb3VGTUg3VjdGdEZod3FtMlU2eEdqb3lCS3ZCWGhmZHRMUVV2TjdBSDU0RHZkRDRxQlJySFlGY2t4dUhWTUg5bTVjVE4xQTZ1T2MxU0Vma25aa1hLNlNwSkxRQldlYUVTdWRBSDNsd3dSQlMxMjAxRVZEVlI1d2JXZG8zWnl3Y2pxQ1ZvUmNxaHE4djNYNHlQL25DazgrQTFyYlVueXhXcTZseE1QYy9hWnJqVXByMldtVVQ0S0dmSFE9&trace_id=de5abb72f72a39bcfc19a818d402a8cf/16719276437055373411

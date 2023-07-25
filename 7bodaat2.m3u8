@@ -1,45 +1,19 @@
-<pre>Array
-(
-    [data] => Array
-        (
-            [id] => 6397
-            [type] => livestreaming
-            [attributes] => Array
-                (
-                    [hls] => https://etslive-app.vidio.com/live/6397/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdkM3SXNVNWUxSVJRZDlzTmpyd3cyNnNTa1RaSWZUUWR2QnFmTmwvd2tvczlLVVJnZEZBa211WkNzWVhGamlBbHZwa0hCYVdFZEFxenJkdnJyZ21GQWdxYkR4czJVTG1vVkxsTVBxcVpSY3JvYkowcEdYNUxjODM3Wi9DbFk0REQxOWxIQVBLOS9oN0tiVUhxZitaL0tuekc2WE8xQTRyN1U4b0Q3MU16NlZOQnBVZjhqdG5qbzg5ZDIvZW01SzA0cVJsTHIzazZDTmxIQVlNOEZuL2dvQWg2S1FnTHlDYUJPazZmbG4zTDNQeGJwM05aejNkdjl2OVFCVkx6dTE1SUYrWEJ2SjBRdjlCKzJqdk01RzJDSWUwbW4wRnVIRDZISjFwUHlRNGpTc3BKTWtLaHFjRm41eFVVRHZVYmZvSE94M3lObW1GeG1laU5KNE93SWRhZFRxbWNJK3Flc25mOERDekV0amlMRXJmOUVudWQ4dU14RmdSeThDUXVkejF0c1FpcE5oSC9GY0xQMXFUM045ZTUyN29Rb2d0Tlhkamx4azFHUnk1S09aVGd6WEtOSytqcWpVZUJWdHVRcVJxeGRSblpnd0F0U0sxL2VoSDlHclFFTG56aVNIbUJLTkZ3elQ4NVFUY0ZBNFZyOFNXeFRMRERwSWkwdW4zcG5HU1BMRVJ5cVh5L05BQythaFdIbGhVZGlVMWlwTnhKZjFIVEVicXpVc2FUci8ySTgzYmNyejllV3BJcmlSL01XTEJCWFlwcURxUWZnN1pnemtPL3FGcmtoalFFYzZSQm1HUk1xV25oUFJRUXdIR3doamxHaU01eXVIK1pEc1hzL3ZyYTl0Tmx0eldhQllTNHI2Z3dSTmxLVTBOQWdLK011cTZDRFh3TWVpTk1sMXRWRFA3UktTUktFcmdEdUp3VTVoaDErcnZJU0crVHVPc1V4QnZrMHIyZ2k1QmxGd3hERThzZ1B2dVBDQU9IL3RnS3NCMlpsWTJzbXhneEU0QmJnbTYrZFNGbE9jWW1pUVdUYnJVYkh0TXIwcmd4SElRU0NDWUYwQ2ZaUkxrV09ldU09&trace_id=2c3fcb401c8a5bf09faf9dc175b56963/6315615852010907177
-                    [dash] => 
-                    [cdn] => swiftserve
-                    [geoblock_url] => 
-                    [expires_in] => 14400
-                    [is_preview] => 
-                    [is_drm] => 
-                    [custom_data] => 
-                    [required_hdcp] => 
-                    [background_playback] => pip
-                    [dvr_enabled] => 
-                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=true&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F6397-horee&cid=6397&cuu=vidiopremier&cuid=26094842&fld=false&cmg&ce=&cg=&cgp&cro=less%20than%207&cur=internal_partner&cct&lst=kids
-                    [jailbreak_check] => 
-                    [resolution_mapping] => Array
-                        (
-                        )
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://live-production.secureswiftcontent.com/exp=1690270354~acl=/hls-p/ingest_6397_*/*~hmac=eb12c93608c1b80ab7b25fc1fce65ed2e140daeae4e7f0e452b34ce44238dd77/hls-p/ingest_6397_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://live-production.secureswiftcontent.com/exp=1690270354~acl=/hls-p/ingest_6397_*/*~hmac=eb12c93608c1b80ab7b25fc1fce65ed2e140daeae4e7f0e452b34ce44238dd77/hls-p/ingest_6397_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://live-production.secureswiftcontent.com/exp=1690270354~acl=/hls-p/ingest_6397_*/*~hmac=eb12c93608c1b80ab7b25fc1fce65ed2e140daeae4e7f0e452b34ce44238dd77/hls-p/ingest_6397_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://live-production.secureswiftcontent.com/exp=1690270354~acl=/hls-p/ingest_6397_*/*~hmac=eb12c93608c1b80ab7b25fc1fce65ed2e140daeae4e7f0e452b34ce44238dd77/hls-p/ingest_6397_240p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://live-production.secureswiftcontent.com/exp=1690270354~acl=/hls-b/ingest_6397_*/*~hmac=514ea1b33edee65650f6186c22c44e3b7e95ad0597af801ecef3faaa7bd6dffb/hls-b/ingest_6397_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://live-production.secureswiftcontent.com/exp=1690270354~acl=/hls-b/ingest_6397_*/*~hmac=514ea1b33edee65650f6186c22c44e3b7e95ad0597af801ecef3faaa7bd6dffb/hls-b/ingest_6397_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://live-production.secureswiftcontent.com/exp=1690270354~acl=/hls-b/ingest_6397_*/*~hmac=514ea1b33edee65650f6186c22c44e3b7e95ad0597af801ecef3faaa7bd6dffb/hls-b/ingest_6397_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://live-production.secureswiftcontent.com/exp=1690270354~acl=/hls-b/ingest_6397_*/*~hmac=514ea1b33edee65650f6186c22c44e3b7e95ad0597af801ecef3faaa7bd6dffb/hls-b/ingest_6397_240p/index.m3u8
 
-                )
-
-            [relationships] => Array
-                (
-                )
-
-            [links] => Array
-                (
-                    [watchpage] => https://www.vidio.com/live/6397-horee
-                )
-
-            [meta] => Array
-                (
-                    [mux_reporting] => 
-                )
-
-        )
-
-)
-</pre>https://etslive-app.vidio.com/live/6397/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdkM3SXNVNWUxSVJRZDlzTmpyd3cyNnNTa1RaSWZUUWR2QnFmTmwvd2tvczlLVVJnZEZBa211WkNzWVhGamlBbHZwa0hCYVdFZEFxenJkdnJyZ21GQWdxYkR4czJVTG1vVkxsTVBxcVpSY3JvYkowcEdYNUxjODM3Wi9DbFk0REQxOWxIQVBLOS9oN0tiVUhxZitaL0tuekc2WE8xQTRyN1U4b0Q3MU16NlZOQnBVZjhqdG5qbzg5ZDIvZW01SzA0cVJsTHIzazZDTmxIQVlNOEZuL2dvQWg2S1FnTHlDYUJPazZmbG4zTDNQeGJwM05aejNkdjl2OVFCVkx6dTE1SUYrWEJ2SjBRdjlCKzJqdk01RzJDSWUwbW4wRnVIRDZISjFwUHlRNGpTc3BKTWtLaHFjRm41eFVVRHZVYmZvSE94M3lObW1GeG1laU5KNE93SWRhZFRxbWNJK3Flc25mOERDekV0amlMRXJmOUVudWQ4dU14RmdSeThDUXVkejF0c1FpcE5oSC9GY0xQMXFUM045ZTUyN29Rb2d0Tlhkamx4azFHUnk1S09aVGd6WEtOSytqcWpVZUJWdHVRcVJxeGRSblpnd0F0U0sxL2VoSDlHclFFTG56aVNIbUJLTkZ3elQ4NVFUY0ZBNFZyOFNXeFRMRERwSWkwdW4zcG5HU1BMRVJ5cVh5L05BQythaFdIbGhVZGlVMWlwTnhKZjFIVEVicXpVc2FUci8ySTgzYmNyejllV3BJcmlSL01XTEJCWFlwcURxUWZnN1pnemtPL3FGcmtoalFFYzZSQm1HUk1xV25oUFJRUXdIR3doamxHaU01eXVIK1pEc1hzL3ZyYTl0Tmx0eldhQllTNHI2Z3dSTmxLVTBOQWdLK011cTZDRFh3TWVpTk1sMXRWRFA3UktTUktFcmdEdUp3VTVoaDErcnZJU0crVHVPc1V4QnZrMHIyZ2k1QmxGd3hERThzZ1B2dVBDQU9IL3RnS3NCMlpsWTJzbXhneEU0QmJnbTYrZFNGbE9jWW1pUVdUYnJVYkh0TXIwcmd4SElRU0NDWUYwQ2ZaUkxrV09ldU09&trace_id=2c3fcb401c8a5bf09faf9dc175b56963/6315615852010907177

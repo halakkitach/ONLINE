@@ -1,45 +1,19 @@
-<pre>Array
-(
-    [data] => Array
-        (
-            [id] => 6685
-            [type] => livestreaming
-            [attributes] => Array
-                (
-                    [hls] => https://etslive-app.vidio.com/live/6685/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmovVDlNYmVObVdUWnVoMGpFVjkzdklyVWdoZXBob2NpbHcrOGRybC9ERnB0YWhwV2NJMXNocU9KY3I1SUpYRDVzOTNaSVBrY21veUlaTFNOTVlRSXRUazlzR1N4NERUVHc1cGRBRm5EQTBOZDVERDNvcjBuYUZVdzhYOTFoVk9zcHU1SzE0dGhPUVREY0pEbjU4UmhydDZsZ0lRaE12QkRIRFYyenZKK01SRUlxN0lxT0NPcURVMTBidWhGVk1HRW1seDBkQUJMTHBuYS9tdnlsRkloMm1vdGprRDY4NzNDRGZXQ3U4N1pUVWdCdGRSN2lZUTlDSmlxMkVqQUJXQm5kRDNncEdkamxxM3dkMmdpZ2pwYWxmTkl1dDNhOEovL3pUdHV0MmZXNVJOZUxDUG81dlZhaVFWZlA5MHB1aG5xeW5RSE1nTkxLejZMcEVKZDlFNTN2V1F1VmNZazcvcUZaVXdydDlyT3pBWHFJR0JMZ3UrQ21YK09acU4rN3g1d1kzNmlUWXNXVFB6VjBBZko1U1ZRYnZrMUhEa3B5dGpBMmFkUDQ3eWE2bUZ0LzJNY1F2S3VuNXNRa2JMMkxkYjE4OWhMemVkSWhIWGgwVkRnN0dSTlZtWURCTitjaXcvbHM5enhrT1RzVmdZWWJiU1hrMUU5anJJbHBQdTBDWHNSTnhTRi81a1pXSk9JSDBlcnZMR2FkQUM0Wk1MaktmN1ZLV2czaWh1b2Y4emE2RC9KVXM1RzNQR0puTjFLc0JTbUtGeHZIdGRMWk0vQXdLUmIvTVZhc2pSSVlkQjZvK0YzV2ZHZUV6OGpmV3BPeGZORmMrT0ZVWDVHUThFd2ZycnNLRmh1cVVXenVFU0h6Mk9qN0R4cncvNUpzK1BtSHdjeWJBSThGa0NRUDNRdS8zQUVRWFNGZUxpQlJpNFc4cUdJNnM2N2JibHFUWVkxSXVLWEcxdEtRQT09&trace_id=41201d13c2a7f668da680bff19784272/17132677036547564786
-                    [dash] => 
-                    [cdn] => akamai
-                    [geoblock_url] => https://geo-id-tl-media-vidio-com.akamaized.net/2x2.png
-                    [expires_in] => 14400
-                    [is_preview] => 
-                    [is_drm] => 
-                    [custom_data] => 
-                    [required_hdcp] => 
-                    [background_playback] => pip
-                    [dvr_enabled] => 
-                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=true&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F6685-champions-tv-1&cid=6685&cuu=vidiopremier&cuid=26094842&fld=false&cmg&ce=&cg=&cgp=Sports&cro=13%20or%20more&cur=internal_partner&cct&lst=sports
-                    [jailbreak_check] => 
-                    [resolution_mapping] => Array
-                        (
-                        )
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://etslive-2-vidio-com.akamaized.net/exp=1690270347~acl=/hls-p/ingest_6685_*/*~hmac=9a24b6127b960e0228068f9fafaf01717afd10eef9063325ed5cb6290647a5c2/hls-p/ingest_6685_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://etslive-2-vidio-com.akamaized.net/exp=1690270347~acl=/hls-p/ingest_6685_*/*~hmac=9a24b6127b960e0228068f9fafaf01717afd10eef9063325ed5cb6290647a5c2/hls-p/ingest_6685_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://etslive-2-vidio-com.akamaized.net/exp=1690270347~acl=/hls-p/ingest_6685_*/*~hmac=9a24b6127b960e0228068f9fafaf01717afd10eef9063325ed5cb6290647a5c2/hls-p/ingest_6685_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://etslive-2-vidio-com.akamaized.net/exp=1690270347~acl=/hls-p/ingest_6685_*/*~hmac=9a24b6127b960e0228068f9fafaf01717afd10eef9063325ed5cb6290647a5c2/hls-p/ingest_6685_240p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://etslive-2-vidio-com.akamaized.net/exp=1690270347~acl=/hls-b/ingest_6685_*/*~hmac=89726398dea453a92000c2b03e7884887c7e48cd5478b4db02ad2e02b6656da1/hls-b/ingest_6685_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://etslive-2-vidio-com.akamaized.net/exp=1690270347~acl=/hls-b/ingest_6685_*/*~hmac=89726398dea453a92000c2b03e7884887c7e48cd5478b4db02ad2e02b6656da1/hls-b/ingest_6685_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://etslive-2-vidio-com.akamaized.net/exp=1690270347~acl=/hls-b/ingest_6685_*/*~hmac=89726398dea453a92000c2b03e7884887c7e48cd5478b4db02ad2e02b6656da1/hls-b/ingest_6685_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://etslive-2-vidio-com.akamaized.net/exp=1690270347~acl=/hls-b/ingest_6685_*/*~hmac=89726398dea453a92000c2b03e7884887c7e48cd5478b4db02ad2e02b6656da1/hls-b/ingest_6685_240p/index.m3u8
 
-                )
-
-            [relationships] => Array
-                (
-                )
-
-            [links] => Array
-                (
-                    [watchpage] => https://www.vidio.com/live/6685-champions-tv-1
-                )
-
-            [meta] => Array
-                (
-                    [mux_reporting] => 
-                )
-
-        )
-
-)
-</pre>https://etslive-app.vidio.com/live/6685/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmovVDlNYmVObVdUWnVoMGpFVjkzdklyVWdoZXBob2NpbHcrOGRybC9ERnB0YWhwV2NJMXNocU9KY3I1SUpYRDVzOTNaSVBrY21veUlaTFNOTVlRSXRUazlzR1N4NERUVHc1cGRBRm5EQTBOZDVERDNvcjBuYUZVdzhYOTFoVk9zcHU1SzE0dGhPUVREY0pEbjU4UmhydDZsZ0lRaE12QkRIRFYyenZKK01SRUlxN0lxT0NPcURVMTBidWhGVk1HRW1seDBkQUJMTHBuYS9tdnlsRkloMm1vdGprRDY4NzNDRGZXQ3U4N1pUVWdCdGRSN2lZUTlDSmlxMkVqQUJXQm5kRDNncEdkamxxM3dkMmdpZ2pwYWxmTkl1dDNhOEovL3pUdHV0MmZXNVJOZUxDUG81dlZhaVFWZlA5MHB1aG5xeW5RSE1nTkxLejZMcEVKZDlFNTN2V1F1VmNZazcvcUZaVXdydDlyT3pBWHFJR0JMZ3UrQ21YK09acU4rN3g1d1kzNmlUWXNXVFB6VjBBZko1U1ZRYnZrMUhEa3B5dGpBMmFkUDQ3eWE2bUZ0LzJNY1F2S3VuNXNRa2JMMkxkYjE4OWhMemVkSWhIWGgwVkRnN0dSTlZtWURCTitjaXcvbHM5enhrT1RzVmdZWWJiU1hrMUU5anJJbHBQdTBDWHNSTnhTRi81a1pXSk9JSDBlcnZMR2FkQUM0Wk1MaktmN1ZLV2czaWh1b2Y4emE2RC9KVXM1RzNQR0puTjFLc0JTbUtGeHZIdGRMWk0vQXdLUmIvTVZhc2pSSVlkQjZvK0YzV2ZHZUV6OGpmV3BPeGZORmMrT0ZVWDVHUThFd2ZycnNLRmh1cVVXenVFU0h6Mk9qN0R4cncvNUpzK1BtSHdjeWJBSThGa0NRUDNRdS8zQUVRWFNGZUxpQlJpNFc4cUdJNnM2N2JibHFUWVkxSXVLWEcxdEtRQT09&trace_id=41201d13c2a7f668da680bff19784272/17132677036547564786

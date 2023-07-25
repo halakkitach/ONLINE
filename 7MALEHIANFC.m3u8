@@ -1,45 +1,23 @@
-<pre>Array
-(
-    [data] => Array
-        (
-            [id] => 7916
-            [type] => livestreaming
-            [attributes] => Array
-                (
-                    [hls] => https://etslive-app.vidio.com/live/7916/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmdCbVRadEFJU0k5QW5tWVloL0RqUHBwdXNScU9lRGExNHFRMjZBcmxLVFJpbnlrT28wYW9IRXJyc1dCaGRiOFA2QnVBNUg1TXN5bmNWcG5VbXlTNmFabmQ3aHdhcTVDWE1IQ1o0TkZwTlFXRUJEZFBkV3hOWWp4aUhGQUFVeHVDR2tHdzM0MTFhTDdQaUVpU2ZYaS92ZFhLbU9Ga2lkZmdydzhJL3o4VDBaTzdGNVhNb1lxMk0zMVQ4MUEyMmhwN0cxS1ZGeWI2cE1CSFBBUU1RbkRtN2RhakFUUldHRWRxZ0w3QWRISGQ0dldoUnVFcDlmM0QwS3V5RjFmQ01ISnZTdU10TWVCRlFlOXdHbE5MM0N1UlJKNndBM2JxLzA5dVhGYVRodHNUZWxPY3FreDRadzduRm5FbXJwTmszdCtYUWZsOC9oalNUNTJiZjVQNnpBeXJjbUJVcXp1clZheXkzN01QdmQ2UFlxR2VyRmJ5SlMwOXdrampyTFZkNTVVekF6WXREY0o3czhCc3d3c3gvTFJrbk82dmFXZis5Rk1Hd090T2JHZnA5bi9GQVNVSFVycC9OYzRLbUNabGRUQStua3NFaHFBdzdrNEwzcFlKNHFpTlViSk14QmdvNW04ZmJneDQ5UWZnaDdJRWM3WFBwbmFMK1dBbGo4UW1BVUpmWnRMeDRoSGw5NzF4RDRob1llZ29ycGJQejJKbGVDdmJSN1FtakN5Q1FwenU3Q2tpcnZ3ZzV0aUF2dGY4cktqSkNTZ3U4cEtmZk4xcHNwWE5PaWMrUnFLYUtkeXhISHNPbDlVNVEvVEZYeExzWTcrZGxEOTNjRXdadEVqb2NBZng1djNkckZDMU5sS2hSZjNBaExYektWYTc0NTJHUktzb3AyT0w3VmxvUlFaMzdFTld6M1l4VHREV2dHUVhBU3BhUmF4cnlTeXl0Z01mWVpEVHNyYWI3V1A4M2RhMG54d0xaY0hhbjkrU3pZRUVpMVB5T1U0NjlEL2V0L3pmbXRJTCs3L1hJL3hkMGpOYkNodFdjUkpyNzRnc2JVSXZBa0VJTUJCa3dncmR0clk9&trace_id=5779f470a95575de751e50a8c68e62c5/18210519679555469097
-                    [dash] => 
-                    [cdn] => swiftserve
-                    [geoblock_url] => https://geo-id-media-vidio-com.akamaized.net/2x2.png
-                    [expires_in] => 14400
-                    [is_preview] => 
-                    [is_drm] => 
-                    [custom_data] => 
-                    [required_hdcp] => 
-                    [background_playback] => pip
-                    [dvr_enabled] => 1
-                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=true&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F7916-liverpool-tv&cid=7916&cuu=vidiopremier&cuid=26094842&fld=false&cmg&ce=&cg=&cgp=Sports&cro=&cur=internal_partner&cct&lst=sports
-                    [jailbreak_check] => 
-                    [resolution_mapping] => Array
-                        (
-                        )
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=2500000,NAME=1080p,RESOLUTION=1920x1080
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-p/ingest_7916_*/*~hmac=2dc750a99fe58b3281951b6ccef516997a0b6ad1b99b3bbd7eb2457b71a81a23/hls-p/ingest_7916_1080p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-p/ingest_7916_*/*~hmac=2dc750a99fe58b3281951b6ccef516997a0b6ad1b99b3bbd7eb2457b71a81a23/hls-p/ingest_7916_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-p/ingest_7916_*/*~hmac=2dc750a99fe58b3281951b6ccef516997a0b6ad1b99b3bbd7eb2457b71a81a23/hls-p/ingest_7916_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-p/ingest_7916_*/*~hmac=2dc750a99fe58b3281951b6ccef516997a0b6ad1b99b3bbd7eb2457b71a81a23/hls-p/ingest_7916_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-p/ingest_7916_*/*~hmac=2dc750a99fe58b3281951b6ccef516997a0b6ad1b99b3bbd7eb2457b71a81a23/hls-p/ingest_7916_240p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=2500000,NAME=1080p,RESOLUTION=1920x1080
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-b/ingest_7916_*/*~hmac=ac6c9764ddea7a3c667f0853027b3050a84649fed0b55741d0be1bba2b0beafd/hls-b/ingest_7916_1080p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-b/ingest_7916_*/*~hmac=ac6c9764ddea7a3c667f0853027b3050a84649fed0b55741d0be1bba2b0beafd/hls-b/ingest_7916_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-b/ingest_7916_*/*~hmac=ac6c9764ddea7a3c667f0853027b3050a84649fed0b55741d0be1bba2b0beafd/hls-b/ingest_7916_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-b/ingest_7916_*/*~hmac=ac6c9764ddea7a3c667f0853027b3050a84649fed0b55741d0be1bba2b0beafd/hls-b/ingest_7916_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://live-production.secureswiftcontent.com/exp=1690270389~acl=/hls-b/ingest_7916_*/*~hmac=ac6c9764ddea7a3c667f0853027b3050a84649fed0b55741d0be1bba2b0beafd/hls-b/ingest_7916_240p/index.m3u8
 
-                )
-
-            [relationships] => Array
-                (
-                )
-
-            [links] => Array
-                (
-                    [watchpage] => https://www.vidio.com/live/7916-liverpool-tv
-                )
-
-            [meta] => Array
-                (
-                    [mux_reporting] => 
-                )
-
-        )
-
-)
-</pre>https://etslive-app.vidio.com/live/7916/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmdCbVRadEFJU0k5QW5tWVloL0RqUHBwdXNScU9lRGExNHFRMjZBcmxLVFJpbnlrT28wYW9IRXJyc1dCaGRiOFA2QnVBNUg1TXN5bmNWcG5VbXlTNmFabmQ3aHdhcTVDWE1IQ1o0TkZwTlFXRUJEZFBkV3hOWWp4aUhGQUFVeHVDR2tHdzM0MTFhTDdQaUVpU2ZYaS92ZFhLbU9Ga2lkZmdydzhJL3o4VDBaTzdGNVhNb1lxMk0zMVQ4MUEyMmhwN0cxS1ZGeWI2cE1CSFBBUU1RbkRtN2RhakFUUldHRWRxZ0w3QWRISGQ0dldoUnVFcDlmM0QwS3V5RjFmQ01ISnZTdU10TWVCRlFlOXdHbE5MM0N1UlJKNndBM2JxLzA5dVhGYVRodHNUZWxPY3FreDRadzduRm5FbXJwTmszdCtYUWZsOC9oalNUNTJiZjVQNnpBeXJjbUJVcXp1clZheXkzN01QdmQ2UFlxR2VyRmJ5SlMwOXdrampyTFZkNTVVekF6WXREY0o3czhCc3d3c3gvTFJrbk82dmFXZis5Rk1Hd090T2JHZnA5bi9GQVNVSFVycC9OYzRLbUNabGRUQStua3NFaHFBdzdrNEwzcFlKNHFpTlViSk14QmdvNW04ZmJneDQ5UWZnaDdJRWM3WFBwbmFMK1dBbGo4UW1BVUpmWnRMeDRoSGw5NzF4RDRob1llZ29ycGJQejJKbGVDdmJSN1FtakN5Q1FwenU3Q2tpcnZ3ZzV0aUF2dGY4cktqSkNTZ3U4cEtmZk4xcHNwWE5PaWMrUnFLYUtkeXhISHNPbDlVNVEvVEZYeExzWTcrZGxEOTNjRXdadEVqb2NBZng1djNkckZDMU5sS2hSZjNBaExYektWYTc0NTJHUktzb3AyT0w3VmxvUlFaMzdFTld6M1l4VHREV2dHUVhBU3BhUmF4cnlTeXl0Z01mWVpEVHNyYWI3V1A4M2RhMG54d0xaY0hhbjkrU3pZRUVpMVB5T1U0NjlEL2V0L3pmbXRJTCs3L1hJL3hkMGpOYkNodFdjUkpyNzRnc2JVSXZBa0VJTUJCa3dncmR0clk9&trace_id=5779f470a95575de751e50a8c68e62c5/18210519679555469097

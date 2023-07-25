@@ -1,45 +1,19 @@
-<pre>Array
-(
-    [data] => Array
-        (
-            [id] => 204
-            [type] => livestreaming
-            [attributes] => Array
-                (
-                    [hls] => https://etslive-app.vidio.com/live/204/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdkpxbHVJOW5XaTlPR2w2Q2lzM3R6ekh6OFY5a2VjQXJJV1d4bGc5OVNoZ0dlc0UyR3Z2OTVyaHRXR1gwbnRzK1dQL3NIOU1QL1kxN0FjUmsxdzIzNnphMGEvTHZ1OWt3cFlZNnNBeTkrQVEzckxlRU50Nm9GNmtJMityOUJQQmZCUUFNZzRrT0xKNHlTS0l4VXhaaUYyK1RaLzljQnlRd1pOSHZ2WHdJMzNYc2g0Tm4zR0JmcHN4UnFIZ2VxNW5oQ1lCVHVyRHVWaU9FdEpDeHU2OEt5cDd2bStYRzAzUmZSRUN5VERBeVIvalF5Z05DMis2UmhjNVlDMVFwQzVaTTlKMThHVHA2OGd3WWo3b2tsYVhCNHZUYTErWGUrWlJHYmk4TUdIaVJCcUltdS9qblZEWDVJVC9qRk9XNG9VZUl0TEZIdE9Xa3pZM0lFdEk1OGRyQk9JanJLdDVZOVlqZEdwSVB4NXpHdkN3T1lNd2hBVkE4MU4yN2NxT3lMY1JzZDJmTFdKdGxtd2FmSmhhdWo2MjFjZ1JtNjJGWUJKZFZpd1Y0NVFZSWNpRFRSY25xMVZGNnBkZ1NNdjVrUENmYTgxdi9MUzR2aVlKMFMxSzE4b252WmJyek96Wm1WN3pVRkxtRWo4V3dMZC9hajBxZUVnTVZYNHJUMm54cFhyaGcrcXV3MWsxbTlwWXFMc1ZDTC9zWWxFOEV3V0lwVXdKamFJS3A5WU5RUUhPYmtQbEFKanN5OG92amlLTlNjUmYxMU8wL0swd2FiYy90eDI1bUl5UXFLaWl2YmhpSUo0OGFDNWx5bzdnMzlvMjhINmlaWTAyV0lzT2hVMm51Z0tkYWJuR0FwTm5PSUNwNnB1bmdqUHNQQTVWUkxmSDJuaFBCSVEweld0VllqeGlFYVc2OHY0TkNBVXJSSHQ5YXN6M1BW&trace_id=fa32610160c533fa98133dd52e4caa02/7327208154836395981
-                    [dash] => 
-                    [cdn] => akamai
-                    [geoblock_url] => 
-                    [expires_in] => 14400
-                    [is_preview] => 
-                    [is_drm] => 
-                    [custom_data] => 
-                    [required_hdcp] => 
-                    [background_playback] => pip
-                    [dvr_enabled] => 
-                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=false&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F204-sctv&cid=204&cuu=sctv&cuid=4&fld=false&cmg&ce=&cg=&cgp&cro=13%20or%20more&cur=internal_partner&cct&lst=entertainment%2Cindonesia-entertainmen-produksi
-                    [jailbreak_check] => 
-                    [resolution_mapping] => Array
-                        (
-                        )
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://etslive-2-vidio-com.akamaized.net/exp=1690270327~acl=/hls-p/ingest_204_*/*~hmac=4742d5333f0b9f1da42c2876b96f7d0274149e0a6fa9296bbc4083e4fc9e55ae/hls-p/ingest_204_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://etslive-2-vidio-com.akamaized.net/exp=1690270327~acl=/hls-p/ingest_204_*/*~hmac=4742d5333f0b9f1da42c2876b96f7d0274149e0a6fa9296bbc4083e4fc9e55ae/hls-p/ingest_204_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://etslive-2-vidio-com.akamaized.net/exp=1690270327~acl=/hls-p/ingest_204_*/*~hmac=4742d5333f0b9f1da42c2876b96f7d0274149e0a6fa9296bbc4083e4fc9e55ae/hls-p/ingest_204_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://etslive-2-vidio-com.akamaized.net/exp=1690270327~acl=/hls-p/ingest_204_*/*~hmac=4742d5333f0b9f1da42c2876b96f7d0274149e0a6fa9296bbc4083e4fc9e55ae/hls-p/ingest_204_240p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://etslive-2-vidio-com.akamaized.net/exp=1690270327~acl=/hls-b/ingest_204_*/*~hmac=6f42d64d8e378ccae34c21ce8b5c6a7cbe81dd21c5d2a54cb6f25748142cf9f2/hls-b/ingest_204_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://etslive-2-vidio-com.akamaized.net/exp=1690270327~acl=/hls-b/ingest_204_*/*~hmac=6f42d64d8e378ccae34c21ce8b5c6a7cbe81dd21c5d2a54cb6f25748142cf9f2/hls-b/ingest_204_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://etslive-2-vidio-com.akamaized.net/exp=1690270327~acl=/hls-b/ingest_204_*/*~hmac=6f42d64d8e378ccae34c21ce8b5c6a7cbe81dd21c5d2a54cb6f25748142cf9f2/hls-b/ingest_204_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://etslive-2-vidio-com.akamaized.net/exp=1690270327~acl=/hls-b/ingest_204_*/*~hmac=6f42d64d8e378ccae34c21ce8b5c6a7cbe81dd21c5d2a54cb6f25748142cf9f2/hls-b/ingest_204_240p/index.m3u8
 
-                )
-
-            [relationships] => Array
-                (
-                )
-
-            [links] => Array
-                (
-                    [watchpage] => https://www.vidio.com/live/204-sctv
-                )
-
-            [meta] => Array
-                (
-                    [mux_reporting] => 
-                )
-
-        )
-
-)
-</pre>https://etslive-app.vidio.com/live/204/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdkpxbHVJOW5XaTlPR2w2Q2lzM3R6ekh6OFY5a2VjQXJJV1d4bGc5OVNoZ0dlc0UyR3Z2OTVyaHRXR1gwbnRzK1dQL3NIOU1QL1kxN0FjUmsxdzIzNnphMGEvTHZ1OWt3cFlZNnNBeTkrQVEzckxlRU50Nm9GNmtJMityOUJQQmZCUUFNZzRrT0xKNHlTS0l4VXhaaUYyK1RaLzljQnlRd1pOSHZ2WHdJMzNYc2g0Tm4zR0JmcHN4UnFIZ2VxNW5oQ1lCVHVyRHVWaU9FdEpDeHU2OEt5cDd2bStYRzAzUmZSRUN5VERBeVIvalF5Z05DMis2UmhjNVlDMVFwQzVaTTlKMThHVHA2OGd3WWo3b2tsYVhCNHZUYTErWGUrWlJHYmk4TUdIaVJCcUltdS9qblZEWDVJVC9qRk9XNG9VZUl0TEZIdE9Xa3pZM0lFdEk1OGRyQk9JanJLdDVZOVlqZEdwSVB4NXpHdkN3T1lNd2hBVkE4MU4yN2NxT3lMY1JzZDJmTFdKdGxtd2FmSmhhdWo2MjFjZ1JtNjJGWUJKZFZpd1Y0NVFZSWNpRFRSY25xMVZGNnBkZ1NNdjVrUENmYTgxdi9MUzR2aVlKMFMxSzE4b252WmJyek96Wm1WN3pVRkxtRWo4V3dMZC9hajBxZUVnTVZYNHJUMm54cFhyaGcrcXV3MWsxbTlwWXFMc1ZDTC9zWWxFOEV3V0lwVXdKamFJS3A5WU5RUUhPYmtQbEFKanN5OG92amlLTlNjUmYxMU8wL0swd2FiYy90eDI1bUl5UXFLaWl2YmhpSUo0OGFDNWx5bzdnMzlvMjhINmlaWTAyV0lzT2hVMm51Z0tkYWJuR0FwTm5PSUNwNnB1bmdqUHNQQTVWUkxmSDJuaFBCSVEweld0VllqeGlFYVc2OHY0TkNBVXJSSHQ5YXN6M1BW&trace_id=fa32610160c533fa98133dd52e4caa02/7327208154836395981

@@ -1,45 +1,13 @@
-<pre>Array
-(
-    [data] => Array
-        (
-            [id] => 12607
-            [type] => livestreaming
-            [attributes] => Array
-                (
-                    [hls] => https://etslive-app.vidio.com/live/12607/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmNFeUoybmh6SnpzRTR3WkJkVU54SnNYQzhBODR6SllOVnNxZEQvZ1dkeGN3Rnppam5qenIraENIV1VEenE4cERxOE03RzI5bmhKblJqUVB6N2kxM2RxNnFNV3AvSXFob2taRTVWREtVTzBxM0tCV0pZV3lKM0dXYWdyTTUraXdCTis0Sy96NzVwSWlLQ2lCUHZ6RWZYN3Y5L0FIQWtPRldjUW00Rjk1VTRBeHZLU25UZ0ZEWHBpL0lGQUZHTS9rZHBUUFRZUjNqL0w2aGtTL2dNUkhCa29WOS9qUmRlZHdhcG1JOEMzT1dSdlc5UXp6eGpxMVJhR3RZc3lCUWZmM0d3Rk41UXFNVDFOTEkxUDBkQ0tvNlltd1ZwT1M1bnBYekJ5K1VaRVdFZlc5dWp5eDNDRjZFZ3hGMDA5MkFtUmN6YkZUVzJuWU41L2toQ05hd205R1JFQzFGdFhvc1BHWEZiVDlKSTdTZ0IyaEgrMldoVTh2MEpqSHlKZVdLQXNuaitBVGhObm9WemVzMW5oOUcyaDllZkpOSW1rd2k2YVp2enZnZzR0NS8xZGYrK04ybGE0MlNra0wxTjFsWE5pQmIrOHJBeWU0RktyODd4TWc1MGVQN1JvMkhBTzlkUzVOamlBQkt5TFpieWR5NkxFZGU2TnhZaDdZdGVEK2VhdHNXMXVsckYvK1B1SXk1blFBWTVWZFhWUlFsVC9kVjBlNDdEanJkaEhhVTRsSi9aMk9WRE11ZnM1L3NnUEhOemdVRFE1ZDFnK0ttREZCcWR5VVdWMVRWYitrejgvYmM1V3NIOFcvdEtaSjFzL2l2TmMzb1JBNFdGYjBnWXlOdXgxUmpTSGJxcFl1V1g0S3E2RmdXRm5HOFRseHpIczBCUGlpRnd1NFVvNWNoa1pKK0ZiblU4WVRFVEE4eHFndEoxUm1Pc280N3N1R3djOUhKcDBWQW93MXlZNFJFZFVOQityT2dISkVMdFpjMXdRRk5JVExGay9PSDBua2xJUkRORldFV1BJaGN1cC9DZ1FRaG1VeE03UGR0RC9BbWN6N2dlVjBwMjVuenNFcHpRT0E9&trace_id=0c911360f179a4783900a497d8f2e80b/3376442913295744571
-                    [dash] => 
-                    [cdn] => swiftserve
-                    [geoblock_url] => 
-                    [expires_in] => 14400
-                    [is_preview] => 
-                    [is_drm] => 
-                    [custom_data] => 
-                    [required_hdcp] => 
-                    [background_playback] => pip
-                    [dvr_enabled] => 
-                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=false&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F12607-tawaf-tv&cid=12607&cuu=tawaftv&cuid=31334652&fld=false&cmg&ce=&cg=&cgp&cro=&cur=external_partner&cct&lst=religi
-                    [jailbreak_check] => 
-                    [resolution_mapping] => Array
-                        (
-                        )
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=2500000,NAME=1080p,RESOLUTION=1920x1080
+https://live-production.secureswiftcontent.com/exp=1690270367~acl=/hls-p/ingest_12607_*/*~hmac=ce4ee35c435f6a7a183eedb9f03e4bacd5ac2f715b720b9963b055f20543fdef/hls-p/ingest_12607_1080p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://live-production.secureswiftcontent.com/exp=1690270367~acl=/hls-p/ingest_12607_*/*~hmac=ce4ee35c435f6a7a183eedb9f03e4bacd5ac2f715b720b9963b055f20543fdef/hls-p/ingest_12607_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://live-production.secureswiftcontent.com/exp=1690270367~acl=/hls-p/ingest_12607_*/*~hmac=ce4ee35c435f6a7a183eedb9f03e4bacd5ac2f715b720b9963b055f20543fdef/hls-p/ingest_12607_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://live-production.secureswiftcontent.com/exp=1690270367~acl=/hls-p/ingest_12607_*/*~hmac=ce4ee35c435f6a7a183eedb9f03e4bacd5ac2f715b720b9963b055f20543fdef/hls-p/ingest_12607_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://live-production.secureswiftcontent.com/exp=1690270367~acl=/hls-p/ingest_12607_*/*~hmac=ce4ee35c435f6a7a183eedb9f03e4bacd5ac2f715b720b9963b055f20543fdef/hls-p/ingest_12607_240p/index.m3u8
 
-                )
-
-            [relationships] => Array
-                (
-                )
-
-            [links] => Array
-                (
-                    [watchpage] => https://www.vidio.com/live/12607-tawaf-tv
-                )
-
-            [meta] => Array
-                (
-                    [mux_reporting] => 
-                )
-
-        )
-
-)
-</pre>https://etslive-app.vidio.com/live/12607/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdmNFeUoybmh6SnpzRTR3WkJkVU54SnNYQzhBODR6SllOVnNxZEQvZ1dkeGN3Rnppam5qenIraENIV1VEenE4cERxOE03RzI5bmhKblJqUVB6N2kxM2RxNnFNV3AvSXFob2taRTVWREtVTzBxM0tCV0pZV3lKM0dXYWdyTTUraXdCTis0Sy96NzVwSWlLQ2lCUHZ6RWZYN3Y5L0FIQWtPRldjUW00Rjk1VTRBeHZLU25UZ0ZEWHBpL0lGQUZHTS9rZHBUUFRZUjNqL0w2aGtTL2dNUkhCa29WOS9qUmRlZHdhcG1JOEMzT1dSdlc5UXp6eGpxMVJhR3RZc3lCUWZmM0d3Rk41UXFNVDFOTEkxUDBkQ0tvNlltd1ZwT1M1bnBYekJ5K1VaRVdFZlc5dWp5eDNDRjZFZ3hGMDA5MkFtUmN6YkZUVzJuWU41L2toQ05hd205R1JFQzFGdFhvc1BHWEZiVDlKSTdTZ0IyaEgrMldoVTh2MEpqSHlKZVdLQXNuaitBVGhObm9WemVzMW5oOUcyaDllZkpOSW1rd2k2YVp2enZnZzR0NS8xZGYrK04ybGE0MlNra0wxTjFsWE5pQmIrOHJBeWU0RktyODd4TWc1MGVQN1JvMkhBTzlkUzVOamlBQkt5TFpieWR5NkxFZGU2TnhZaDdZdGVEK2VhdHNXMXVsckYvK1B1SXk1blFBWTVWZFhWUlFsVC9kVjBlNDdEanJkaEhhVTRsSi9aMk9WRE11ZnM1L3NnUEhOemdVRFE1ZDFnK0ttREZCcWR5VVdWMVRWYitrejgvYmM1V3NIOFcvdEtaSjFzL2l2TmMzb1JBNFdGYjBnWXlOdXgxUmpTSGJxcFl1V1g0S3E2RmdXRm5HOFRseHpIczBCUGlpRnd1NFVvNWNoa1pKK0ZiblU4WVRFVEE4eHFndEoxUm1Pc280N3N1R3djOUhKcDBWQW93MXlZNFJFZFVOQityT2dISkVMdFpjMXdRRk5JVExGay9PSDBua2xJUkRORldFV1BJaGN1cC9DZ1FRaG1VeE03UGR0RC9BbWN6N2dlVjBwMjVuenNFcHpRT0E9&trace_id=0c911360f179a4783900a497d8f2e80b/3376442913295744571

@@ -1,45 +1,11 @@
-<pre>Array
-(
-    [data] => Array
-        (
-            [id] => 6482
-            [type] => livestreaming
-            [attributes] => Array
-                (
-                    [hls] => https://etslive-app.vidio.com/live/6482/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdi91SHNKTzlLNzF6YlpUMm4rYUUwZStoMWtZU3FQZDVlVDNlaStpZ2E1ZjMza1U1OUpKUkE3NGtScjd3V242WERsSlYxSmFqUEJ5cElxaXR5b2hRMVpuSTROUzVBbzhLTytMa1ZhRWh3OGdXT1pJd3c0dm5ueE1McVcxRGluMkpWTTR4TmtSRE1LbVFISXpGS3hSMVhPNzVZRkRZODloaGZoY1k3aWlJSGo5dkV5K2tWQVo1NlVOWGIzVTRYdFJ3ZmVFTjVSV2tXeVk5M1RHdXM5ZXhDOEtkSXZYbE1pNEoyamQvYld4NXFLYWc0dCtEZ0dsTXM1M0ZwS0tEUzY3SlpLWjZVTXlheG9sTnFnSThpNThSYkRvbnl5b0pSVEFCQkNENlZsUWRVSGJzYW94NTZPcFlzK2gwRlJVbmdINDB5V1F6ck05NzNZYy8wZlI5eW0xSW1aNkpuQTd1T3R6cnBIZlFvcDM3Smp4WTV0RkZUK2RjTzZScE1vdU9pSUhJSzZvd0FQNDVBeHZCN2lyaVh2UEc0TlkrU0d3c2xwN3VQR2lpVWRnWFdWZThXRWRDdmNJUU00THBuYWlQdEFXa3pnQ0F5V3U4T3JsVU5Va24zZTJtZkZiOUo4NG9qSmhEMlIzR0F6RXNteTErZFFHMjJ4RWVoS0RIV2tHYW8za1QxZmwxQUtTd1B0RFkyVXpqdjJvbUpBcDF1NHhxUDE5OE5yK3JZakdHN3FhMmJ5TzNlMG1CeER0dFViK3VZTCtQUkVEUC8veVk0NzhFUjNYMzBWRUc5Mmg0Yy81bHlLQkNaOFlvT0tQVVI2TzAyVVpvWUZwUTduNWJLSFNTMkJEdWZmMlpNS0pIdExPdVFhWCtvbHF5ejF4Qit6czdueHF0QVdqL2FIWkFnSCtqTVRXeDZiRHpmeStyNWdmRlN1SzI5SSt6YTh4ZEFJK01tUmFIMlBOSUdFOGlTSkE2U0pSOFlvczRqci9ibmQ2VU5aNkxBTEtmMmxvQzZndVIzZk54YUFXWFNaWkRuZDBMd21Ya3UyK1pzRXJtODJvejcrQXNlNnhuSUxNM1E2bWc9&trace_id=8beaadcdb64e2354e91e260b089371c0/18128472486033505773
-                    [dash] => 
-                    [cdn] => swiftserve
-                    [geoblock_url] => 
-                    [expires_in] => 14400
-                    [is_preview] => 
-                    [is_drm] => 
-                    [custom_data] => 
-                    [required_hdcp] => 
-                    [background_playback] => pip
-                    [dvr_enabled] => 
-                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=false&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F6482-daai-tv&cid=6482&cuu=daaitvindonesia&cuid=29400664&fld=false&cmg&ce=&cg=&cgp&cro=&cur=external_partner&cct&lst=
-                    [jailbreak_check] => 
-                    [resolution_mapping] => Array
-                        (
-                        )
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://live-production.secureswiftcontent.com/exp=1690270319~acl=/hls-p/ingest_6482_*/*~hmac=5884bab5b288971e6b13f5a6dc2ee25e957166ce07aad17efffd62952fd67129/hls-p/ingest_6482_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://live-production.secureswiftcontent.com/exp=1690270319~acl=/hls-p/ingest_6482_*/*~hmac=5884bab5b288971e6b13f5a6dc2ee25e957166ce07aad17efffd62952fd67129/hls-p/ingest_6482_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://live-production.secureswiftcontent.com/exp=1690270319~acl=/hls-p/ingest_6482_*/*~hmac=5884bab5b288971e6b13f5a6dc2ee25e957166ce07aad17efffd62952fd67129/hls-p/ingest_6482_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://live-production.secureswiftcontent.com/exp=1690270319~acl=/hls-p/ingest_6482_*/*~hmac=5884bab5b288971e6b13f5a6dc2ee25e957166ce07aad17efffd62952fd67129/hls-p/ingest_6482_240p/index.m3u8
 
-                )
-
-            [relationships] => Array
-                (
-                )
-
-            [links] => Array
-                (
-                    [watchpage] => https://www.vidio.com/live/6482-daai-tv
-                )
-
-            [meta] => Array
-                (
-                    [mux_reporting] => 
-                )
-
-        )
-
-)
-</pre>https://etslive-app.vidio.com/live/6482/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdi91SHNKTzlLNzF6YlpUMm4rYUUwZStoMWtZU3FQZDVlVDNlaStpZ2E1ZjMza1U1OUpKUkE3NGtScjd3V242WERsSlYxSmFqUEJ5cElxaXR5b2hRMVpuSTROUzVBbzhLTytMa1ZhRWh3OGdXT1pJd3c0dm5ueE1McVcxRGluMkpWTTR4TmtSRE1LbVFISXpGS3hSMVhPNzVZRkRZODloaGZoY1k3aWlJSGo5dkV5K2tWQVo1NlVOWGIzVTRYdFJ3ZmVFTjVSV2tXeVk5M1RHdXM5ZXhDOEtkSXZYbE1pNEoyamQvYld4NXFLYWc0dCtEZ0dsTXM1M0ZwS0tEUzY3SlpLWjZVTXlheG9sTnFnSThpNThSYkRvbnl5b0pSVEFCQkNENlZsUWRVSGJzYW94NTZPcFlzK2gwRlJVbmdINDB5V1F6ck05NzNZYy8wZlI5eW0xSW1aNkpuQTd1T3R6cnBIZlFvcDM3Smp4WTV0RkZUK2RjTzZScE1vdU9pSUhJSzZvd0FQNDVBeHZCN2lyaVh2UEc0TlkrU0d3c2xwN3VQR2lpVWRnWFdWZThXRWRDdmNJUU00THBuYWlQdEFXa3pnQ0F5V3U4T3JsVU5Va24zZTJtZkZiOUo4NG9qSmhEMlIzR0F6RXNteTErZFFHMjJ4RWVoS0RIV2tHYW8za1QxZmwxQUtTd1B0RFkyVXpqdjJvbUpBcDF1NHhxUDE5OE5yK3JZakdHN3FhMmJ5TzNlMG1CeER0dFViK3VZTCtQUkVEUC8veVk0NzhFUjNYMzBWRUc5Mmg0Yy81bHlLQkNaOFlvT0tQVVI2TzAyVVpvWUZwUTduNWJLSFNTMkJEdWZmMlpNS0pIdExPdVFhWCtvbHF5ejF4Qit6czdueHF0QVdqL2FIWkFnSCtqTVRXeDZiRHpmeStyNWdmRlN1SzI5SSt6YTh4ZEFJK01tUmFIMlBOSUdFOGlTSkE2U0pSOFlvczRqci9ibmQ2VU5aNkxBTEtmMmxvQzZndVIzZk54YUFXWFNaWkRuZDBMd21Ya3UyK1pzRXJtODJvejcrQXNlNnhuSUxNM1E2bWc9&trace_id=8beaadcdb64e2354e91e260b089371c0/18128472486033505773

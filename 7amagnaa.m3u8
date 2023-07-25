@@ -1,45 +1,11 @@
-<pre>Array
-(
-    [data] => Array
-        (
-            [id] => 7432
-            [type] => livestreaming
-            [attributes] => Array
-                (
-                    [hls] => https://etslive-app.vidio.com/live/7432/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdlNybzRZTnpiS0JsRENnWWticFRYaWZqOXpWRXlPN1RCYWdLRHUxMjdBVjBaU3ErSG1tOTZsVDVUUVV4RHhHSjJDTS9uODJjdzdhdlZpd2FMYjhxbGVaWU9KRGxPanpFakIvdU1HTjExNWEyb0l5ZG90NWVNd1JIcDZlaEZROEI2MmxNaHBDMlJISzZSamNaT3hWOTFrOXpxWXlTVUQ5NUFSZmh0YWk4VUxMTzRGSWJQS1FPSFp1SWNYMXR4MVcxaTFianhPYUpJM29ZMHpZZWpzTWpXcTljNllmNnJDNi9zYnNDdzZBL1liemFUUGU1bFQ0c05UV0dFVUxZNjE4YXNaZk8yQkdCVWlzK3UyVzJkSHJjSE9GRFdYcytURUw3ZFlzcnRzcDZvNVFFY0l1bkNRQ1M5TVFXR0wxUEpHWkhnMmJTQnU3NGFUR0VWdjQyT3YvdVBydnEzd0hFYzN0am45TS9XU2NQR2UwMDZQTmQvU2RQTldzMllwR1g4TWIrekxuY05aTVNBQmhJZEorUDd4d1J4THE3d3pocUVjaExKbTRhY0Rac1MwYmZnc3M2ODg0NHBramd2K0U4N0RnRnFvVU1MUFBBY3FXeVBNRkJML2h1VWxqdmxZYzZGV2Z1OWdxTVhZTklnVTlPVnVhRmh3aEozckRRM1g0em0rNzRZN2RJU1J5RWJPZ0Q5eGZvUlJlZG1oVm40QWF3U3REYTcxczdoaDlNVXJFYUJJUTU3Rk1ZcURoQ3UvMXlobnczRytnOE9OcHNNU2d1RVBYVEsreWhqVjZKNkRiUjJoR3JMRGZJTWgxMTFtQTBzam5KWnYreVRyN1NHMDZlTEtrVFExV3NnNExsZXg1RTQ4SjMzRUpYOTVZbSt3NDE2Y3I4bXlGeTZ1K3BFNldxbXVydFYvRjRMUnhyU1k4Q2VWZnZvTFZpczltK0k0b2ZSdnF5Mk90dHdxU2FBMWJTUTNucEtlMWJacGx0Y0t0SkgxWEM1bXB0bTlvZkl1VG5uUnhTL2xYcUVuMGRic3Z0bGZyVkM1NUh4UTU5N2NzOGEyRDY3SkQ4QkdrcEsyT0U9&trace_id=6b47730ad4fbf858b4431eeb69a249c8/7117857823901991890
-                    [dash] => 
-                    [cdn] => swiftserve
-                    [geoblock_url] => 
-                    [expires_in] => 14400
-                    [is_preview] => 
-                    [is_drm] => 
-                    [custom_data] => 
-                    [required_hdcp] => 
-                    [background_playback] => pip
-                    [dvr_enabled] => 
-                    [ads_tag_uri] => https://hermes.vidio.com/api/tags?cp=false&ct=Livestreaming&durl=https%3A%2F%2Fwww.vidio.com%2Flive%2F7432-nusantara-tv&cid=7432&cuu=nusantaratv&cuid=412122&fld=false&cmg&ce=&cg=&cgp&cro=&cur=external_partner&cct&lst=
-                    [jailbreak_check] => 
-                    [resolution_mapping] => Array
-                        (
-                        )
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://live-production.secureswiftcontent.com/exp=1690270331~acl=/hls-p/ingest_7432_*/*~hmac=db47ed87fd2b11e7fdaea6f66dac6c6b81cac3a5ea9e83c451a05b459c2c469b/hls-p/ingest_7432_720p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1200000,NAME=480p,RESOLUTION=854x480
+https://live-production.secureswiftcontent.com/exp=1690270331~acl=/hls-p/ingest_7432_*/*~hmac=db47ed87fd2b11e7fdaea6f66dac6c6b81cac3a5ea9e83c451a05b459c2c469b/hls-p/ingest_7432_480p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=625000,NAME=360p,RESOLUTION=640x360
+https://live-production.secureswiftcontent.com/exp=1690270331~acl=/hls-p/ingest_7432_*/*~hmac=db47ed87fd2b11e7fdaea6f66dac6c6b81cac3a5ea9e83c451a05b459c2c469b/hls-p/ingest_7432_360p/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=375000,NAME=240p,RESOLUTION=426x240
+https://live-production.secureswiftcontent.com/exp=1690270331~acl=/hls-p/ingest_7432_*/*~hmac=db47ed87fd2b11e7fdaea6f66dac6c6b81cac3a5ea9e83c451a05b459c2c469b/hls-p/ingest_7432_240p/index.m3u8
 
-                )
-
-            [relationships] => Array
-                (
-                )
-
-            [links] => Array
-                (
-                    [watchpage] => https://www.vidio.com/live/7432-nusantara-tv
-                )
-
-            [meta] => Array
-                (
-                    [mux_reporting] => 
-                )
-
-        )
-
-)
-</pre>https://etslive-app.vidio.com/live/7432/master.m3u8?auth=aFErdkFlK1BDbXFMc3JNQ2p3QjFxbE1hTmwxQWViMUpLOHhjVmdYWVRnYlU3eUppNmhFR25HTHZUR1hXZnQxdlNybzRZTnpiS0JsRENnWWticFRYaWZqOXpWRXlPN1RCYWdLRHUxMjdBVjBaU3ErSG1tOTZsVDVUUVV4RHhHSjJDTS9uODJjdzdhdlZpd2FMYjhxbGVaWU9KRGxPanpFakIvdU1HTjExNWEyb0l5ZG90NWVNd1JIcDZlaEZROEI2MmxNaHBDMlJISzZSamNaT3hWOTFrOXpxWXlTVUQ5NUFSZmh0YWk4VUxMTzRGSWJQS1FPSFp1SWNYMXR4MVcxaTFianhPYUpJM29ZMHpZZWpzTWpXcTljNllmNnJDNi9zYnNDdzZBL1liemFUUGU1bFQ0c05UV0dFVUxZNjE4YXNaZk8yQkdCVWlzK3UyVzJkSHJjSE9GRFdYcytURUw3ZFlzcnRzcDZvNVFFY0l1bkNRQ1M5TVFXR0wxUEpHWkhnMmJTQnU3NGFUR0VWdjQyT3YvdVBydnEzd0hFYzN0am45TS9XU2NQR2UwMDZQTmQvU2RQTldzMllwR1g4TWIrekxuY05aTVNBQmhJZEorUDd4d1J4THE3d3pocUVjaExKbTRhY0Rac1MwYmZnc3M2ODg0NHBramd2K0U4N0RnRnFvVU1MUFBBY3FXeVBNRkJML2h1VWxqdmxZYzZGV2Z1OWdxTVhZTklnVTlPVnVhRmh3aEozckRRM1g0em0rNzRZN2RJU1J5RWJPZ0Q5eGZvUlJlZG1oVm40QWF3U3REYTcxczdoaDlNVXJFYUJJUTU3Rk1ZcURoQ3UvMXlobnczRytnOE9OcHNNU2d1RVBYVEsreWhqVjZKNkRiUjJoR3JMRGZJTWgxMTFtQTBzam5KWnYreVRyN1NHMDZlTEtrVFExV3NnNExsZXg1RTQ4SjMzRUpYOTVZbSt3NDE2Y3I4bXlGeTZ1K3BFNldxbXVydFYvRjRMUnhyU1k4Q2VWZnZvTFZpczltK0k0b2ZSdnF5Mk90dHdxU2FBMWJTUTNucEtlMWJacGx0Y0t0SkgxWEM1bXB0bTlvZkl1VG5uUnhTL2xYcUVuMGRic3Z0bGZyVkM1NUh4UTU5N2NzOGEyRDY3SkQ4QkdrcEsyT0U9&trace_id=6b47730ad4fbf858b4431eeb69a249c8/7117857823901991890
