@@ -1,100 +1,59 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Update ONLINE
-
-# Controls when the action will run. 
 on:
   schedule:
-    - cron: '30 * * * *'
-
+    - cron: '00 00/2 * * *'
   pull_request:
     branches:
       - master
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      #- name: Run a one-line script
-      #  run: echo testing!
-
-      # Runs a set of commands using the runners shell 
+      - name: checkout repo
+        uses: actions/checkout@v2
       - name: config
         run: |
           git pull
           git config --global user.email "<>"
           git config --global user.name "halakkitach"
-
-      - name: update ONLINE
+      - name: Update ONLINE
         run: |
           pwd
-          python3 api/babamiv/index.py 7464 > 7BABAMI1.m3u8
-          sleep 3	        
-          python3 api/babamiv/index.py 7946 > 7UTTUT.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 206 > 7EMOSIAU.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 8237 > 7MATEMAHO.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 8241 > 7komanadani.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 6482 > 7adongma.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 205 > 7cupangterbang.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 204 > 7sitivi.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 7432 > 7amagnaa.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 782 > 7enteve.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 13886 > 7begugajjang1.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 6686 > 7begugajjang2.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 6685 > 7begugajjanggg2.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 7052 > 7bodaat1.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 6397 > 7bodaat2.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 6441 > 7pasadabangsainna.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 6533 > 7bodaat3.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 12607 > 7TAAAWWWAAAAF.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 13024 > 7PALTAPPON1.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 1561 > 7PALTAPPON2.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 11683 > 7PALTAPPONCVCVC1.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 13610 > 7PALTAPPONCVCVC2.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 13797 > 7PALTAPPONCVCVC3.m3u8	
-          sleep 3	
-          python3 api/babamiv/index.py 7916 > 7MALEHIANFC.m3u8
-          
-            
-      - name: git add
+          mkdir tmp
+          wget -U 'okhttp/1.2' -qP tmp https://raw.githubusercontent.com/halakkitach/bodil/master/index.py
+          python3 tmp/index.py --channel-code 205 --channel-name "indosiar" 7cupangterbang.m3u8
+          python3 tmp/index.py --channel-code 204 --channel-name "sctv" 7sitivi.m3u8
+          python3 tmp/index.py --channel-code 8237 --channel-name "mentari-tv" 7MATEMAHO.m3u8
+          python3 tmp/index.py --channel-code 733 --channel-name "trans-tv" 7trRRanstTTTivi.m3u8
+          python3 tmp/index.py --channel-code 782 --channel-name "antv" 7enteve.m3u8
+          python3 tmp/index.py --channel-code 206 --channel-name "moji" 7EMOSIAU.m3u8
+          python3 tmp/index.py --channel-code 783 --channel-name "tvone" 7tiviwannnnn.m3u8
+          python3 tmp/index.py --channel-code 7464 --channel-name "ajwa-tv" 7BABAMI1.m3u8
+          python3 tmp/index.py --channel-code 734 --channel-name "trans-7" 7terrrrrans7.m3u8
+          python3 tmp/index.py --channel-code 9714 --channel-name "jpm-tv" 7jepeemtivi.m3u8
+          python3 tmp/index.py --channel-code 10975 --channel-name "elshinta-tv" 7elsehintativi.m3u8
+          python3 tmp/index.py --channel-code 8241 --channel-name "rans-channel" 7komanadani.m3u8
+          python3 tmp/index.py --channel-code 6362 --channel-name "tvn" 7tivien.m3u8
+          python3 tmp/index.py --channel-code 12607 --channel-name "Tawaf-TV" 7TAAAWWWAAAAF.m3u8
+          python3 tmp/index.py --channel-code 777 --channel-name "metro-tv" 7MmmmetroTivi.m3u8
+          python3 tmp/index.py --channel-code 874 --channel-name "kompas-tv" 7KompasTivi.m3u8
+          python3 tmp/index.py --channel-code 875 --channel-name "NET." 7Neeeetivi.m3u8
+          python3 tmp/index.py --channel-code 5415 --channel-name "JAK-TV" 7Jakkkkktivi.m3u8
+          python3 tmp/index.py --channel-code 9713 --channel-name "J-TV" 7Jtttttivi.m3u8
+          python3 tmp/index.py --channel-code 6482 --channel-name "daai-tv" 7adongma.m3u8
+          python3 tmp/index.py --channel-code 8815 --channel-name "metro-globe-tv" 7mmetroglobe.m3u8
+          python3 tmp/index.py --channel-code 6165 --channel-name "btv" 7bbbtivi.m3u8
+          python3 tmp/index.py --channel-code 7619 --channel-name "musica-tv" 7muuuuuusicativi.m3u8
+          python3 tmp/index.py --channel-code 7946 --channel-name "tv-tempo" 7UTTUT.m3u8
+          python3 tmp/index.py --channel-code 8638 --channel-name "Nagaswara" 7nnnnnnagaswaradio.m3u8
+          python3 tmp/index.py --channel-code 7004 --channel-name "Prambors" 7Pppppramborstivi.m3u8
+          python3 tmp/index.py --channel-code 13797 --channel-name "BRI" 7PALTAPPONCVCVC3.m3u8
+          python3 tmp/index.py --channel-code 13610 --channel-name "BRI" 7PALTAPPONCVCVC2.m3u8
+          rm -rf tmp
+      - name: commit
         run: |
           git add -A
-          ls -la
-
-      - name: commit & push
-        run: |
           git commit -m "Update ONLINE"
           git push
