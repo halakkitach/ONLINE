@@ -52,6 +52,7 @@ jobs:
           python3 tmp/index.py --channel-code 13797 --channel-name "BRI" 7PALTAPPONCVCVC3.m3u8
           python3 tmp/index.py --channel-code 13610 --channel-name "BRI" 7PALTAPPONCVCVC2.m3u8
           python3 tmp/index.py --channel-code 6441 --channel-name "tvri" 7pasadabangsainna.m3u8
+          python3 tmp/index.py --channel-code 1561 --channel-name "rtv" 7PALTAPPON2.m3u8
           rm -rf tmp
       - name: commit
         run: |
