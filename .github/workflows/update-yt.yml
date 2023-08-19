@@ -52,9 +52,9 @@ jobs:
           sleep 3
           python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=yNKvkPJl-tg" 7onee1tv.m3u8
           sleep 3
-          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=QxAj1eAqgQY" 7rremiixxxbarat.m3u8
+          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=15FMw8qu09A&ab_channel=BreakBeat" 7rremiixxxbarat.m3u8
           sleep 3
-          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=D8idXdTYG4w" 7popido2000.m3u8
+          python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=D8idXdTYG4w&ab_channel=LaguTerbaru" 7popido2000.m3u8
           sleep 3
           python3 api/ytlive/index.py --url "https://www.youtube.com/watch?v=AwHPTgAbb3Y" 7djjido2000.m3u8
           sleep 3
