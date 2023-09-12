@@ -46,13 +46,13 @@ jobs:
 
           wget -U 'okhttp/1.2' -qP tmp https://raw.githubusercontent.com/halakkitach/rajahabang/master/genjet.py
 
-          python3 tmp/rcti.py --channel-name rcti rctiplus.m3u8
+          python3 tmp/genjet.py --channel-name rcti rctiplus.m3u8
 
-          python3 tmp/rcti.py --channel-name mnctv mnctvplus.m3u8
+          python3 tmp/genjet.py --channel-name mnctv mnctvplus.m3u8
 
-          python3 tmp/rcti.py --channel-name gtv gtvplus.m3u8
+          python3 tmp/genjet.py --channel-name gtv gtvplus.m3u8
 
-          python3 tmp/rcti.py --channel-name inews inewsplus.m3u8
+          python3 tmp/genjet.py --channel-name inews inewsplus.m3u8
 
           
 
