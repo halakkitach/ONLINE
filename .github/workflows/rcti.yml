@@ -34,7 +34,7 @@ jobs:
 
           git config --global user.email "<>"
 
-          git config --global user.name "<>"
+          git config --global user.name "halakkitach"
 
       - name: Update ONLINE
 
@@ -50,16 +50,10 @@ jobs:
           python3 tmp/rcti.py --channel-name gtv gtvplus.m3u8
           python3 tmp/rcti.py --channel-name inews inewsplus.m3u8
 
-          
-
+        
           rm -rf tmp
-
       - name: commit
-
         run: |
-
           git add -A
-
-          git commit -m "Update ONLINE"
-
+          git commit -m "rcti"
           git push
