@@ -1,7 +1,4 @@
 #EXTM3U
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=929819,RESOLUTION=960x540
-http://vod.linknetott.swiftcontent.com/Content/HLS/Live/Channel%28ch329%29/Stream(02)/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=470037,RESOLUTION=320x240
-http://vod.linknetott.swiftcontent.com/Content/HLS/Live/Channel%28ch329%29/Stream(01)/index.m3u8
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2238993,RESOLUTION=960x540
-http://vod.linknetott.swiftcontent.com/Content/HLS/Live/Channel%28ch329%29/Stream(03)/index.m3u8
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://invidious.lunar.icu/api/manifest/hls_playlist/expire/1705995988/ei/dBqvZdGuCtDui9oP0s2WyAE/ip/2a0d:5940:90:0:e589:a797:33e:428e/id/tMHX1xzJxdQ.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr5---sn-4g5lzney.c.youtube.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/gcr/de/spc/UWF9f7ozXcYfPd211W3ZevS10xI__dGFSMJKyQo/vprv/1/playlist_type/DVR/initcwndbps/22180000/mh/wU/mm/32/mn/sn-4g5lzney/ms/su/mv/m/mvi/5/pl/41/sc/yes/dover/11/pacing/0/keepalive/yes/fexp/24007246/mt/1705974277/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,gcr,spc,vprv,playlist_type/sig/AJfQdSswRQIgd-AFRbPTJXE7wIjvNgxYiscpgy_8oOJErxtgCPjWGb8CIQC9eJKAC5mf9TnDGVUOND6x4c44w7bjzl9fe0tb7btrCA%3D%3D/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pl,sc/lsig/AAO5W4owRQIhALyXyalMojm8MpkshA9zsJiOo_TAmJ6x6PDbO5vYryayAiAQX56c3IT4fsjWqB4uJ0A-mUDjlUAJt4Y6WnxGLcjDCw%3D%3D/playlist/index.m3u8?local=true
