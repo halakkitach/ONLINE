@@ -1,4 +1,7 @@
 #EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
-https://inv.nadeko.net/api/manifest/hls_playlist/expire/1709323311/ei/z9_hZeSWLreNobIP4f6QyAQ/ip/186.105.181.30/id/B6SazRz6sOg.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr5---sn-nja7sner.c.youtube.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/gcr/cl/spc/UWF9f-I-qYOuv441_nz3yHgpz-prc7p3TMYJc1JyTWxJbCT13w/vprv/1/playlist_type/DVR/initcwndbps/1360000/mh/_Y/mm/32/mn/sn-nja7sner/ms/su/mv/m/mvi/5/pl/20/sc/yes/dover/11/pacing/0/keepalive/yes/fexp/24007246/mt/1709301426/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,gcr,spc,vprv,playlist_type/sig/AJfQdSswRQIgB-xlM_L1tVnE_EzjRQEFlPYIMUqF6SOEhItgvQ_ymmYCIQDC_nONZCQsyWX64PkiF4rn-UkS2szN1sEHFXDEihmG8g%3D%3D/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pl,sc/lsig/APTiJQcwRAIgLbEX6YpWY60qXjU98AOohITKcC7XEg5MV_6naOq1xHkCIAU9wSP4T7BYNM8v3TPmA9IpRkto1LX8jk6O7OJmv-2u/playlist/index.m3u8?local=true
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=929819,RESOLUTION=960x540
+http://vod.linknetott.swiftcontent.com/Content/HLS/Live/Channel%28ch329%29/Stream(02)/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=470037,RESOLUTION=320x240
+http://vod.linknetott.swiftcontent.com/Content/HLS/Live/Channel%28ch329%29/Stream(01)/index.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2238993,RESOLUTION=960x540
+http://vod.linknetott.swiftcontent.com/Content/HLS/Live/Channel%28ch329%29/Stream(03)/index.m3u8
