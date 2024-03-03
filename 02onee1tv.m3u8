@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 403 (Forbidden)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
-  </style>
-  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
-  <p><b>403.</b> <ins>That’s an error.</ins>
-  <p>Your client does not have permission to get URL <code>/api/manifest/hls_variant/expire/1709461237/ei/lfrjZfiiJPumy_sP4defoAw/ip/20.75.95.175/id/yNKvkPJl-tg.3/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ==/tx/51066116/txs/51066116,51066117,51066118,51066119,51066120,51066121/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/spc/UWF9f5IGTe2g3qguyjSwDViEQh2nwWfa_aQJ3KrKq0nF5H0/vprv/1/go/1/pacing/0/nvgoi/1/keepalive/yes/fexp/24007246/dover/11/itag/0/playlist_type/DVR/sparams/expire,ei,ip,id,source,requiressl,xpc,tx,txs,hfr,playlist_duration,manifest_duration,maudio,spc,vprv,go,itag,playlist_type/sig/AJfQdSswRQIgK5eXCvEulJzTwK5ejbSEbY-Eq4RtALF0Y_uSqeX4L3UCIQCyA_H6QAHi2SwA8zWWWTpzWoMwxlM0bYiC0T2iExMwCA==/file/index.m3u8%22,%22probeUrl%22:%22https://r1---sn-0opoxu-2cjez.googlevideo.com/videogoodput?id=o-AMGDs9MgfJb86FgMkKr_0z0EOYst-teu7dV2ZFiqhLHE%5Cu0026source=goodput%5Cu0026range=0-4999%5Cu0026expire=1709443237%5Cu0026ip=20.75.95.175%5Cu0026ms=pm%5Cu0026mm=35%5Cu0026pl=24%5Cu0026sparams=id,source,range,expire,ip,ms,mm,pl%5Cu0026signature=7284BCFAFA67B800E90AD5870AEA2986EC199ABA.552294A4D8ABE94C49534C941EA4C6486449708A%5Cu0026key=cms1</code> from this server.  <ins>That’s all we know.</ins>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="initial-scale=1"><title>https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1709464617/ei/yQfkZeazGuWDsfIP9P2TsAk/ip/20.172.5.33/id/yNKvkPJl-tg.3/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ==/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/spc/UWF9f4RXKUJwVG6Dw-6Y3Z2O-8RfFkSdGrJ1_HNr6hifYNM/vprv/1/go/1/pacing/0/nvgoi/1/keepalive/yes/fexp/24007246/dover/11/itag/0/playlist_type/DVR/sparams/expire,ei,ip,id,source,requiressl,xpc,hfr,playlist_duration,manifest_duration,maudio,spc,vprv,go,itag,playlist_type/sig/AJfQdSswRQIgFlHNdgpLIechdHKO465el4HH29crvCEakwRH-7jE4J0CIQD5e3GCE552PRghApvFGo44Jym3y-rX3ls0dzEI53horQ==/file/index.m3u8</title></head>
+<body style="font-family: arial, sans-serif; background-color: #fff; color: #000; padding:20px; font-size:18px; overscroll-behavior:contain;" onload="e=document.getElementById('captcha');if(e){e.focus();} if(solveSimpleChallenge) {solveSimpleChallenge(,);}">
+<div style="max-width:400px;">
+<hr noshade size="1" style="color:#ccc; background-color:#ccc;"><br>
+<div style="font-size:13px;">
+Our systems have detected unusual traffic from your computer network.  Please try your request again later.  <a href="#" onclick="document.getElementById('infoDiv0').style.display='block';">Why did this happen?</a><br><br>
+<div id="infoDiv0" style="display:none; background-color:#eee; padding:10px; margin:0 0 15px 0; line-height:1.4em;">
+This page appears when Google automatically detects requests coming from your computer network which appear to be in violation of the <a href="//www.google.com/policies/terms/">Terms of Service</a>. The block will expire shortly after those requests stop.<br><br>This traffic may have been sent by malicious software, a browser plug-in, or a script that sends automated requests.  If you share your network connection, ask your administrator for help &mdash; a different computer using the same IP address may be responsible.  <a href="//support.google.com/websearch/answer/86640">Learn more</a><br><br>Sometimes you may see this page if you are using advanced terms that robots are known to use, or sending requests very quickly.
+</div><br>
+
+IP address: 20.172.5.33<br>Time: 2024-03-03T05:16:58Z<br>URL: https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1709464617/ei/yQfkZeazGuWDsfIP9P2TsAk/ip/20.172.5.33/id/yNKvkPJl-tg.3/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ==/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/spc/UWF9f4RXKUJwVG6Dw-6Y3Z2O-8RfFkSdGrJ1_HNr6hifYNM/vprv/1/go/1/pacing/0/nvgoi/1/keepalive/yes/fexp/24007246/dover/11/itag/0/playlist_type/DVR/sparams/expire,ei,ip,id,source,requiressl,xpc,hfr,playlist_duration,manifest_duration,maudio,spc,vprv,go,itag,playlist_type/sig/AJfQdSswRQIgFlHNdgpLIechdHKO465el4HH29crvCEakwRH-7jE4J0CIQD5e3GCE552PRghApvFGo44Jym3y-rX3ls0dzEI53horQ==/file/index.m3u8<br>
+</div>
+</div>
+</body>
+</html>
