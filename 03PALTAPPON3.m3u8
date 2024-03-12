@@ -1,3 +1,4 @@
 #EXTM3U
-#EXTINF:8.333333,
-https://dl.dropboxusercontent.com/s/2e85fh4c34jxksu/kitabisanew_1080p.ts
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,CLOSED-CAPTIONS=NONE,BANDWIDTH=1500000,NAME=720p,RESOLUTION=1280x720
+https://inv.nadeko.net/api/manifest/hls_playlist/expire/1710260365/ei/LSzwZck_o574sA_wrZygDA/ip/186.105.132.155/id/ZM70aLcKZLc.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hdlc/1/hls_chunk_host/rr2---sn-njaeyn7s.c.youtube.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/gcr/cl/vprv/1/playlist_type/DVR/initcwndbps/1438750/mh/Rh/mm/32/mn/sn-njaeyn7s/ms/su/mv/m/mvi/2/pl/19/sc/yes/dover/11/pacing/0/keepalive/yes/fexp/24007246/mt/1710237898/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,hdlc,xpc,playlist_duration,manifest_duration,gcr,vprv,playlist_type/sig/AJfQdSswRgIhAJh79s3lBGR5u4uacDKV4tbz4ozWO1jWiUAdMeOjeb0LAiEA6bJxogUTX1foPfDHMKtEG8ldjWP9IAU7ufXz-uhSSnQ%3D/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pl,sc/lsig/APTiJQcwRAIgUfqyykKp5dp1MqToqGWzTNYI87vr0LXF_LNOZvf5V90CIBe7JRsUMvUIvQHhZEHVTRT8fcdMkyG5DSg8QZaEUrZ7/playlist/index.m3u8?local=true
