@@ -7,15 +7,42 @@
     <link rel="stylesheet" href="style.css">
 <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 </head>
-<body>
-    <div class="wrapper">    <div class="images">
-        <img src="https://i.ibb.co.com/2BCDJbx/BACKGROUND.png" width="400" height="200">	
-    </div>
- </body>
- <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+<style>
 
-    body {
+    /* Placeholder styles to extend code beyond 100 lines */
+    .placeholder {
+        display: none;
+    }
+
+        /* Container untuk tulisan */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background: #222;
+            color: white;
+            padding: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        /* Animasi berjalan */
+        .marquee-text {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        body {
         font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
@@ -83,20 +110,25 @@
     .button-youtube a:focus {
         filter: brightness(90%);
     }
+    </style>
+   
+    <div class="wrapper">    <div class="images">
+        <img src="https://i.ibb.co.com/2BCDJbx/BACKGROUND.png" width="400" height="200">	
+    </div>
+ 
+     <div class="container">
+        <a href="https://ibb.co.com/XkLbsSVY" class="button button-youtube">QRIS BUY/BELI IPTV</a>
+        <a href="https://sfile.mobi/306Ewclzp6r" class="button button-youtube">APLIKASI OTT NAVIGATOR</a>
+        <a href="https://t.me/ottliveevent" class="button button-youtube">GRUP TELEGRAM</a> 
+       <!-- Tambahkan tombol lainnya dengan tautan yang sesuai -->
+ 
+              
+    <p style="display: ;<div class="marquee-container">
+        <span class="marquee-text">🔥 Selamat datang di HallaKitach IPTV! 🎥 Nikmati layanan terbaik kami! 🚀</span>
+    </div> 
+    
 
-    /* Placeholder styles to extend code beyond 100 lines */
-    .placeholder {
-        display: none;
-    }
-</style>
-</head>
-<body>
-<div class="container">
-    <a href="https://ibb.co.com/XkLbsSVY" class="button button-youtube">QRIS BUY/BELI IPTV</a>
-	<a href="https://sfile.mobi/306Ewclzp6r" class="button button-youtube">APLIKASI OTT NAVIGATOR</a>
-    <a href="https://t.me/ottliveevent" class="button button-youtube">GRUP TELEGRAM</a> 
-   <!-- Tambahkan tombol lainnya dengan tautan yang sesuai -->
-<p style="margin-bottom: 1.5rem !important;"><small> <b> &copy; HALAKKITACH </b> </small></p>
-</div>
-</body>
+    <p style="margin-bottom: 1.5rem !important;"><small> <b> &copy; HALAKKITACH </b> </small></p>
+    </div>     
+   </body>
 </html>
