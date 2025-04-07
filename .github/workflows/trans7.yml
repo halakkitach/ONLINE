@@ -41,3 +41,4 @@ jobs:
             git push || echo "⚠️ Push gagal (mungkin perlu git pull)"
           else
             echo "❌ File trans7.m3u8 tidak ditemukan"
+          fi
