@@ -1,8 +1,8 @@
-name: Update trans7.m3u8 via Proxy
+name: Update trans7.m3u8
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Tiap jam
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -20,22 +20,24 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python3 -m pip install -U pip
-          python3 -m pip install requests beautifulsoup4
+          python3 -m pip install requests
 
-      - name: Jalankan proxy checker + grabber
+      - name: Ambil proxy valid
         run: |
-          python3 proxy_checker_dailymotion.py
+          python3 proxy_checker.py > proxy.txt
 
-      - name: Commit hasil trans7.m3u8
+      - name: Jalankan script dengan proxy
+        run: |
+          proxy=$(cat proxy.txt || echo "")
+          python3 scriptdaily.py "$proxy" https://www.dailymotion.com/video/x8qckyq
+
+      - name: Commit trans7.m3u8
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           if [ -f "trans7.m3u8" ]; then
             git add trans7.m3u8
-            git commit -m "Update trans7.m3u8 [auto]" || echo "Tidak ada perubahan"
-            git push || echo "Gagal push"
+            git commit -m "Update trans7.m3u8 [auto]" || echo "No changes"
+            git push || echo "⚠️ Push gagal (mungkin perlu git pull)"
           else
             echo "❌ File trans7.m3u8 tidak ditemukan"
-          fi
