@@ -1,0 +1,30 @@
+name: Update trans7.m3u8
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # Setiap jam
+  workflow_dispatch:     # Bisa dijalankan manual juga
+
+jobs:
+  update-m3u8:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Jalankan script Python
+        run: python3 scriptdaily.py "" https://www.dailymotion.com/video/x8qckyq
+
+      - name: Commit hasil trans7.m3u8
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trans7.m3u8
+          git commit -m "Update trans7.m3u8 [auto]" || echo "No changes to commit"
+          git push
