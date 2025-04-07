@@ -2,14 +2,14 @@
 import requests
 import time
 
-PROXY_SOURCE = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=3000&country=all&ssl=all&anonymity=all"
+PROXY_SOURCE = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=https&timeout=3000&country=all&ssl=yes&anonymity=elite"
 
 TEST_URL = "https://www.dailymotion.com"
 TIMEOUT = 5
-MAX_TRY = 20
+MAX_TRY = 30
 
 def get_proxies():
-    print("📦 Mengambil daftar proxy dari ProxyScrape...")
+    print("📦 Mengambil daftar proxy dari ProxyScrape (HTTPS only)...")
     try:
         res = requests.get(PROXY_SOURCE)
         res.raise_for_status()
@@ -38,11 +38,15 @@ def is_proxy_working(proxy):
 def main():
     proxies = get_proxies()
     print("🔍 Mencoba validasi proxy...")
+    count = 0
     for proxy in proxies:
         if is_proxy_working(proxy):
             print(proxy)
-            return  # Keluar setelah dapat 1 proxy valid
-        time.sleep(1)  # Hindari diblok
+            return
+        time.sleep(1)
+        count += 1
+        if count >= MAX_TRY:
+            break
 
     print("❌ Tidak ada proxy yang valid.")
 
