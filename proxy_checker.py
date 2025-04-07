@@ -1,30 +1,39 @@
+# proxy_checker.py
 import requests
+from bs4 import BeautifulSoup
 
 def get_proxies():
-    url = "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt"
-    print("📦 Mengambil daftar proxy...")
-    res = requests.get(url)
-    proxies = res.text.strip().split('\n')
+    res = requests.get("https://free-proxy-list.net/")
+    soup = BeautifulSoup(res.text, "html.parser")
+    table = soup.find("table", id="proxylisttable")
+    proxies = []
+
+    for row in table.tbody.find_all("tr"):
+        cols = row.find_all("td")
+        ip = cols[0].text
+        port = cols[1].text
+        https = cols[6].text == "yes"
+        if https:
+            proxies.append(f"http://{ip}:{port}")
     return proxies
 
-def is_valid_proxy(proxy):
+def is_working(proxy):
     try:
-        print(f"🌐 Coba proxy: {proxy}")
-        r = requests.get("https://www.dailymotion.com", proxies={
-            "http": proxy,
-            "https": proxy
+        res = requests.get("https://www.dailymotion.com", proxies={
+            "http": proxy, "https": proxy
         }, timeout=5)
-        return r.status_code == 200
+        return res.status_code == 200
     except:
         return False
 
 def main():
     proxies = get_proxies()
-    for p in proxies:
-        if is_valid_proxy(p.strip()):
-            print(p.strip())
+    for proxy in proxies:
+        if is_working(proxy):
+            # ONLY print this line as output
+            print(proxy)
             return
-    print("❌ Tidak ada proxy valid ditemukan")
+    print("")  # fallback kosong kalau tidak ada proxy valid
 
 if __name__ == "__main__":
     main()
