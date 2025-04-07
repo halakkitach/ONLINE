@@ -26,18 +26,23 @@ jobs:
       - name: Jalankan script Python
         run: |
           python3 scriptdaily.py "" https://www.dailymotion.com/video/x8qckyq
-          
-      - name: Cek isi direktori
-        run: ls -lah
+
+      - name: Debug: cek file trans7.m3u8
+        run: |
+          ls -lah
+          cat trans7.m3u8 || echo "File trans7.m3u8 belum ada"
 
       - name: Commit hasil trans7.m3u8
+        shell: bash
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
           if [ -f "trans7.m3u8" ]; then
+            echo "✅ File trans7.m3u8 ditemukan, siap commit."
             git add trans7.m3u8
-            git commit -m "Update trans7.m3u8 [auto]" || echo "No changes to commit"
+            git commit -m "Update trans7.m3u8 [auto]" || echo "ℹ️ Tidak ada perubahan untuk di-commit."
             git push
           else
-            echo "trans7.m3u8 tidak ditemukan, tidak ada yang di-commit."
+            echo "⚠️ File trans7.m3u8 TIDAK ditemukan, skip commit."
           fi
