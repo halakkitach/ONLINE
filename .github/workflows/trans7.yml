@@ -35,6 +35,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           if [ -f "trans7.m3u8" ]; then
             git add trans7.m3u8
             git commit -m "Update trans7.m3u8 [auto]" || echo "No changes"
