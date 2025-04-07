@@ -24,7 +24,7 @@ jobs:
 
       - name: Run script
         run: |
-          python3 scriptdaily.py "" https://www.dailymotion.com/video/x8qckyq
+          python3 scriptdaily.py "http://123.456.789.101:8080" https://www.dailymotion.com/video/x8qckyq
 
       - name: Commit m3u8 file
         shell: bash
