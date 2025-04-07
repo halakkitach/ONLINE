@@ -38,6 +38,7 @@ jobs:
           fi
 
       - name: Commit hasil trans7.m3u8
+        shell: bash
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
