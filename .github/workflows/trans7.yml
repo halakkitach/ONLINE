@@ -2,15 +2,15 @@ name: Update trans7.m3u8
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Tiap jam
-  workflow_dispatch:     # Bisa dijalankan manual
+    - cron: "0 * * * *"  # Setiap jam
+  workflow_dispatch:
 
 jobs:
   update-m3u8:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Python
@@ -28,6 +28,7 @@ jobs:
           python3 scriptdaily.py "" https://www.dailymotion.com/video/x8qckyq
 
       - name: Debug: cek file trans7.m3u8
+        shell: bash
         run: |
           ls -lah
           if [ -f "trans7.m3u8" ]; then
