@@ -16,13 +16,15 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.x
+          python-version: '3.x'
 
       - name: Install dependencies
-  run: pip install -r requirements.txt
+        run: |
+          pip install requests
 
       - name: Jalankan script Python
-        run: python3 scriptdaily.py "" https://www.dailymotion.com/video/x8qckyq
+        run: |
+          python3 scriptdaily.py "" https://www.dailymotion.com/video/x8qckyq
 
       - name: Commit hasil trans7.m3u8
         run: |
