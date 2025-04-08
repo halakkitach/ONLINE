@@ -1,56 +1,38 @@
-name: Dailymotion M3U8 Grabber
+name: Fetch Dailymotion M3U8
 
 on:
   workflow_dispatch:
-    inputs:
-      dailymotion_url:
-        description: 'Dailymotion Video URL'
-        required: true
-      output_filename:
-        description: 'Output filename'
-        default: 'output.m3u8'
-        required: false
+  schedule:
+    - cron: '0 1 * * *'  # Setiap hari jam 08:00 WIB
 
 jobs:
-  grab-m3u8:
+  grab:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests
+      - name: Install dependencies
+        run: pip install requests
 
-    - name: Get Indonesian Proxies
-      id: proxy
-      run: |
-        # Mengambil proxy Indonesia dari sumber alternatif
-        PROXY=$(curl -s "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&country=ID&timeout=5000")
-        echo "proxy=${PROXY}" >> $GITHUB_OUTPUT
+      - name: Run script
+        env:
+          VIDEO_URL: https://www.dailymotion.com/video/x8qckyq  # Ganti sesuai kebutuhan
+          OUTPUT_FILE: trans7.m3u8
+          PROXY: ""
+        run: |
+          python3 scriptdaily.py
 
-    - name: Run Dailymotion Grabber
-      run: |
-        # Split proxies dan coba satu per satu
-        IFS=$'\n' read -d '' -r -a proxy_list <<< "${{ steps.proxy.outputs.proxy }}"
-        
-        for proxy in "${proxy_list[@]:0:5}"; do  # Coba 5 proxy pertama
-          echo "Trying proxy: $proxy"
-          python scriptdaily.py "$proxy" "${{ github.event.inputs.dailymotion_url }}" "${{ github.event.inputs.output_filename }}"
-          if [ -s "${{ github.event.inputs.output_filename }}" ]; then
-            echo "Success with proxy: $proxy"
-            break
-          fi
-        done
-
-    - name: Upload Result
-      uses: actions/upload-artifact@v3
-      with:
-        name: m3u8-file
-        path: ${{ github.event.inputs.output_filename }}
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trans7.m3u8
+          git commit -m "Update M3U8 - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes"
+          git push
