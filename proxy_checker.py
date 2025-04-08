@@ -2,10 +2,9 @@
 import requests
 import time
 
-# Sumber proxy alternatif yang mungkin menyediakan proxy Indonesia
 PROXY_SOURCES = [
-    "https://www.proxy-list.download/api/v1/get?type=https&country=ID",  # Proxy Indonesia
-    "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=3000&country=ID",  # Proxy Indonesia
+    "https://www.proxy-list.download/api/v1/get?type=https&country=ID",
+    "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=3000&country=ID",
     "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt",
     "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
 ]
@@ -27,7 +26,6 @@ def get_proxies():
         except Exception as e:
             print(f"❌ Gagal mengambil proxy dari {source}: {e}")
     
-    # Hapus duplikat
     proxy_list = list(set(proxy_list))
     print(f"🔍 Total {len(proxy_list)} proxy unik ditemukan.")
     return proxy_list
@@ -38,66 +36,41 @@ def is_proxy_working(proxy):
         "https": f"http://{proxy}",
     }
     try:
-        # Tambahkan header untuk meniru browser
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept-Language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+            'User-Agent': 'Mozilla/5.0',
+            'Accept-Language': 'id-ID,id;q=0.9'
         }
-        
-        res = requests.get(
-            TEST_URL, 
-            proxies=proxies, 
-            timeout=TIMEOUT,
-            headers=headers
-        )
-        
-        # Periksa apakah konten Indonesia ada di response (contoh sederhana)
+        res = requests.get(TEST_URL, proxies=proxies, timeout=TIMEOUT, headers=headers)
         if res.status_code == 200 and "dailymotion" in res.text.lower():
-            print(f"✅ Proxy valid dan mungkin Indonesia: {proxy}")
+            print(f"✅ Proxy valid: {proxy}")
             return True
-    except Exception as e:
+    except:
         pass
     print(f"⚠️ Proxy gagal: {proxy}")
     return False
 
 def main():
     proxies = get_proxies()
-    if not proxies:
-        print("❌ Tidak ada proxy yang ditemukan.")
-        
-    print("🔍 Mencoba validasi proxy...")
-    working_proxies = []
-    
+    working = []
+
     for i, proxy in enumerate(proxies[:MAX_TRY], 1):
-        print(f"🔎 Menguji proxy {i}/{MAX_TRY}: {proxy}")
+        print(f"🔎 Uji proxy {i}/{MAX_TRY}: {proxy}")
         if is_proxy_working(proxy):
-            working_proxies.append(proxy)
-            print(f"🎉 Proxy yang bekerja: {proxy}")
-            # Jika Anda hanya butuh satu proxy, bisa langsung return
-            # return
-        
-        time.sleep(1)  # Jeda untuk menghindari banned
-    
-    if working_proxies:
-        print("\n🎉 Daftar proxy yang bekerja:")
-        for proxy in working_proxies:
-            print(proxy)
+            working.append(proxy)
+            break
+        time.sleep(1)
+
+    # Simpan ke file walaupun kosong
+    with open("valid_proxy.txt", "w") as f:
+        if working:
+            f.write(working[0] + "\n")
+        else:
+            f.write("")
+
+    if working:
+        print("🎉 Proxy valid ditemukan.")
     else:
         print("❌ Tidak ada proxy yang valid.")
 
 if __name__ == "__main__":
     main()
-
-if working_proxies:
-    with open("valid_proxy.txt", "w") as f:
-        f.write(working_proxies[0])  # ambil proxy pertama yang valid
-        
-        # Simpan proxy yang valid ke file
-with open("valid_proxy.txt", "w") as f:
-    if working_proxies:
-        f.write(working_proxies[0] + "\n")  # hanya simpan satu proxy
-    else:
-        f.write("")  # kosongkan jika tidak ada
-        
-# Jangan exit dengan error meskipun tidak ada proxy yang valid
-print("✅ Selesai menjalankan proxy checker.")
