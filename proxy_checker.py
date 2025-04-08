@@ -92,5 +92,12 @@ if working_proxies:
     with open("valid_proxy.txt", "w") as f:
         f.write(working_proxies[0])  # ambil proxy pertama yang valid
         
+        # Simpan proxy yang valid ke file
+with open("valid_proxy.txt", "w") as f:
+    if working_proxies:
+        f.write(working_proxies[0] + "\n")  # hanya simpan satu proxy
+    else:
+        f.write("")  # kosongkan jika tidak ada
+        
 # Jangan exit dengan error meskipun tidak ada proxy yang valid
 print("✅ Selesai menjalankan proxy checker.")
