@@ -1,38 +1,38 @@
-name: Fetch Dailymotion M3U8
+name: Dailymotion M3U8 Scraper
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 1 * * *'  # Setiap hari jam 08:00 WIB
+    - cron: "0 * * * *"  # jalan setiap jam
 
 jobs:
-  grab:
+  fetch-hls:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: 3.x
 
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run script
-        env:
-          VIDEO_URL: https://www.dailymotion.com/video/x8qckyq  # Ganti sesuai kebutuhan
-          OUTPUT_FILE: trans7.m3u8
-          PROXY: ""
-        run: |
-          python3 scriptdaily.py
+      - name: Run proxy checker
+        run: python3 proxy_checker.py
 
-      - name: Commit result
+      - name: Run Dailymotion HLS fetcher
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          PROXY=$(cat valid_proxy.txt || echo "")
+          python3 scriptdaily.py "$PROXY" "https://www.dailymotion.com/video/x8qckyq" "trans7.m3u8"
+
+      - name: Commit and Push result
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add trans7.m3u8
-          git commit -m "Update M3U8 - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes"
+          git commit -m "✅ Update trans7.m3u8 [auto]" || echo "No changes to commit"
           git push
