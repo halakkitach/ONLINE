@@ -88,3 +88,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+if working_proxies:
+    with open("valid_proxy.txt", "w") as f:
+        f.write(working_proxies[0])  # ambil proxy pertama yang valid
