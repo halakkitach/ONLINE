@@ -64,8 +64,7 @@ def main():
     proxies = get_proxies()
     if not proxies:
         print("❌ Tidak ada proxy yang ditemukan.")
-        return
-    
+        
     print("🔍 Mencoba validasi proxy...")
     working_proxies = []
     
@@ -92,3 +91,6 @@ if __name__ == "__main__":
 if working_proxies:
     with open("valid_proxy.txt", "w") as f:
         f.write(working_proxies[0])  # ambil proxy pertama yang valid
+        
+# Jangan exit dengan error meskipun tidak ada proxy yang valid
+print("✅ Selesai menjalankan proxy checker.")
