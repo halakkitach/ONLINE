@@ -1,40 +1,31 @@
 #!/usr/bin/python3
 import requests
-import sys
+import os
 import json
 import re
-import os
-from urllib.parse import urlparse
+import sys
 
-# Proxy configuration
-proxies = {}
-if len(sys.argv) >= 2 and sys.argv[1].strip():
-    proxy_url = sys.argv[1].strip()
-    if not proxy_url.startswith(('http://', 'https://')):
-        proxy_url = f"http://{proxy_url}"
-    
-    proxies = {
-        'http': proxy_url,
-        'https': proxy_url
-    }
-    print(f"[+] Using proxy: {proxy_url}")
-
-# Validate arguments
-if len(sys.argv) < 3:
-    print("Usage: scriptdaily.py [proxy or ''] [dailymotion_url] [output_file]")
-    sys.exit(1)
-
-# Get URL and output filename
-url = sys.argv[2]
-output_file = sys.argv[3] if len(sys.argv) >= 4 else "output.m3u8"
+# Get environment or fallback
+proxy = os.environ.get("PROXY", "")
+url = os.environ.get("VIDEO_URL", "")
+output_file = os.environ.get("OUTPUT_FILE", "output.m3u8")
 fallback_url = "https://example.com/fallback.ts"
 
-# Configure session with timeout and retry
+if not url:
+    print("Error: VIDEO_URL is not set")
+    sys.exit(1)
+
+# Configure proxy
+proxies = {
+    'http': proxy,
+    'https': proxy
+} if proxy else {}
+
+# Configure session
 s = requests.Session()
 s.headers.update({
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-    'Accept': 'application/json',
-    'Accept-Language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+    'Accept': 'application/json'
 })
 
 def extract_video_id(url):
@@ -51,26 +42,9 @@ def extract_video_id(url):
             return match.group(1)
     return None
 
-def validate_proxy():
-    """Check if proxy is working"""
-    try:
-        test_url = "https://httpbin.org/ip"
-        res = s.get(test_url, proxies=proxies, timeout=5)
-        print(f"[+] Proxy test successful. Your IP: {res.json().get('origin')}")
-        return True
-    except Exception as e:
-        print(f"[!] Proxy test failed: {str(e)}")
-        return False
-
 def grab(url):
     try:
         print(f"[+] Processing URL: {url}")
-        
-        # Validate proxy first
-        if proxies and not validate_proxy():
-            print("[!] Switching to direct connection")
-            global proxies
-            proxies = {}
         
         # Extract video ID
         video_id = extract_video_id(url)
@@ -79,80 +53,55 @@ def grab(url):
             
         print(f"[+] Extracted Video ID: {video_id}")
 
-        # Get metadata with retry
+        # Get metadata
         meta_url = f"https://www.dailymotion.com/player/metadata/video/{video_id}"
         print(f"[+] Fetching metadata from: {meta_url}")
         
-        for attempt in range(3):
-            try:
-                res = s.get(meta_url, proxies=proxies, timeout=10)
-                print(f"[+] Status Code: {res.status_code}")
-                
-                if res.status_code != 200:
-                    continue
+        res = s.get(meta_url, proxies=proxies, timeout=10)
+        print(f"[+] Status Code: {res.status_code}")
+        
+        if res.status_code != 200:
+            raise Exception(f"Metadata request failed with status {res.status_code}")
 
-                try:
-                    metadata = res.json()
-                    break
-                except json.JSONDecodeError:
-                    continue
-            except:
-                if attempt == 2:
-                    raise Exception("Failed to get metadata after 3 attempts")
-                continue
+        metadata = res.json()
 
-        # Check for multiple metadata structures
+        # Check if qualities exist
+        if 'qualities' not in metadata:
+            raise Exception("No quality information found in metadata")
+
+        print("[+] Available qualities:")
+        for quality in metadata['qualities']:
+            print(f" - {quality}")
+
+        # Try to get HLS URL (prefer higher qualities)
+        preferred_qualities = ['1080', '720', '480', '360', '240', '144', 'auto']
         hls_url = None
         
-        # Structure 1: Direct 'hls_url'
-        if 'hls_url' in metadata:
-            hls_url = metadata['hls_url']
-            print("[+] Found HLS URL in metadata root")
-        
-        # Structure 2: Qualities object
-        elif 'qualities' in metadata:
-            print("[+] Available qualities:")
-            for quality in metadata['qualities']:
-                print(f" - {quality}")
-
-            preferred_qualities = ['1080', '720', '480', '360', '240', '144', 'auto']
-            for quality in preferred_qualities:
-                if quality in metadata['qualities'] and metadata['qualities'][quality]:
-                    hls_url = metadata['qualities'][quality][0].get('url')
-                    if hls_url:
-                        print(f"[+] Selected quality: {quality}")
-                        break
-        
-        # Structure 3: Nested in 'data' object
-        elif 'data' in metadata and 'hls_url' in metadata['data']:
-            hls_url = metadata['data']['hls_url']
-            print("[+] Found HLS URL in metadata.data")
+        for quality in preferred_qualities:
+            if quality in metadata['qualities']:
+                hls_url = metadata['qualities'][quality][0]['url']
+                print(f"[+] Selected quality: {quality}")
+                break
 
         if not hls_url:
-            raise Exception("No valid HLS URL found in metadata")
+            raise Exception("No valid HLS URL found in qualities")
 
-        print(f"[+] Final HLS URL: {hls_url}")
+        print(f"[+] HLS URL: {hls_url}")
 
-        # Get playlist content with retry
-        for attempt in range(3):
-            try:
-                m3u_res = s.get(hls_url, proxies=proxies, timeout=15)
-                m3u_res.raise_for_status()
-                m3u_content = m3u_res.text.strip()
-                
-                if m3u_content and "#EXTM3U" in m3u_content:
-                    break
-            except:
-                if attempt == 2:
-                    raise Exception("Failed to get playlist after 3 attempts")
-                continue
+        # Get playlist content
+        m3u_res = s.get(hls_url, proxies=proxies, timeout=10)
+        m3u_res.raise_for_status()
+        m3u_content = m3u_res.text.strip()
+
+        if not m3u_content:
+            raise Exception("Empty playlist content")
 
         # Save to file
         with open(output_file, "w") as f:
             f.write(m3u_content)
 
         print(f"[+] Successfully saved to {output_file}")
-        print(f"[+] File size: {os.path.getsize(output_file)} bytes")
+        print(f"[+] First line: {m3u_content.splitlines()[0]}")
 
     except requests.exceptions.RequestException as e:
         print(f"[!] Network error: {str(e)}")
@@ -167,5 +116,6 @@ def write_fallback():
         f.write(fallback_url + "\n")
     print(f"[!] Fallback URL written to {output_file}")
 
+# Run main function
 if __name__ == "__main__":
     grab(url)
