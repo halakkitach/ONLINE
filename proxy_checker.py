@@ -3,7 +3,7 @@ import requests
 import time
 
 PROXY_SOURCES = [
-    "https://www.proxy-list.download/api/v1/get?type=https&country=ID",
+    "https://raw.githubusercontent.com/elliottophellia/proxylist/refs/heads/master/results/http/country/ID/http_ID_checked.txt",
     "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=3000&country=ID",
     "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt",
     "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
