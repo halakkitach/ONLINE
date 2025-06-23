@@ -20,12 +20,12 @@ jobs:
         run: pip install requests
 
       - name: Run grabber
-        run: python script.py
+        run: python Autorotate.py
 
       - name: Push output
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add trans7.m3u8
-          git commit -m "auto: update trans7.m3u8" || echo "no changes"
+          git add TESSTSS7.m3u8
+          git commit -m "auto: update TESSTSS7.m3u8" || echo "no changes"
           git push
