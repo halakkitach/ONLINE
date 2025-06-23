@@ -3,6 +3,7 @@ import requests
 
 DAILYMOTION_URL = "https://www.dailymotion.com/video/x8qckyq"
 FILE_NAME = "TESSTSS7.m3u8"
+FALLBACK_URL = "https://raw.githubusercontent.com/halakkitach/ONLINE/refs/heads/master/erorya/1infoku.m3u8"
 
 session = requests.Session()
 
@@ -59,10 +60,22 @@ def try_proxy(proxy):
         print(f"[×] Gagal proxy {proxy}: {e}")
         return False
 
+def fallback_write():
+    try:
+        print(f"[!] Menggunakan fallback: {FALLBACK_URL}")
+        res = session.get(FALLBACK_URL, timeout=10)
+        res.raise_for_status()
+        with open(FILE_NAME, "w") as f:
+            f.write(res.text)
+        print(f"[✓] Fallback disimpan ke {FILE_NAME}")
+    except Exception as e:
+        print(f"[×] Gagal ambil fallback: {e}")
+
 def main():
     proxies = get_proxies()
     if not proxies:
         print("❌ Tidak ada proxy tersedia")
+        fallback_write()
         return
 
     for proxy in proxies:
@@ -71,6 +84,7 @@ def main():
             return
 
     print("❌ Semua proxy gagal")
+    fallback_write()
 
 if __name__ == "__main__":
     main()
