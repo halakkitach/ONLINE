@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DAILYMOTION_URL = "https://www.dailymotion.com/video/x8qckyq"
-FILE_NAME = "trans7.m3u8"
+FILE_NAME = "testtt7.m3u8"
 
 session = requests.Session()
 
