@@ -1,0 +1,32 @@
+name: Ekstrak & Commit Proxy Indonesia
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'  # Setiap 1 jam
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    env:
+      PROXY_JSON_URL: ${{ secrets.PROXY_JSON_URL }}
+    steps:
+      - name: Checkout kode
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Jalankan skrip ekstraksi proxy
+        run: |
+          python3 proxy_extract.py
+
+      - name: Commit dan Push hasil
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add indo_proxies.txt
+          git commit -m "🔁 Update proxy Indonesia otomatis" || echo "Tidak ada perubahan"
+          git push
