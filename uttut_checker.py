@@ -26,8 +26,8 @@ def get_indonesian_proxies():
 if __name__ == "__main__":
     proxies = get_indonesian_proxies()
     if proxies:
-        with open("indo_proxies.txt", "w") as f:
+        with open("UTTUT_DOOR.txt", "w") as f:
             f.write("\n".join(proxies))
-        print(f"✅ {len(proxies)} proxy dari Indonesia disimpan di indo_proxies.txt")
+        print(f"✅ {len(proxies)} proxy dari Indonesia disimpan di UTTUT_DOOR.txt")
     else:
         print("⚠️ Tidak ada proxy Indonesia ditemukan.")
