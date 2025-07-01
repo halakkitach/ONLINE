@@ -21,7 +21,7 @@ jobs:
 
       - name: Jalankan skrip ekstraksi proxy
         run: |
-          python3 proxy_extract.py
+          python3 proxy_checker.py
 
       - name: Commit dan Push hasil
         run: |
