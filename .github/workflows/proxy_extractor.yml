@@ -1,4 +1,4 @@
-name: Ekstrak & Commit Proxy Indonesia
+name: Ekstrak & Commit DOOR UTTUT
 
 on:
   workflow_dispatch:
@@ -24,12 +24,12 @@ jobs:
         
       - name: Jalankan skrip ekstraksi proxy
         run: |
-          python3 proxy_checker.py
+          python3 uttut_checker.py
 
       - name: Commit dan Push hasil
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add indo_proxies.txt
-          git commit -m "🔁 Update proxy Indonesia otomatis" || echo "Tidak ada perubahan"
+          git add UTTUT_DOOR.txt
+          git commit -m "🔁 Update UTTUT otomatis" || echo "Tidak ada perubahan"
           git push
