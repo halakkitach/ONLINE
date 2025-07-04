@@ -15,9 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Playwright
+      - name: Install Python dependencies
         run: |
-          pip install playwright
+          pip install playwright python-dotenv
           playwright install chromium
 
       - name: Jalankan get_rri.py
