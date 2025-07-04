@@ -9,7 +9,7 @@ jobs:
   fetch_rri:
     runs-on: ubuntu-latest
     env:
-      BASE_URL: ${{ secrets.RRI_BASE_URL }}
+      BASE_URL: ${{ secrets.BASE_URL }}
 
     steps:
       - name: Checkout
