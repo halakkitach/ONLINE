@@ -81,9 +81,9 @@ async def main():
 
         if m3u8_links:
             print("✅ M3U8 berhasil diambil:", m3u8_links[0])
-            with open("RRILIVE.txt", "w") as f:
+            with open("RRILIVE.m3u8", "w") as f:
                 f.write(m3u8_links[0] + "\n")
-            print("💾 Disimpan ke RRILIVE.txt")
+            print("💾 Disimpan ke RRILIVE.m3u8")
         else:
             print("⚠️ Tidak ditemukan M3U8.")
 
