@@ -28,7 +28,7 @@ jobs:
           echo "REFERER=${{ secrets.REFERER }}" >> $GITHUB_ENV
 
       - name: 🚀 Jalankan Grabber
-        run: python testtvn.py
+        run: python sangarden.py
 
       - name: 📤 Commit & Push hasil M3U8 ke root
         run: |
