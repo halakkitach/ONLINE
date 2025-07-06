@@ -19,7 +19,7 @@ jobs:
           python-version: 3.11
 
       - name: 📦 Install dependencies
-        run: pip install python-dotenv
+        run: pip install requests python-dotenv
 
       - name: ⚙️ Set environment variables
         run: |
