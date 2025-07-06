@@ -1,0 +1,39 @@
+name: Grab SANGAR M3U8
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'  # Setiap 30 menit
+
+jobs:
+  grab-stream:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: 📦 Install dependencies
+        run: pip install python-dotenv
+
+      - name: ⚙️ Set environment variables
+        run: |
+          echo "JS_URL=${{ secrets.JS_URL }}" >> $GITHUB_ENV
+          echo "FALLBACK_URL=${{ secrets.FALLBACK_URL }}" >> $GITHUB_ENV
+          echo "REFERER=${{ secrets.REFERER }}" >> $GITHUB_ENV
+
+      - name: 🚀 Jalankan Grabber
+        run: python testtvn.py
+
+      - name: 📤 Commit & Push hasil M3U8 ke root
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add SANGAR.m3u8
+          git commit -m "🔄 Update SANGAR.m3u8 - $(date -u '+%Y-%m-%d %H:%M:%S')" || echo "✅ Tidak ada perubahan"
+          git push
