@@ -1,4 +1,4 @@
-import re
+import re 
 import os
 import requests
 from pathlib import Path
@@ -52,16 +52,15 @@ def main():
     best_url, best_exp = fetch_best_19035_url()
 
     with open(OUTPUT_FILE, "w") as f:
-        f.write("#EXTM3U\n")
         if best_url and best_exp > last_exp:
             print("✅ URL baru ditemukan dengan exp lebih tinggi:")
             print(best_url)
-            f.write(f"#EXTINF:-1,Stream 19035\n{best_url}\n")
+            f.write(best_url + "\n")
             save_last_exp(best_exp)
         else:
             print("⚠️ Data belum berubah atau tidak ditemukan. Gunakan fallback:")
             print(FALLBACK_URL)
-            f.write(f"#EXTINF:-1,Fallback 19035\n{FALLBACK_URL}\n")
+            f.write(FALLBACK_URL + "\n")
 
 if __name__ == "__main__":
     main()
