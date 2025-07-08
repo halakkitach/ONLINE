@@ -1,7 +1,7 @@
 import os
 import requests
 
-def fetch_proxies_from_url(url):
+def fetch_proxies_from_json_api(url):
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
@@ -10,7 +10,7 @@ def fetch_proxies_from_url(url):
         indo_proxies = []
         for proxy in proxies:
             country = proxy.get("country", "")
-            if country.startswith("Indonesia"):
+            if country.lower().startswith("indonesia"):
                 ip = proxy.get("ip")
                 port = proxy.get("port")
                 if ip and port:
@@ -18,25 +18,32 @@ def fetch_proxies_from_url(url):
         return indo_proxies
 
     except Exception as e:
-        print(f"⚠️ Gagal fetch dari {url} -> {e}")
+        print(f"⚠️ Gagal fetch dari JSON API {url} -> {e}")
+        return []
+
+def fetch_proxies_from_plain_text(url):
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        lines = response.text.splitlines()
+        return [line.strip() for line in lines if line.strip()]
+    except Exception as e:
+        print(f"⚠️ Gagal fetch dari plain text URL {url} -> {e}")
         return []
 
 def get_all_indonesian_proxies():
-    urls = {
-        "PROXY_JSON_URL": os.getenv("PROXY_JSON_URL"),
-        "PROXY_SOCKS4_URL": os.getenv("PROXY_SOCKS4_URL"),
-        "PROXY_SOCKS5_URL": os.getenv("PROXY_SOCKS5_URL")
-    }
-
     all_proxies = []
-    for env_var, url in urls.items():
-        if not url:
-            print(f"❌ Environment variable {env_var} tidak ditemukan.")
-            continue
-        proxies = fetch_proxies_from_url(url)
-        all_proxies.extend(proxies)
 
-    return all_proxies
+    # Ambil semua variabel env yang diawali dengan PROXY_
+    for key, url in os.environ.items():
+        if key.startswith("PROXY_") and url:
+            if url.endswith(".txt"):
+                proxies = fetch_proxies_from_plain_text(url)
+            else:
+                proxies = fetch_proxies_from_json_api(url)
+            all_proxies.extend(proxies)
+
+    return sorted(set(all_proxies))
 
 if __name__ == "__main__":
     proxies = get_all_indonesian_proxies()
