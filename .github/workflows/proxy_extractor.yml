@@ -12,6 +12,7 @@ jobs:
       PROXY_JSON_URL: ${{ secrets.PROXY_JSON_URL }}
       PROXY_SOCKS4_URL: ${{ secrets.PROXY_SOCKS4_URL }}
       PROXY_SOCKS5_URL: ${{ secrets.PROXY_SOCKS5_URL }}
+      PROXY_GITHUB_URL: ${{ secrets.PROXY_GITHUB_URL }}
     steps:
       - name: Checkout kode
         uses: actions/checkout@v4
