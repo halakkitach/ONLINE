@@ -23,7 +23,7 @@ def load_last_exp():
 def save_last_exp(exp):
     LAST_EXP_FILE.write_text(str(exp))
 
-def fetch_best_19035_url():
+def fetch_best_18037_url():
     headers = {
         "User-Agent": USER_AGENT,
         "Referer": REFERER
@@ -49,7 +49,7 @@ def fetch_best_19035_url():
 
 def main():
     last_exp = load_last_exp()
-    best_url, best_exp = fetch_best_19035_url()
+    best_url, best_exp = fetch_best_18037_url()
 
     with open(OUTPUT_FILE, "w") as f:
         if best_url and best_exp > last_exp:
