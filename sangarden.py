@@ -31,7 +31,7 @@ def fetch_best_18037_url():
     response = requests.get(JS_URL, headers=headers)
     js_content = response.text
 
-    pattern = re.compile(r"initializePlayer\('([^']+)',\s*'([^']+19035[^']+)',\s*'([^']+)'\)")
+    pattern = re.compile(r"initializePlayer\('([^']+)',\s*'([^']+18037[^']+)',\s*'([^']+)'\)")
     matches = pattern.findall(js_content)
 
     best_exp = 0
