@@ -3,8 +3,8 @@ name: Grab SANGAR M3U8
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 10 * * *'   # 17:00 WIB
-    - cron: '0 13 * * *'   # 20:00 WIB
+    - cron: '0 09 * * *'   # 16:00 WIB
+    - cron: '0 12 * * *'   # 19:00 WIB
 
 jobs:
   grab-stream:
@@ -31,12 +31,23 @@ jobs:
       - name: 🚀 Jalankan Grabber
         run: python sangarden.py
 
-      - name: 📤 Commit & Push hasil M3U8 ke root
+      - name: 📤 Commit & Push hasil M3U8
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add SANGAR.m3u8
-          git commit -m "🔄 Update SANGAR.m3u8 - $(date -u '+%Y-%m-%d %H:%M:%S')" || echo "✅ Tidak ada perubahan"
-          git pull --rebase origin master
-          git push
 
+          CHANGED=false
+          for file in *.m3u8; do
+            if [[ -f "$file" ]]; then
+              git add "$file"
+              CHANGED=true
+            fi
+          done
+
+          if $CHANGED; then
+            git commit -m "🔄 Update M3U8 - $(date -u '+%Y-%m-%d %H:%M:%S')" || echo "✅ Tidak ada perubahan konten"
+            git pull --rebase origin master
+            git push
+          else
+            echo "⏭️ Tidak ada file .m3u8 untuk dipush"
+          fi
