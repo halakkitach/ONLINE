@@ -18,7 +18,8 @@ EXP_FILE = Path("last_exp.json")
 # Mapping ID -> Nama file output
 OUTPUT_MAP = {
     "18037": "SANGAR.m3u8",
-    "19051": "GASPOL.m3u8",
+    "19353": "GASPOL.m3u8",
+    "19354": "GASRUK.m3u8",
     # Tambahkan di sini sesuai ID yang diinginkan
 }
 
