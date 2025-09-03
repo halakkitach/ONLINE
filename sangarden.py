@@ -23,6 +23,7 @@ OUTPUT_MAP = {
     "19384": "GASCOK.m3u8",
     "19385": "GASBEK.m3u8",
     "19386": "GASBUK.m3u8",
+    "19488": "GASHABIS.m3u8",
     # Tambahkan di sini sesuai ID yang diinginkan
 }
 
