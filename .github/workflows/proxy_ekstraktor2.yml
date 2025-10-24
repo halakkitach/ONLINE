@@ -23,7 +23,7 @@ jobs:
         run: pip install requests
         
       - name: Jalankan skrip ekstraksi proxy
-        run: python3 uttut_checker.py
+        run: python3 uttut_cheker2.py
 
       - name: Commit dan Push hasil
         run: |
