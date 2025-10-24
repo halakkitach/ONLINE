@@ -26,13 +26,12 @@ jobs:
         run: pip install requests
         
       - name: Jalankan skrip ekstraksi proxy
-        run: |
-          python3 uttut_checker.py
+        run: python3 uttut_checker.py
 
       - name: Commit dan Push hasil
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add UTTUT_DOOR.txt
+          git add UTTUT_DOOR.txt UTTUTHONGKONG_DOOR.txt UTTUTSINGAPORE_DOOR.txt
           git commit -m "🔁 Update UTTUT otomatis" || echo "Tidak ada perubahan"
           git push
