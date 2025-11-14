@@ -1,34 +1,57 @@
 name: Fetch M3U8 From EmbedNow
 
 on:
-  workflow_dispatch:   # bisa run manual
+  workflow_dispatch:
 
 jobs:
-  run-script:
+  grab-m3u8:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repo
       uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.11"
+    - name: Install system dependencies for Chrome/Playwright
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          xvfb \
+          libnss3 \
+          libxss1 \
+          libasound2 \
+          libatk1.0-0 \
+          libatk-bridge2.0-0 \
+          libcups2 \
+          libpangocairo-1.0-0 \
+          libxcomposite1 \
+          libxrandr2 \
+          libgbm-dev \
+          libxdamage1 \
+          libpango-1.0-0 \
+          libcairo2 \
+          libatspi2.0-0 \
+          libgtk-3-0
 
-    - name: Install Playwright + dependencies
+    - name: Install Python + Playwright
       run: |
         pip install playwright
         python -m playwright install-deps
         python -m playwright install chromium
 
-    - name: Run script (grab m3u8)
+    - name: Start virtual display (Xvfb)
+      run: |
+        export DISPLAY=:99
+        Xvfb :99 -ac -screen 0 1280x720x16 &
+        sleep 3
+
+    - name: Run script to fetch stream
       env:
+        DISPLAY: ":99"
         GITHUB_ACTIONS: "true"
       run: |
         python3 TEST1.py
 
-    - name: Upload map7.json as artifact
+    - name: Upload map7.json artifact
       uses: actions/upload-artifact@v4
       with:
         name: map7
