@@ -2,7 +2,7 @@ import asyncio
 import json
 from playwright.async_api import async_playwright
 
-TARGET_URL = "https://embednow.top/embed/wc/2025-11-14/lux-ger"
+TARGET_URL = "https://embednow.top/embed/wc/---"
 OUTPUT_FILE = "map7.json"
 
 async def run():
