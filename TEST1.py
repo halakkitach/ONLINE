@@ -1,49 +1,23 @@
 import asyncio
 import json
-import os
-import sys
-import shutil
 from playwright.async_api import async_playwright
 
 TARGET_URL = "https://embednow.top/embed/wc/2025-11-14/lux-ger"
 OUTPUT_FILE = "map7.json"
 
-IN_GITHUB = os.getenv("GITHUB_ACTIONS") == "true"
-
-def detect_browser():
-    if IN_GITHUB:
-        return None
-    if sys.platform.startswith("win"):
-        candidates = [
-            r"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-            r"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
-            shutil.which("chrome"),
-            shutil.which("chromium"),
-        ]
-    else:
-        candidates = [
-            shutil.which("google-chrome"),
-            shutil.which("chrome"),
-            shutil.which("chromium"),
-            shutil.which("chromium-browser"),
-        ]
-    for c in candidates:
-        if c:
-            return c
-    return None
-
 async def run():
-    chrome_path = detect_browser()
-    print(f"Using browser: {chrome_path or 'Playwright Chromium'}")
-
     async with async_playwright() as p:
         browser = await p.chromium.launch(
-            executable_path=chrome_path,
-            headless=False,        # NON HEADLESS because Xvfb
+            executable_path="/usr/bin/google-chrome",
+            headless=False,
             args=[
+                "--disable-gpu-sandbox",
+                "--disable-setuid-sandbox",
                 "--disable-blink-features=AutomationControlled",
                 "--disable-web-security",
                 "--disable-infobars",
+                "--ignore-certificate-errors",
+                "--use-gl=swiftshader",
                 "--no-sandbox",
                 "--window-size=1280,720",
             ]
@@ -57,42 +31,29 @@ async def run():
         page = await context.new_page()
 
         await page.add_init_script("""
-            Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
-            Object.defineProperty(navigator, 'plugins', {get: () => [1,2,3]});
-            Object.defineProperty(navigator, 'languages', {get: () => ['en-US']});
-            WebGLRenderingContext.prototype.getParameter = function() { 
-                return "Intel Open Source Technology Center";
-            };
+        Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
         """)
 
-        m3u8_list = []
+        m3u8 = None
 
         def on_request(req):
-            url = req.url
-            if ".m3u8" in url:
-                print("🔥 M3U8 FOUND:", url)
-                m3u8_list.append(url)
+            nonlocal m3u8
+            if ".m3u8" in req.url:
+                print("🔥 FOUND M3U8:", req.url)
+                m3u8 = req.url
 
         page.on("request", on_request)
 
-        print("Opening:", TARGET_URL)
         await page.goto(TARGET_URL, timeout=0)
 
-        # wait 15 seconds (embednow lambat)
-        for _ in range(30):
-            await asyncio.sleep(0.5)
-            if m3u8_list:
+        for _ in range(40):
+            if m3u8:
                 break
+            await asyncio.sleep(0.5)
 
         await browser.close()
 
-    found = m3u8_list[0] if m3u8_list else None
-
     with open(OUTPUT_FILE, "w") as f:
-        json.dump({TARGET_URL: found}, f, indent=2)
-
-    print("Saved to map7.json:")
-    print(json.dumps({TARGET_URL: found}, indent=2))
-
+        json.dump({TARGET_URL: m3u8}, f, indent=2)
 
 asyncio.run(run())
