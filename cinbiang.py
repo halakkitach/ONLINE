@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 from pathlib import Path
 import os
-import ast  # untuk parsing list dari file
+import ast
 
 CONFIG_FILE = Path.home() / "steramest2data_file.txt"
 
@@ -14,7 +14,7 @@ USER_DATA_IFRAME = "/tmp/ngefilm_iframe_profile"
 os.makedirs(USER_DATA, exist_ok=True)
 os.makedirs(USER_DATA_IFRAME, exist_ok=True)
 
-# --- load config dari file ---
+# --- load config ---
 config = {}
 with open(CONFIG_FILE, "r", encoding="utf-8") as f:
     for line in f:
@@ -23,7 +23,6 @@ with open(CONFIG_FILE, "r", encoding="utf-8") as f:
             key, val = line.split("=", 1)
             key = key.strip()
             val = val.strip().strip('"').strip("'")
-            # Parse list jika key adalah UNIVERSAL_DOMAINS
             if key == "UNIVERSAL_DOMAINS":
                 val = ast.literal_eval(val)
             config[key] = val
@@ -43,36 +42,43 @@ def get_items():
             "?s=&search=advanced&post_type=&index=&orderby=&genre="
             "&movieyear=&country=indonesia&quality="
         )
-        print("🔎 Scraping:", url)
+        print("🔎 Scraping:", url, flush=True)
+
         try:
             r = requests.get(url, headers=headers, timeout=20)
             r.raise_for_status()
-        except:
+        except Exception as e:
+            print("❌ Error load page:", e, flush=True)
             continue
 
         soup = BeautifulSoup(r.text, "html.parser")
         articles = soup.select("div#gmr-main-load article")
+
         for art in articles:
             a = art.select_one("h2.entry-title a")
             if not a:
                 continue
             detail = a["href"]
             slug = detail.rstrip("/").split("/")[-1]
+
             if slug in seen:
                 continue
             seen.add(slug)
+
             title = a.get_text(strip=True)
             img = art.select_one("img")
             poster = img["src"] if img else ""
+
             all_results.append({
                 "title": title,
                 "slug": slug,
                 "poster": poster,
                 "detail": detail
             })
-        print("➕ Total sementara:", len(all_results))
 
-    print("\n🎉 TOTAL FINAL:", len(all_results), "\n")
+        print("➕ Total sementara:", len(all_results), flush=True)
+
+    print("\n🎉 TOTAL FINAL:", len(all_results), "\n", flush=True)
     return all_results
 
 def print_m3u(item, m3u8, out):
@@ -85,6 +91,8 @@ def print_m3u(item, m3u8, out):
 
 async def process_item(item):
     slug = item["slug"]
+    print(f"\n🎬 MEMPROSES: {slug}", flush=True)
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             executable_path="/usr/bin/google-chrome",
@@ -105,54 +113,82 @@ async def process_item(item):
         context = await browser.new_context()
         page = await context.new_page()
 
-        # Cari iframe universal
+        # ----------------------------
+        # CARI IFRAME
+        # ----------------------------
         iframe = None
+
         for player in range(1, 6):
             urlp = f"{BASE_URL}/{slug}/?player={player}"
+            print(f"➡ Membuka player {player}: {urlp}", flush=True)
+
             try:
                 await page.goto(urlp, timeout=0)
                 await page.wait_for_timeout(3000)
-            except:
+            except Exception as e:
+                print("⚠ Error goto player:", e, flush=True)
                 continue
 
             frames = await page.query_selector_all("iframe")
+
+            print(f"📌 Jumlah iframe ditemukan: {len(frames)}", flush=True)
+
             for fr in frames:
                 src = await fr.get_attribute("src")
+                print("   🔍 iframe src:", src, flush=True)
+
                 if src and any(d in src.lower() for d in UNIVERSAL_DOMAINS):
                     iframe = src
+                    print(f"✅ IFRAME UNIVERSAL DITEMUKAN: {iframe}", flush=True)
                     break
+
             if iframe:
                 break
 
         if not iframe:
-            print(f"❌ Skip {slug} — tidak ada iframe universal")
+            print(f"❌ Skip {slug} — tidak ada iframe universal", flush=True)
             await browser.close()
             return (item, None)
 
-        # Extract m3u8
+        # ----------------------------
+        # INTERCEPT M3U8
+        # ----------------------------
         found = None
+
         async def intercept(route, request):
             nonlocal found
             url = request.url
-            is_fake = url.endswith(".txt") or url.endswith(".woff") or url.endswith(".woff2")
-            if ".m3u8" in url or is_fake:
+
+            if ".m3u8" in url:
                 if found is None:
                     found = url
-                    print("🔥 STREAM:", url)
-                return await route.continue_(headers={"referer": iframe, "user-agent": "Mozilla/5.0"})
+                    print(f"🔥 M3U8 TERDETEKSI: {url}", flush=True)
+
+                return await route.continue_(headers={
+                    "referer": iframe,
+                    "user-agent": "Mozilla/5.0"
+                })
+
             return await route.continue_()
 
         await page.route("**/*", intercept)
 
+        print(f"➡ Membuka iframe stream: {iframe}", flush=True)
+
         try:
             await page.goto(iframe, timeout=0)
-        except:
-            pass
+        except Exception as e:
+            print("⚠ Error membuka iframe:", e, flush=True)
 
-        for _ in range(15):
+        # waktu tunggu diperpanjang supaya lebih stabil
+        for i in range(60):
             if found:
+                print(f"🎉 M3U8 BERHASIL DIAMBIL UNTUK {slug}", flush=True)
                 break
             await asyncio.sleep(1)
+
+        if not found:
+            print(f"⏳ TIMEOUT 60s — tidak ada m3u8 untuk {slug}", flush=True)
 
         await browser.close()
         return (item, found)
@@ -160,10 +196,11 @@ async def process_item(item):
 async def main():
     items = get_items()
     if not items:
+        print("❌ Tidak ada item!", flush=True)
         return
 
-    # Batasi concurrency agar tidak overload
     sem = asyncio.Semaphore(5)
+
     async def sem_task(item):
         async with sem:
             return await process_item(item)
@@ -175,7 +212,7 @@ async def main():
         f.write("#EXTM3U\n\n")
         for item, m3u8 in results:
             if m3u8:
-                print(f"🔥 STREAM={m3u8} ({item['slug']})")
+                print(f"🔥 STREAM FINAL: {m3u8} ({item['slug']})", flush=True)
                 print_m3u(item, m3u8, f)
 
 asyncio.run(main())
