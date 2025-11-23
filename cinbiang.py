@@ -133,23 +133,23 @@ async def find_valid_iframe(page, slug):
 
 
 # =====================================================================
-# Extract m3u8 (PAKAI GOOGLE CHROME)
+# Extract M3U8 (BENAR PAKAI launch_persistent_context)
 # =====================================================================
 async def extract_m3u8(iframe_url, p):
-    browser = await p.chromium.launch(
+
+    iframe_ctx = await p.chromium.launch_persistent_context(
+        user_data_dir=USER_DATA_IFRAME,
         executable_path=CHROME_PATH,
         headless=True,
         args=[
-            f"--user-data-dir={USER_DATA_IFRAME}",
             "--disable-blink-features=AutomationControlled",
             "--no-sandbox",
-            "--disable-web-security",
             "--disable-gpu",
+            "--disable-dev-shm-usage",
         ]
     )
 
-    context = await browser.new_context()
-    page = await context.new_page()
+    page = iframe_ctx.pages[0] if iframe_ctx.pages else await iframe_ctx.new_page()
 
     print("▶ Memuat iframe:", iframe_url, flush=True)
 
@@ -159,17 +159,11 @@ async def extract_m3u8(iframe_url, p):
         nonlocal found
         url = request.url
 
-        if ".m3u8" in url:
-            if found is None:
-                found = url
-                print("🔥 STREAM (intercept):", url, flush=True)
+        if ".m3u8" in url and found is None:
+            found = url
+            print("🔥 STREAM (intercept):", url, flush=True)
 
-            return await route.continue_(headers={
-                "referer": iframe_url,
-                "user-agent": "Mozilla/5.0"
-            })
-
-        return await route.continue_()
+        await route.continue_()
 
     await page.route("**/*", intercept)
 
@@ -182,17 +176,16 @@ async def extract_m3u8(iframe_url, p):
 
     for i in range(30):
         if found:
-            print("✔ Stream muncul setelah", i+1, "detik", flush=True)
+            print("✔ Stream muncul setelah", i + 1, "detik", flush=True)
             break
         await asyncio.sleep(1)
 
-    await context.close()
-    await browser.close()
+    await iframe_ctx.close()
     return found
 
 
 # =====================================================================
-# MAIN (PAKAI GOOGLE CHROME)
+# MAIN (BENAR PAKAI launch_persistent_context)
 # =====================================================================
 async def main():
     items = get_items()
@@ -201,19 +194,19 @@ async def main():
 
     async with async_playwright() as p:
 
-        browser = await p.chromium.launch(
+        main_ctx = await p.chromium.launch_persistent_context(
+            user_data_dir=USER_DATA,
             executable_path=CHROME_PATH,
             headless=True,
             args=[
-                f"--user-data-dir={USER_DATA}",
                 "--disable-blink-features=AutomationControlled",
                 "--no-sandbox",
                 "--disable-gpu",
+                "--disable-dev-shm-usage",
             ]
         )
 
-        context = await browser.new_context()
-        page = await context.new_page()
+        page = main_ctx.pages[0] if main_ctx.pages else await main_ctx.new_page()
 
         with OUTPUT_FILE.open("w", encoding="utf-8") as f:
             f.write("#EXTM3U\n\n")
@@ -238,8 +231,7 @@ async def main():
                 else:
                     print("❌ Stream tidak ditemukan", flush=True)
 
-        await context.close()
-        await browser.close()
+        await main_ctx.close()
 
 
 asyncio.run(main())
