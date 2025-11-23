@@ -14,6 +14,8 @@ USER_DATA_IFRAME = "/tmp/ngefilm_iframe_profile"
 os.makedirs(USER_DATA, exist_ok=True)
 os.makedirs(USER_DATA_IFRAME, exist_ok=True)
 
+CHROME_PATH = "/usr/bin/google-chrome"
+
 # --- load config ---
 config = {}
 with open(CONFIG_FILE, "r", encoding="utf-8") as f:
@@ -33,7 +35,7 @@ INDEX_URL = f"{BASE_URL}/page/"
 ref = config["ref"]
 
 # =====================================================================
-# Ambil daftar item (SAMA seperti Code1)
+# Ambil daftar item
 # =====================================================================
 def get_items():
     headers = {"User-Agent": "Mozilla/5.0"}
@@ -100,7 +102,7 @@ def print_m3u(item, m3u8, out):
 
 
 # =====================================================================
-# FUNGSI SAMA DENGAN CODE1 — Cari Iframe Universal
+# Cari iframe universal
 # =====================================================================
 async def find_valid_iframe(page, slug):
     for player in range(1, 6):
@@ -131,13 +133,14 @@ async def find_valid_iframe(page, slug):
 
 
 # =====================================================================
-# FUNGSI SAMA DENGAN CODE1 — Extract m3u8
+# Extract m3u8 (PAKAI GOOGLE CHROME)
 # =====================================================================
 async def extract_m3u8(iframe_url, p):
-    context = await p.chromium.launch_persistent_context(
-        user_data_dir=USER_DATA_IFRAME,
+    browser = await p.chromium.launch(
+        executable_path=CHROME_PATH,
         headless=True,
         args=[
+            f"--user-data-dir={USER_DATA_IFRAME}",
             "--disable-blink-features=AutomationControlled",
             "--no-sandbox",
             "--disable-web-security",
@@ -145,13 +148,13 @@ async def extract_m3u8(iframe_url, p):
         ]
     )
 
-    page = context.pages[0] if context.pages else await context.new_page()
+    context = await browser.new_context()
+    page = await context.new_page()
 
     print("▶ Memuat iframe:", iframe_url, flush=True)
 
     found = None
 
-    # intercept request
     async def intercept(route, request):
         nonlocal found
         url = request.url
@@ -170,7 +173,6 @@ async def extract_m3u8(iframe_url, p):
 
     await page.route("**/*", intercept)
 
-    # buka iframe
     try:
         await page.goto(iframe_url, timeout=0)
     except:
@@ -185,11 +187,12 @@ async def extract_m3u8(iframe_url, p):
         await asyncio.sleep(1)
 
     await context.close()
+    await browser.close()
     return found
 
 
 # =====================================================================
-# MAIN (sekuensial seperti CODE1)
+# MAIN (PAKAI GOOGLE CHROME)
 # =====================================================================
 async def main():
     items = get_items()
@@ -198,17 +201,19 @@ async def main():
 
     async with async_playwright() as p:
 
-        context = await p.chromium.launch_persistent_context(
-            user_data_dir=USER_DATA,
+        browser = await p.chromium.launch(
+            executable_path=CHROME_PATH,
             headless=True,
             args=[
+                f"--user-data-dir={USER_DATA}",
                 "--disable-blink-features=AutomationControlled",
                 "--no-sandbox",
                 "--disable-gpu",
             ]
         )
 
-        page = context.pages[0] if context.pages else await context.new_page()
+        context = await browser.new_context()
+        page = await context.new_page()
 
         with OUTPUT_FILE.open("w", encoding="utf-8") as f:
             f.write("#EXTM3U\n\n")
@@ -220,16 +225,13 @@ async def main():
                 print("▶ MEMPROSES:", slug)
                 print("==========================================\n")
 
-                # 1. Cari iframe
                 iframe = await find_valid_iframe(page, slug)
                 if not iframe:
                     print("❌ Tidak ada iframe universal — skip", flush=True)
                     continue
 
-                # 2. Ekstrak m3u8
                 m3u8 = await extract_m3u8(iframe, p)
 
-                # 3. Tulis hasil
                 if m3u8:
                     print("🔥 STREAM =", m3u8, flush=True)
                     print_m3u(item, m3u8, f)
@@ -237,6 +239,7 @@ async def main():
                     print("❌ Stream tidak ditemukan", flush=True)
 
         await context.close()
+        await browser.close()
 
 
 asyncio.run(main())
