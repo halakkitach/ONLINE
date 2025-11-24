@@ -77,3 +77,4 @@ jobs:
           else
             git commit -m "auto: update ngefilm.m3u"
             git push
+          fi
