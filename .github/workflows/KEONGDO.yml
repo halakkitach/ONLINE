@@ -37,7 +37,7 @@ jobs:
       - name: 📁 Ambil file konfigurasi dari repo privat
         shell: bash
         run: |
-          git clone --depth=1 https://x-access-token:${{ secrets.TOKEN_PRIVATE2 }}@github.com/${{ secrets.REPO_PRIVATE2 }} configrepo
+          git clone --depth=1 https://x-access-token:${{ secrets.TOKEN_PRIVATE2 }}@github.com/${{ secrets.REPO_PRIVATE2 }}.git configrepo
           cp configrepo/keongdata.txt $HOME/keongdata.txt
 
       - name: ▶️ Jalankan script Python dan simpan output M3U
@@ -51,15 +51,13 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git clone --depth=1 https://x-access-token:${{ secrets.TOKEN_PRIVATE2 }}@github.com/${{ secrets.REPO_PRIVATE2 }} repo-output
-          cp Keongphut_sport.m3u repo-output/
-
-          cd repo-output
+          cp Keongphut_sport.m3u configrepo/
+          cd configrepo
           git add Keongphut_sport.m3u
 
           if git diff --cached --quiet; then
             echo "✅ Tidak ada perubahan pada Keongphut_sport.m3u, skip push."
           else
             git commit -m "🔄 auto: update Keongphut_sport.m3u"
-            git 
+            git push origin HEAD
           fi
