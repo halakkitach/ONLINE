@@ -23,7 +23,7 @@ jobs:
 
       - name: Ambil file mapping dari repo privat
         run: |
-          git clone --depth=1 https://x-access-token:${{ secrets.TOKEN_PRIVATE }}@github.com/${{ secrets.REPO_PRIVATE }} private
+          git clone --depth=1 https://x-access-token:${{ secrets.TOKEN_PRIVATE2 }}@github.com/${{ secrets.REPO_PRIVATE2 }} private
           cp private/cool_mapping.txt $HOME/cool_mapping.txt
 
       - name: Jalankan script Python dan simpan output
@@ -49,7 +49,7 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git clone --depth=1 https://x-access-token:${{ secrets.TOKEN_PRIVATE }}@github.com/${{ secrets.REPO_PRIVATE }} repo-output
+          git clone --depth=1 https://x-access-token:${{ secrets.TOKEN_PRIVATE2 }}@github.com/${{ secrets.REPO_PRIVATE2 }} repo-output
           cp $GITHUB_WORKSPACE/hodalmi.m3u repo-output/
 
           cd repo-output
