@@ -2,8 +2,6 @@ name: Grab OMRRI M3U8
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 */2 * * *'  # Setiap 2 jam
 
 jobs:
   fetch_rri:
