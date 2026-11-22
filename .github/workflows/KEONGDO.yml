@@ -1,0 +1,64 @@
+name: GET KEONG M3U
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'  # Setiap 1 jam
+
+permissions:
+  contents: write  # Diperlukan agar bisa push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 Checkout repo utama (isi script)
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: 🛠️ Fix dpkg lock and update package lists
+        run: |
+          sudo rm /var/lib/dpkg/lock-frontend || true
+          sudo rm /var/lib/apt/lists/lock || true
+          sudo dpkg --configure -a || true
+          sudo apt-get update -y
+
+      - name: 📦 Install dependencies
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 urllib3 argostranslate
+
+      - name: 📁 Ambil file konfigurasi dari repo privat
+        shell: bash
+        run: |
+          git clone --depth=1 https://x-access-token:${{ secrets.TOKEN_PRIVATE }}@github.com/${{ secrets.REPO_PRIVATE }} configrepo
+          cp configrepo/keongdata.txt $HOME/keongdata.txt
+
+      - name: ▶️ Jalankan script Python dan simpan output M3U
+        shell: bash
+        run: |
+          python TESTKEONG.py
+
+      - name: 📤 Push output ke repo privat jika ada perubahan
+        shell: bash
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git clone --depth=1 https://x-access-token:${{ secrets.TOKEN_PRIVATE }}@github.com/${{ secrets.REPO_PRIVATE }} repo-output
+          cp Keongphut_sport.m3u repo-output/
+
+          cd repo-output
+          git add Keongphut_sport.m3u
+
+          if git diff --cached --quiet; then
+            echo "✅ Tidak ada perubahan pada Keongphut_sport.m3u, skip push."
+          else
+            git commit -m "🔄 auto: update Keongphut_sport.m3u"
+            git 
